@@ -42,7 +42,7 @@
     <img height=170 src="https://streak-stats.demolab.com?user=abdelrahman-kamel-elgendy&theme=react&border_radius=10" alt="streak stats"/>
     <img height=170 src="https://github-readme-stats.vercel.app/api?username=abdelrahman-kamel-elgendy&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10" alt="readme stats"/>
     <br/>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&layout=donut-vertical&langs_count=8&theme=react&border_radius=10"/>
+    <img height=300 src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&layout=donut-vertical&langs_count=8&theme=react&border_radius=10"/>
 </div>
 
 <br/><br/>
