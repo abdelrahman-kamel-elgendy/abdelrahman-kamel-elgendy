@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hey!;+I'm+Abdelrahman+Kamel;" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=35&center=true&vCenter=true&width=500&height=70&duration=5000&lines=Hey!;+I'm+Abdelrahman+Kamel;" />
 </h1>
 
 <h3 align="center">A passionate software developer from Egypt</h3>
