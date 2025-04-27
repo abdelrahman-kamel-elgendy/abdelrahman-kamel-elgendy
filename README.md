@@ -6,7 +6,7 @@
 
 <div align="center">
 
- 🔭 I’m currently learning **ASP.Net**
+ 🔭 I’m currently learning **Backend Development**
 
 😁 Fun fact **I can't remember secrets**    
 
