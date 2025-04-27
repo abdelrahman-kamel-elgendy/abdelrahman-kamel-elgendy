@@ -27,8 +27,8 @@
 <h2 align="center">⚒️ Languages - Frameworks - Tools ⚒️</h2>
 <br/>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=html,css,c,cs,cpp,js,py"/>
-    <img src="https://skillicons.dev/icons?i=dotnet,nodejs,mysql,androidstudio,vscode,flask,anaconda,bootstrap,git,github,figma"/>
+    <img src="https://skillicons.dev/icons?i=html,css,cs,cpp,js,py"/>
+    <img src="https://skillicons.dev/icons?i=dotnet,nodejs,nestjs,mysql,androidstudio,vscode,flask,anaconda,git,github,figma"/>
    <br>
 </div>
 
