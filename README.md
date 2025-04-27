@@ -39,8 +39,6 @@
 <h2 align="center">⚡ Stats ⚡</h2>
 <br>
 <div align=center>
-    <img height=170 src="https://github-readme-stats.vercel.app/api?username=abdelrahman-kamel-elgendy&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10" alt="readme stats"/>
-    <br/>
     <img height=300 src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&layout=donut-vertical&langs_count=8&theme=react&border_radius=10"/>
 </div>
 
