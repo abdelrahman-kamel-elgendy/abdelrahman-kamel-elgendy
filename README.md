@@ -3,14 +3,6 @@
 </h1>
 
 <h3 align="center">A passionate software developer from Egypt</h3>
-
-<div align="center">
-
- 🔭 I’m currently learning **Backend Development**
-
-😁 Fun fact **I can't remember secrets**    
-
- </div> 
  
 <div align="center">
   <a href="mailto:abdelrahman.kamel.elgendy@gmail.com">
@@ -37,7 +29,6 @@
 <hr/>
 
 <h2 align="center">⚡ Stats ⚡</h2>
-<br>
 <div align=center>
     <img height=300 src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&layout=donut-vertical&langs_count=8&theme=react&border_radius=10"/>
 </div>
