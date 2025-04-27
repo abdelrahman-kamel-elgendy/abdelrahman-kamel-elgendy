@@ -21,23 +21,13 @@
 <div align="center">
     <img src="https://skillicons.dev/icons?i=cs,cpp,js,ts,py"/>
     <img src="https://skillicons.dev/icons?i=dotnet,nodejs,nestjs,mysql,mongodb,prisma"/>
-   <br>
+    <br>
+    <br>
+    <div align=center>
+        <img width=400 src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&layout=donut&langs_count=8&theme=react&border_radius=10"/>
+    </div>
 </div>
-
-<br/>
-
 <hr/>
-
-<h2 align="center">⚡ Stats ⚡</h2>
-<div align=center>
-    <img height=300 src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&layout=donut-vertical&langs_count=8&theme=react&border_radius=10"/>
-</div>
-
-<br/><br/>
-
-<hr/>
-
-<br/>
 <h2 align="center">✨ Random Quote ✨</h2>
 <br/>
 <div align=center>
