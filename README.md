@@ -2,7 +2,7 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,40:1e1b4b,100:24243e&height=220&section=header&text=Abdelrahman%20Kamel&fontSize=56&fontColor=ffffff&fontAlignY=40&desc=%20Backend%20Developer%20&descAlignY=62&descSize=25&animation=fadeIn"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=800&color=A78BFA&center=true&vCenter=true&width=650&lines=Building+robust+backend+systems;Crafting+clean+%26+scalable+APIs;Passionate+about+distributed+systems;Always+learning%2C+always+shipping;Coffee+%E2%98%95+%2B+Code+%3D+Production+Ready" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=800&color=A78BFA&center=true&vCenter=true&width=650&lines=Building+robust+backend+systems;Crafting+clean+%26+scalable+APIs;Always+learning%2C+always+shipping;Coffee+%2B+Code+%3D+Production+Ready" alt="Typing SVG" />
 
 <br/>
 
