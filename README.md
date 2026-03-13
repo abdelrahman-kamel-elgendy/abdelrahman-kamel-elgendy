@@ -201,7 +201,7 @@ ORDER BY
 ---
 
 <!-- ── THEME: Application log ─────────────────────────── -->
-## `tip.log`
+## `daily-backend-tip.log`
  
 <!-- TIP_START -->
 ```log
@@ -217,7 +217,7 @@ INFO  tip-service  »  TIP: Use query caching carefully — stale cache can be w
 ---
  
 <!-- ── THEME: Application log ─────────────────────────── -->
-## `quote.log`
+## `daily-quote.log`
  
 <!-- QUOTE_START -->
 ```log
