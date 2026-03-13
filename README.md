@@ -245,7 +245,4 @@ INFO  quote-service  »  AUTHOR: Lao Tzu
 <a href="https://www.linkedin.com/in/abdelrahman-kamel-elgendy/">
   <img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer&text=The%20best%20backend%20is%20the%20one%20nobody%20notices%20until%20it's%20gone.&fontSize=16&fontColor=ffffff&fontAlignY=75"/>
-
 </div>
