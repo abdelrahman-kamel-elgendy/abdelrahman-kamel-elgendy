@@ -204,7 +204,6 @@ ORDER BY
 ## `tip.log`
  
 <!-- TIP_START -->
-```log
 <!-- TIP_END -->
  
 ---
