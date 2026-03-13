@@ -204,6 +204,14 @@ ORDER BY
 ## `tip.log`
  
 <!-- TIP_START -->
+```log
+INFO  tip-service  »  Fetching tip of the day...
+INFO  tip-service  »  Source: tips.json  offset: day_of_year % 365
+INFO  tip-service  »  Status: OK  →  tip loaded
+─────────────────────────────────────────────────────────────────
+INFO  tip-service  »  TIP: Use query caching carefully — stale cache can be worse than no cache.
+─────────────────────────────────────────────────────────────────
+```
 <!-- TIP_END -->
  
 ---
@@ -212,6 +220,15 @@ ORDER BY
 ## `quote.log`
  
 <!-- QUOTE_START -->
+```log
+INFO  quote-service  »  Connecting to quotes upstream...
+INFO  quote-service  »  GET https://zenquotes.io/api/today  →  200 OK
+INFO  quote-service  »  Message received  →  quote loaded
+─────────────────────────────────────────────────────────────────
+INFO  quote-service  »  QUOTE: The best fighter is never angry.
+INFO  quote-service  »  AUTHOR: Lao Tzu
+─────────────────────────────────────────────────────────────────
+```
 <!-- QUOTE_END -->
 
 ---
