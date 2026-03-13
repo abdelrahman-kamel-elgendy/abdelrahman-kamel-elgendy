@@ -57,7 +57,9 @@ jobs:
               log("INF", "tip-service", "Fetching tip of the day..."),
               log("INF", "tip-service", "Source: tips.json  offset: day_of_year % 365"),
               log("INF", "tip-service", "Status: OK  \u2192  tip loaded"),
+              SEP,
               log("TIP", "tip-service", tip),
+              SEP,
               "```",
               "<!-- TIP_END -->",
           ]
@@ -70,8 +72,10 @@ jobs:
               log("INF", "quote-service", "Connecting to quotes upstream..."),
               log("INF", "quote-service", "GET https://zenquotes.io/api/today  \u2192  200 OK"),
               log("INF", "quote-service", "Message received  \u2192  quote loaded"),
+              SEP,
               log("QOT", "quote-service", quote),
               log("AUT", "quote-service", author),
+              SEP,
               "```",
               "<!-- QUOTE_END -->",
           ]
