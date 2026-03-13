@@ -205,10 +205,12 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-03-13 19:25:48.358 +02:00 INF] tip-service Fetching tip of the day...
-[2026-03-13 19:25:48.358 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-03-13 19:25:48.358 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-03-13 19:25:48.358 +02:00 TIP] tip-service Use query caching carefully — stale cache can be worse than no cache.
+[2026-03-13 19:31:50.343 +02:00 INF] tip-service Fetching tip of the day...
+[2026-03-13 19:31:50.343 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-03-13 19:31:50.343 +02:00 INF] tip-service Status: OK  →  tip loaded
+─────────────────────────────────────────────────────────────────
+[2026-03-13 19:31:50.343 +02:00 TIP] tip-service Use query caching carefully — stale cache can be worse than no cache.
+─────────────────────────────────────────────────────────────────
 ```
 <!-- TIP_END -->
  
@@ -219,11 +221,13 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-03-13 19:25:48.358 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-03-13 19:25:48.358 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-03-13 19:25:48.358 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-03-13 19:25:48.358 +02:00 QOT] quote-service The best fighter is never angry.
-[2026-03-13 19:25:48.358 +02:00 AUT] quote-service Lao Tzu
+[2026-03-13 19:31:50.343 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-03-13 19:31:50.343 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-03-13 19:31:50.343 +02:00 INF] quote-service Message received  →  quote loaded
+─────────────────────────────────────────────────────────────────
+[2026-03-13 19:31:50.343 +02:00 QOT] quote-service The best fighter is never angry.
+[2026-03-13 19:31:50.343 +02:00 AUT] quote-service Lao Tzu
+─────────────────────────────────────────────────────────────────
 ```
 <!-- QUOTE_END -->
 
