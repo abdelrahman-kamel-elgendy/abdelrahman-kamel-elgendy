@@ -131,6 +131,10 @@ stack:
 <td valign="top" width="40%">
 
 ```sql
+-- ──────────────────────────────────
+--  Querying developer stats
+--  from github.db
+-- ──────────────────────────────────
 SELECT
     total_commits,
     pull_requests,
