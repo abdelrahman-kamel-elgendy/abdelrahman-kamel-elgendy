@@ -23,11 +23,14 @@ jobs:
           import datetime
           import re
 
+          # --- Get current datetime ---
+          now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=2)))
+          ts  = now.strftime("%Y-%m-%d %H:%M:%S.") + f"{now.microsecond // 1000:03d} +02:00"
+
           # --- Pick daily tip ---
-          NOW=$(date +'%Y-%m-%d %H:%M:%S')
           with open('tips.json') as f:
               tips = json.load(f)
-          day = datetime.datetime.now().timetuple().tm_yday - 1
+          day = now.timetuple().tm_yday - 1
           tip = tips[day % len(tips)]
 
           # --- Fetch quote from API ---
@@ -44,14 +47,17 @@ jobs:
 
           SEP = "\u2500" * 65
 
+          def log(level, service, msg):
+              return f"[{ts} {level}] {service} {msg}"
+
           # --- Build tip log block ---
           tip_lines = [
               "<!-- TIP_START -->",
               "```log",
-              NOW + "INFO  tip-service  \u00bb  Fetching tip of the day...",
-              NOW + "INFO  tip-service  \u00bb  Source: tips.json  offset: day_of_year % 365",
-              NOW + "INFO  tip-service  \u00bb  Status: OK  \u2192  tip loaded",
-              NOW + "TIP  tip-service  \u00bb  " + tip,
+              log("INF", "tip-service", "Fetching tip of the day..."),
+              log("INF", "tip-service", "Source: tips.json  offset: day_of_year % 365"),
+              log("INF", "tip-service", "Status: OK  \u2192  tip loaded"),
+              log("TIP", "tip-service", tip),
               "```",
               "<!-- TIP_END -->",
           ]
@@ -61,11 +67,11 @@ jobs:
           quote_lines = [
               "<!-- QUOTE_START -->",
               "```log",
-              NOW + "INFO  quote-service  \u00bb  Connecting to quotes upstream...",
-              NOW + "INFO  quote-service  \u00bb  GET https://zenquotes.io/api/today  \u2192  200 OK",
-              NOW + "INFO  quote-service  \u00bb  Message received  \u2192  quote loaded",
-              NOW + "QUOTE  quote-service  \u00bb  " + quote,
-              NOW + "AUTHOR  quote-service  \u00bb " + author,
+              log("INF", "quote-service", "Connecting to quotes upstream..."),
+              log("INF", "quote-service", "GET https://zenquotes.io/api/today  \u2192  200 OK"),
+              log("INF", "quote-service", "Message received  \u2192  quote loaded"),
+              log("QOT", "quote-service", quote),
+              log("AUT", "quote-service", author),
               "```",
               "<!-- QUOTE_END -->",
           ]
