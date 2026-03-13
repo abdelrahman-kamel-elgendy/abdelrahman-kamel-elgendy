@@ -24,6 +24,7 @@ jobs:
           import re
 
           # --- Pick daily tip ---
+          NOW=$(date +'%Y-%m-%d %H:%M:%S')
           with open('tips.json') as f:
               tips = json.load(f)
           day = datetime.datetime.now().timetuple().tm_yday - 1
@@ -47,12 +48,10 @@ jobs:
           tip_lines = [
               "<!-- TIP_START -->",
               "```log",
-              "INFO  tip-service  \u00bb  Fetching tip of the day...",
-              "INFO  tip-service  \u00bb  Source: tips.json  offset: day_of_year % 365",
-              "INFO  tip-service  \u00bb  Status: OK  \u2192  tip loaded",
-              SEP,
-              "INFO  tip-service  \u00bb  TIP: " + tip,
-              SEP,
+              NOW + "INFO  tip-service  \u00bb  Fetching tip of the day...",
+              NOW + "INFO  tip-service  \u00bb  Source: tips.json  offset: day_of_year % 365",
+              NOW + "INFO  tip-service  \u00bb  Status: OK  \u2192  tip loaded",
+              NOW + "TIP  tip-service  \u00bb  " + tip,
               "```",
               "<!-- TIP_END -->",
           ]
@@ -62,13 +61,11 @@ jobs:
           quote_lines = [
               "<!-- QUOTE_START -->",
               "```log",
-              "INFO  quote-service  \u00bb  Connecting to quotes upstream...",
-              "INFO  quote-service  \u00bb  GET https://zenquotes.io/api/today  \u2192  200 OK",
-              "INFO  quote-service  \u00bb  Message received  \u2192  quote loaded",
-              SEP,
-              "INFO  quote-service  \u00bb  QUOTE: " + quote,
-              "INFO  quote-service  \u00bb  AUTHOR: " + author,
-              SEP,
+              NOW + "INFO  quote-service  \u00bb  Connecting to quotes upstream...",
+              NOW + "INFO  quote-service  \u00bb  GET https://zenquotes.io/api/today  \u2192  200 OK",
+              NOW + "INFO  quote-service  \u00bb  Message received  \u2192  quote loaded",
+              NOW + "QUOTE  quote-service  \u00bb  " + quote,
+              NOW + "AUTHOR  quote-service  \u00bb " + author,
               "```",
               "<!-- QUOTE_END -->",
           ]
