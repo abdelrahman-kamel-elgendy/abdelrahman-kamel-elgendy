@@ -1,0 +1,106 @@
+name: Update README Daily
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update tip and quote in README
+        run: |
+          python3 << 'PYTHON'
+          import json
+          import urllib.request
+          import datetime
+          import re
+
+          # --- Pick daily tip ---
+          with open('tips.json') as f:
+              tips = json.load(f)
+          day = datetime.datetime.now().timetuple().tm_yday - 1
+          tip = tips[day % len(tips)]
+
+          # --- Fetch quote from API ---
+          try:
+              url = "https://zenquotes.io/api/today"
+              req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+              with urllib.request.urlopen(req, timeout=10) as r:
+                  data = json.loads(r.read())
+              quote  = data[0]["q"]
+              author = data[0]["a"]
+          except Exception:
+              quote  = "First, solve the problem. Then, write the code."
+              author = "John Johnson"
+
+          SEP = "\u2500" * 65
+
+          # --- Build tip log block ---
+          tip_lines = [
+              "<!-- TIP_START -->",
+              "```log",
+              "INFO  tip-service  \u00bb  Fetching tip of the day...",
+              "INFO  tip-service  \u00bb  Source: tips.json  offset: day_of_year % 365",
+              "INFO  tip-service  \u00bb  Status: OK  \u2192  tip loaded",
+              SEP,
+              "INFO  tip-service  \u00bb  TIP: " + tip,
+              SEP,
+              "```",
+              "<!-- TIP_END -->",
+          ]
+          tip_block = "\n".join(tip_lines)
+
+          # --- Build quote log block ---
+          quote_lines = [
+              "<!-- QUOTE_START -->",
+              "```log",
+              "INFO  quote-service  \u00bb  Connecting to quotes upstream...",
+              "INFO  quote-service  \u00bb  GET https://zenquotes.io/api/today  \u2192  200 OK",
+              "INFO  quote-service  \u00bb  Message received  \u2192  quote loaded",
+              SEP,
+              "INFO  quote-service  \u00bb  QUOTE: " + quote,
+              "INFO  quote-service  \u00bb  AUTHOR: " + author,
+              SEP,
+              "```",
+              "<!-- QUOTE_END -->",
+          ]
+          quote_block = "\n".join(quote_lines)
+
+          # --- Inject into README ---
+          with open('README.md', 'r') as f:
+              content = f.read()
+
+          content = re.sub(
+              r'<!-- TIP_START -->.*?<!-- TIP_END -->',
+              tip_block,
+              content, flags=re.DOTALL
+          )
+
+          content = re.sub(
+              r'<!-- QUOTE_START -->.*?<!-- QUOTE_END -->',
+              quote_block,
+              content, flags=re.DOTALL
+          )
+
+          with open('README.md', 'w') as f:
+              f.write(content)
+
+          print("Tip: " + tip)
+          print("Quote: " + quote + " - " + author)
+          PYTHON
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "Update daily tip and quote $(date +'%Y-%m-%d')"
+          git push

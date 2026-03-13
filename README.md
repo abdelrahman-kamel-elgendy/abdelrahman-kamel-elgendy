@@ -1,17 +1,15 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,40:1e1b4b,100:24243e&height=220&section=header&text=Abdelrahman%20Kamel&fontSize=56&fontColor=ffffff&fontAlignY=40&desc=%20Backend%20Developer%20&descAlignY=62&descSize=25&animation=fadeIn"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,40:1e1b4b,100:24243e&height=220&section=header&text=Abdelrahman%20Kamel&fontSize=56&fontColor=ffffff&fontAlignY=40&desc=Backend%20Developer&descAlignY=62&descSize=25&animation=fadeIn"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=800&color=A78BFA&center=true&vCenter=true&width=650&lines=Building+robust+backend+systems;Crafting+clean+%26+scalable+APIs;Always+learning%2C+always+shipping;Coffee+%2B+Code+%3D+Production+Ready" alt="Typing SVG" />
-
-<br/>
 
 </div>
 
 ---
 
+<!-- ── THEME: REST API response ─────────────────────────── -->
 ## `GET /api/whoiam`
-
 
 ```json
 {
@@ -41,7 +39,7 @@
       "coffee_dependency" : true,
       "favourite_http"    : 418,
       "debug_strategy"    : "console.log first, ask questions later...",
-      "principle"         : "Write code humans can read, machines can run, and future-you won't curse.",
+      "principle"         : "Write code humans can read, machines can run, and future-you won't curse."
     }
 
   }
@@ -50,80 +48,74 @@
 
 ---
 
-## `GET /api/stack`
+<!-- ── THEME: YAML config ───────────────────────────────── -->
+## `stack.yml`
+ 
 <div align="center">
-<table width=100%>
+<table width="80%">
 <tr>
-<td valign="top" width="50%">
-
-```json
-{
-  "status": 200,
-  "data": {
-
-    "Languages": [
-      "C#",
-      "Java",
-      "JavaScript",
-      "TypeScript",
-      "Python"
-      ],
-
-    "Frameworks & Runtimes": [
-      ".NET",
-      "Spring",
-      "NodeJS",
-      "NestJs"
-    ],
-
-    "Databases & ORMs": [
-      "MySQL",
-      "MongoDB",
-      "Prisma",
-      "Redis"
-    ],
-
-    "DevOps & Tools": [
-      "Docker",
-      "Git",
-      "Github",
-      "Postman"
-    ]
-  }
-}
+<td valign="middle" width="50%">
+ 
+```yaml
+developer:
+  name: Abdelrahman Kamel
+  title: Backend Developer
+  status: production-ready
+ 
+stack:
+  languages:
+    - C#
+    - Java
+    - JavaScript
+    - TypeScript
+    - Python
+ 
+  frameworks_and_runtimes:
+    - .NET
+    - Spring
+    - NodeJS
+    - NestJS
+ 
+  databases_and_orms:
+    - MySQL
+    - MongoDB
+    - Redis
+    - Prisma
+ 
+  devops_and_tools:
+    - Docker
+    - Git
+    - GitHub
+    - Postman
 ```
-
+ 
 </td>
-<td valign="right" width="50%">
-
+<td valign="middle" width="50%">
 <div align="center">
-
-### **Languages** 
-<img src="https://skillicons.dev/icons?i=js,py&theme=dark" />
-<img src="https://skillicons.dev/icons?i=cs,java,ts&theme=dark" />
-
-<br/>
-<br/>
-
-### **Frameworks & Runtimes**
-<img src="https://skillicons.dev/icons?i=nodejs,nestjs&theme=dark" />
-<img src="https://skillicons.dev/icons?i=dotnet,spring&theme=dark" />
-
-<br/>
-<br/>
-
-### **Databases & ORMs**
-<img src="https://skillicons.dev/icons?i=mysql,prisma&theme=dark" />
-<img src="https://skillicons.dev/icons?i=mongodb,redis&theme=dark" />
-
-<br/>
-<br/>
-
-### **DevOps & Tools**
-<img src="https://skillicons.dev/icons?i=docker,postman&theme=dark" />
-<img src="https://skillicons.dev/icons?i=git,github&theme=dark" />
+ 
+**Languages**
+ 
+<img src="https://skillicons.dev/icons?i=cs,java,js,ts,py&theme=dark" />
+ 
+<br/><br/>
+ 
+**Frameworks & Runtimes**
+ 
+<img src="https://skillicons.dev/icons?i=dotnet,spring,nodejs,nestjs&theme=dark" />
+ 
+<br/><br/>
+ 
+**Databases & ORMs**
+ 
+<img src="https://skillicons.dev/icons?i=mysql,mongodb,redis,prisma&theme=dark" />
+ 
+<br/><br/>
+ 
+**DevOps & Tools**
+ 
+<img src="https://skillicons.dev/icons?i=docker,git,github,postman&theme=dark" />
+ 
 </div>
-
 </td>
 </tr>
 </table>
@@ -131,23 +123,117 @@
 
 ---
 
-## `GET /api/metrics`
+<!-- ── THEME: SQL query ────────────────────────────────── -->
+## `metrics.sql`
+
+<table width="100%">
+<tr>
+<td valign="top" width="40%">
+
+```sql
+SELECT
+    total_commits,
+    pull_requests,
+    repositories,
+    current_streak,
+    longest_streak,
+    top_languages
+FROM
+    github_stats
+WHERE
+    username = 'abdelrahman-kamel-elgendy'
+  AND
+    year = YEAR(CURDATE())
+ORDER BY
+    contributions DESC;
+
+-- ── Result ─────────────────────────
+-- rows returned : 1
+-- execution time: 0.003s
+-- status        : 200 OK
+-- cache         : HIT
+-- ──────────────────────────────────
+
+-- ── Indexes used ───────────────────
+-- idx_username  (seek)
+-- idx_year      (seek)
+-- idx_contributions (sort)
+-- ──────────────────────────────────
+```
+</td>
+<td valign="top" width="60%">
 <div align="center">
-<img width="49%" src="https://streak-stats.demolab.com/?user=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&background=0D1117&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA&sideLabels=CDD6F4&currStreakNum=ffffff&sideNums=CDD6F4&dates=6b7280" />
+
+<img width="100%" src="https://github-readme-stats.vercel.app/api?username=abdelrahman-kamel-elgendy&show_icons=true&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA&text_color=CDD6F4&rank_icon=github" />
+
+<img width="100%" src="https://streak-stats.demolab.com/?user=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&background=0D1117&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA&sideLabels=CDD6F4&currStreakNum=ffffff&sideNums=CDD6F4&dates=6b7280" />
+
+<img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&text_color=CDD6F4&layout=compact&langs_count=8" />
+
+</div>
+</td>
+</tr>
+</table>
+
+---
+
+<!-- ── THEME: Redis CLI ────────────────────────────────── -->
+## `CMD`
+
+```redis
+127.0.0.1:6379> KEYS activity:*
+1) "activity:contribution_graph"
+2) "activity:streak"
+3) "activity:last_commit"
+
+127.0.0.1:6379> GET activity:contribution_graph
+# ── rendering below ───────────────────────────
+```
+
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=abdelrahman-kamel-elgendy&bg_color=0D1117&color=A78BFA&line=A78BFA&point=ffffff&area=true&hide_border=true" width="100%"/>
 </div>
 
 ---
 
-## `GET /api/quote` 
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
-</div>
+<!-- ── THEME: Application log ─────────────────────────── -->
+## `tip.log`
+ 
+<!-- TIP_START -->
+```log
+INFO  tip-service  »  Fetching tip of the day...
+INFO  tip-service  »  Source: tips.json  offset: day_of_year % 365
+INFO  tip-service  »  Status: OK  →  tip loaded
+─────────────────────────────────────────────────────────────────
+INFO  tip-service  »  TIP: Use query caching carefully — stale cache can be worse than no cache.
+─────────────────────────────────────────────────────────────────
+```
+<!-- TIP_END -->
+ 
+---
+ 
+<!-- ── THEME: Application log ─────────────────────────── -->
+## `quote.log`
+ 
+<!-- QUOTE_START -->
+```log
+INFO  quote-service  »  Connecting to quotes upstream...
+INFO  quote-service  »  GET https://zenquotes.io/api/today  →  200 OK
+INFO  quote-service  »  Message received  →  quote loaded
+─────────────────────────────────────────────────────────────────
+INFO  quote-service  »  QUOTE: The best fighter is never angry.
+INFO  quote-service  »  AUTHOR: Lao Tzu
+─────────────────────────────────────────────────────────────────
+```
+<!-- QUOTE_END -->
 
 ---
 
-## `POST api/Connect/`
+<!-- ── THEME: TCP handshake ───────────────────────────── -->
+## `POST /api/connect`
 
 <div align="center">
+
 <a href="mailto:abdelrahman.kamel.elgendy@gmail.com">
   <img src="https://img.shields.io/badge/Drop%20me%20an%20email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
@@ -155,5 +241,9 @@
 <a href="https://www.linkedin.com/in/abdelrahman-kamel-elgendy/">
   <img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
+
+<br/><br/>
+
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer&text=The%20best%20backend%20is%20the%20one%20nobody%20notices%20until%20it's%20gone.&fontSize=16&fontColor=ffffff&fontAlignY=75"/>
+
 </div>
