@@ -202,11 +202,11 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-03-15 03:10:06.839 +02:00 INF] tip-service Fetching tip of the day...
-[2026-03-15 03:10:06.839 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-03-15 03:10:06.839 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-03-16 03:09:40.327 +02:00 INF] tip-service Fetching tip of the day...
+[2026-03-16 03:09:40.327 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-03-16 03:09:40.327 +02:00 INF] tip-service Status: OK  →  tip loaded
 ─────────────────────────────────────────────────────────────────
-[2026-03-15 03:10:06.839 +02:00 TIP] tip-service Use an API gateway to handle auth, rate limiting, and routing in one place.
+[2026-03-16 03:09:40.327 +02:00 TIP] tip-service Write migration scripts that can be run up and down for safe rollbacks.
 ─────────────────────────────────────────────────────────────────
 ```
 <!-- TIP_END -->
@@ -218,12 +218,12 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-03-15 03:10:06.839 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-03-15 03:10:06.839 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-03-15 03:10:06.839 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-03-16 03:09:40.327 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-03-16 03:09:40.327 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-03-16 03:09:40.327 +02:00 INF] quote-service Message received  →  quote loaded
 ─────────────────────────────────────────────────────────────────
-[2026-03-15 03:10:06.839 +02:00 QOT] quote-service Your first and foremost job as a leader is to take charge of your own energy and then help to orchestrate the energy of those around you.
-[2026-03-15 03:10:06.839 +02:00 AUT] quote-service Peter Drucker
+[2026-03-16 03:09:40.327 +02:00 QOT] quote-service We never know how high we are till we are called to rise. Then if we are true to form our statures touch the skies.
+[2026-03-16 03:09:40.327 +02:00 AUT] quote-service Emily Dickinson
 ─────────────────────────────────────────────────────────────────
 ```
 <!-- QUOTE_END -->
