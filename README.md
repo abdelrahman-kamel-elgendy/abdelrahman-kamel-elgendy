@@ -202,11 +202,11 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-03-16 03:09:40.327 +02:00 INF] tip-service Fetching tip of the day...
-[2026-03-16 03:09:40.327 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-03-16 03:09:40.327 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-03-17 03:02:28.777 +02:00 INF] tip-service Fetching tip of the day...
+[2026-03-17 03:02:28.777 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-03-17 03:02:28.777 +02:00 INF] tip-service Status: OK  →  tip loaded
 ─────────────────────────────────────────────────────────────────
-[2026-03-16 03:09:40.327 +02:00 TIP] tip-service Write migration scripts that can be run up and down for safe rollbacks.
+[2026-03-17 03:02:28.777 +02:00 TIP] tip-service Use prepared statements to improve both security and query performance.
 ─────────────────────────────────────────────────────────────────
 ```
 <!-- TIP_END -->
@@ -218,12 +218,12 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-03-16 03:09:40.327 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-03-16 03:09:40.327 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-03-16 03:09:40.327 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-03-17 03:02:28.777 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-03-17 03:02:28.777 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-03-17 03:02:28.777 +02:00 INF] quote-service Message received  →  quote loaded
 ─────────────────────────────────────────────────────────────────
-[2026-03-16 03:09:40.327 +02:00 QOT] quote-service We never know how high we are till we are called to rise. Then if we are true to form our statures touch the skies.
-[2026-03-16 03:09:40.327 +02:00 AUT] quote-service Emily Dickinson
+[2026-03-17 03:02:28.777 +02:00 QOT] quote-service Your happiness is what truly matters most. Do what you have to do in order to be happy.
+[2026-03-17 03:02:28.777 +02:00 AUT] quote-service Brian Tracy
 ─────────────────────────────────────────────────────────────────
 ```
 <!-- QUOTE_END -->
