@@ -235,7 +235,6 @@ ORDER BY
 ## `POST /api/connect`
 
 <div align="center">
-
 <a href="mailto:abdelrahman.kamel.elgendy@gmail.com">
   <img src="https://img.shields.io/badge/Drop%20me%20an%20email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
@@ -243,4 +242,8 @@ ORDER BY
 <a href="https://www.linkedin.com/in/abdelrahman-kamel-elgendy/">
   <img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
+
+<br/>
+
+> *The best backend is the one nobody notices until it's gone ;)*
 </div>
