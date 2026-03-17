@@ -10,36 +10,38 @@
 
 ```json
 {
-  "status" : 200,
-  "data"   : {
-
-    "name"     : "Abdelrahman Kamel",
-    "title"    : "Backend Developer",
-    "location" : "Egypt 🇪🇬  [UTC+2]",
-    "uptime"   : "available 24/7 for cool projects",
-
-    "core_skills" : [
-      "RESTful & GraphQL API Design",
-      "Microservices & Event-Driven Architecture",
-      "Database Modeling & Query Optimization",
-      "Auth Systems  (JWT · OAuth2 · Sessions)"
-    ],
-
-    "currently"  : {
-      "building" : "Scalable backend systems",
-      "learning" : ["System Design patterns", "AWS Cloud"],
-      "focus_on" : ["REST APIs", "Microservices", "System Design"],
-      "open_to"  : "Exciting backend opportunities"
-    },
-
-    "config" : {
-      "coffee_dependency" : true,
-      "favourite_http"    : 418,
-      "debug_strategy"    : "console.log first, ask questions later...",
-      "principle"         : "Write code humans can read, machines can run, and future-you won't curse."
+    "status": 200,
+    "data": {
+        "name": "Abdelrahman Kamel",
+        "title": "Backend Developer",
+        "location": "Egypt 🇪🇬  [UTC+2]",
+        "uptime": "available 24/7 for cool projects",
+        "core_skills": [
+            "RESTful & GraphQL API Design",
+            "Microservices & Event-Driven Architecture",
+            "Database Modeling & Query Optimization",
+            "Auth Systems  (JWT · OAuth2 · Sessions)"
+        ],
+        "currently": {
+            "building": "Scalable backend systems",
+            "learning": [
+                "System Design patterns",
+                "AWS Cloud"
+            ],
+            "focus_on": [
+                "REST APIs",
+                "Microservices",
+                "System Design"
+            ],
+            "open_to": "Exciting backend opportunities"
+        },
+        "config": {
+            "coffee_dependency": true,
+            "favourite_http": 418,
+            "debug_strategy": "console.log first, ask questions later...",
+            "principle": "Write code humans can read, machines can run, and future-you won't curse."
+        }
     }
-
-  }
 }
 ```
 
@@ -58,7 +60,7 @@ developer:
   name: Abdelrahman Kamel
   title: Backend Developer
   status: production-ready
- 
+
 stack:
   languages:
     - C#
@@ -66,19 +68,19 @@ stack:
     - JavaScript
     - TypeScript
     - Python
- 
+
   frameworks_and_runtimes:
     - .NET
     - Spring
     - NodeJS
     - NestJS
- 
+
   databases_and_orms:
     - MySQL
     - MongoDB
     - Redis
     - Prisma
- 
+
   devops_and_tools:
     - Docker
     - Git
@@ -143,8 +145,7 @@ FROM
     github_stats
 WHERE
     username = 'abdelrahman-kamel-elgendy'
-  AND
-    year = YEAR(CURDATE())
+    AND year = YEAR (CURDATE ())
 ORDER BY
     contributions DESC;
 
