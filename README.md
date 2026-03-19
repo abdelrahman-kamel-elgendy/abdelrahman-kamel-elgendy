@@ -203,11 +203,11 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-03-18 03:06:22.886 +02:00 INF] tip-service Fetching tip of the day...
-[2026-03-18 03:06:22.886 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-03-18 03:06:22.886 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-03-19 03:05:48.986 +02:00 INF] tip-service Fetching tip of the day...
+[2026-03-19 03:05:48.986 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-03-19 03:05:48.986 +02:00 INF] tip-service Status: OK  →  tip loaded
 ─────────────────────────────────────────────────────────────────
-[2026-03-18 03:06:22.886 +02:00 TIP] tip-service Monorepos simplify dependency sharing across multiple services in a large codebase.
+[2026-03-19 03:05:48.986 +02:00 TIP] tip-service Use cursor-based pagination for large datasets instead of OFFSET — it scales much better.
 ─────────────────────────────────────────────────────────────────
 ```
 <!-- TIP_END -->
@@ -219,12 +219,12 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-03-18 03:06:22.886 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-03-18 03:06:22.886 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-03-18 03:06:22.886 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-03-19 03:05:48.986 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-03-19 03:05:48.986 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-03-19 03:05:48.986 +02:00 INF] quote-service Message received  →  quote loaded
 ─────────────────────────────────────────────────────────────────
-[2026-03-18 03:06:22.886 +02:00 QOT] quote-service Giving back involves a certain amount of giving up.
-[2026-03-18 03:06:22.886 +02:00 AUT] quote-service Colin Powell
+[2026-03-19 03:05:48.986 +02:00 QOT] quote-service Be fascinated instead of frustrated.
+[2026-03-19 03:05:48.986 +02:00 AUT] quote-service Jim Rohn
 ─────────────────────────────────────────────────────────────────
 ```
 <!-- QUOTE_END -->
