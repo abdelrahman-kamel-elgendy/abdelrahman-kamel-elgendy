@@ -203,11 +203,11 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-03-22 03:05:03.669 +02:00 INF] tip-service Fetching tip of the day...
-[2026-03-22 03:05:03.669 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-03-22 03:05:03.669 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-03-23 03:06:15.170 +02:00 INF] tip-service Fetching tip of the day...
+[2026-03-23 03:06:15.170 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-03-23 03:06:15.170 +02:00 INF] tip-service Status: OK  →  tip loaded
 ─────────────────────────────────────────────────────────────────
-[2026-03-22 03:05:03.669 +02:00 TIP] tip-service Implement request queuing at peak load rather than rejecting requests outright.
+[2026-03-23 03:06:15.170 +02:00 TIP] tip-service Use a consistent naming convention across your API — camelCase or snake_case, pick one.
 ─────────────────────────────────────────────────────────────────
 ```
 <!-- TIP_END -->
@@ -219,12 +219,12 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-03-22 03:05:03.669 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-03-22 03:05:03.669 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-03-22 03:05:03.669 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-03-23 03:06:15.170 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-03-23 03:06:15.170 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-03-23 03:06:15.170 +02:00 INF] quote-service Message received  →  quote loaded
 ─────────────────────────────────────────────────────────────────
-[2026-03-22 03:05:03.669 +02:00 QOT] quote-service Excellence is not an exception, it is a prevailing attitude.
-[2026-03-22 03:05:03.669 +02:00 AUT] quote-service Colin Powell
+[2026-03-23 03:06:15.170 +02:00 QOT] quote-service You are now, and you do become, what you think about.
+[2026-03-23 03:06:15.170 +02:00 AUT] quote-service Earl Nightingale
 ─────────────────────────────────────────────────────────────────
 ```
 <!-- QUOTE_END -->
