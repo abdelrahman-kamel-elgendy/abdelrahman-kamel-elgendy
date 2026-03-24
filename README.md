@@ -203,11 +203,11 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-03-23 03:06:15.170 +02:00 INF] tip-service Fetching tip of the day...
-[2026-03-23 03:06:15.170 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-03-23 03:06:15.170 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-03-24 02:59:02.822 +02:00 INF] tip-service Fetching tip of the day...
+[2026-03-24 02:59:02.822 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-03-24 02:59:02.822 +02:00 INF] tip-service Status: OK  →  tip loaded
 ─────────────────────────────────────────────────────────────────
-[2026-03-23 03:06:15.170 +02:00 TIP] tip-service Use a consistent naming convention across your API — camelCase or snake_case, pick one.
+[2026-03-24 02:59:02.822 +02:00 TIP] tip-service Apply database constraints (NOT NULL, UNIQUE, FK) — don't rely solely on app-level validation.
 ─────────────────────────────────────────────────────────────────
 ```
 <!-- TIP_END -->
@@ -219,12 +219,12 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-03-23 03:06:15.170 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-03-23 03:06:15.170 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-03-23 03:06:15.170 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-03-24 02:59:02.822 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-03-24 02:59:02.822 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-03-24 02:59:02.822 +02:00 INF] quote-service Message received  →  quote loaded
 ─────────────────────────────────────────────────────────────────
-[2026-03-23 03:06:15.170 +02:00 QOT] quote-service You are now, and you do become, what you think about.
-[2026-03-23 03:06:15.170 +02:00 AUT] quote-service Earl Nightingale
+[2026-03-24 02:59:02.822 +02:00 QOT] quote-service It's easier to lose than to win.  
+[2026-03-24 02:59:02.822 +02:00 AUT] quote-service Wayne Gretzky
 ─────────────────────────────────────────────────────────────────
 ```
 <!-- QUOTE_END -->
