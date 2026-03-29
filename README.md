@@ -165,13 +165,10 @@ ORDER BY
 </td>
 <td valign="top" width="60%">
 <div align="center">
-
-<img width="100%" src="https://github-readme-stats.vercel.app/api?username=abdelrahman-kamel-elgendy&show_icons=true&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA&text_color=CDD6F4&rank_icon=github" />
-
-<img width="100%" src="https://streak-stats.demolab.com/?user=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&background=0D1117&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA&sideLabels=CDD6F4&currStreakNum=ffffff&sideNums=CDD6F4&dates=6b7280" />
-
-<img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&text_color=CDD6F4&layout=compact&langs_count=8" />
-
+<!-- Stats auto-generated daily by GitHub Actions → .github/workflows/metrics.yml -->
+<img width="100%" src="./assets/stats.svg" />
+<img width="100%" src="./assets/streak.svg" />
+<img width="100%" src="./assets/langs.svg" />
 </div>
 </td>
 </tr>
