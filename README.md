@@ -150,8 +150,11 @@ WHERE
 ORDER BY
     contribution_score DESC;
 ```
-<!-- METRICS_START -->
-<!-- METRICS_END -->
+<div align="center">
+<img width="100%" src="./assets/stats.svg" />
+<img width="100%" src="./assets/streak.svg" />
+<img width="100%" src="./assets/langs.svg" />
+</div>
 
 ---
 

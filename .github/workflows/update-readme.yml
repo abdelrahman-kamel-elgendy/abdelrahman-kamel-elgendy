@@ -19,7 +19,7 @@ jobs:
       # ── Step 1: Fetch real GitHub stats → inject into SQL result block ────
       - name: Fetch GitHub stats and update metrics block
         env:
-          METRICS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
         run: |
           python3 << 'PYTHON'
           import urllib.request
