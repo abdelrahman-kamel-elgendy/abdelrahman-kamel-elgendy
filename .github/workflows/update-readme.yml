@@ -106,13 +106,12 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "abdelrahman-kamel-elgendy"
+          git config --global user.email "abdelrahman.kamel.elgendy@gmail.com"
           git add README.md
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            git commit --allow-empty -m "Update daily tip and quote $(date +'%Y-%m-%d')"
           else
-            git commit -m "chore: update daily tip and quote [$(date +'%Y-%m-%d')]"
-            git pull --rebase origin main
-            git push
+            git commit -m "Update daily tip and quote $(date +'%Y-%m-%d')"
           fi
+          git push

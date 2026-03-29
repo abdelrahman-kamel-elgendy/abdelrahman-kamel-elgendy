@@ -125,10 +125,6 @@ stack:
 <!-- ── THEME: SQL query ────────────────────────────────── -->
 ## `metrics.sql`
 
-<table width="100%">
-<tr>
-<td valign="top" width="50%">
-
 ```sql
 -- ──────────────────────────────────
 --  Querying developer stats
@@ -162,17 +158,12 @@ ORDER BY
 -- idx_contributions (sort)
 -- ──────────────────────────────────
 ```
-</td>
-<td valign="top" width="60%">
 <div align="center">
 <!-- Stats auto-generated daily by GitHub Actions → .github/workflows/metrics.yml -->
 <img width="100%" src="./assets/stats.svg" />
 <img width="100%" src="./assets/streak.svg" />
 <img width="100%" src="./assets/langs.svg" />
 </div>
-</td>
-</tr>
-</table>
 
 ---
 
