@@ -265,10 +265,14 @@ jobs:
         run: |
           git config --global user.name "abdelrahman-kamel-elgendy"
           git config --global user.email "abdelrahman.kamel.elgendy@gmail.com"
+
           git add README.md
+
           if git diff --cached --quiet; then
             git commit --allow-empty -m "Update daily tip and quote $(date +'%Y-%m-%d')"
           else
             git commit -m "Update daily tip and quote $(date +'%Y-%m-%d')"
           fi
+
+          git pull --rebase origin main
           git push
