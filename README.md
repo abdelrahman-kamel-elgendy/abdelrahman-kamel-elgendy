@@ -124,7 +124,6 @@ stack:
 
 <!-- ── THEME: SQL query ────────────────────────────────── -->
 ## `metrics.sql`
-
 ```sql
 -- ──────────────────────────────────
 --  Querying developer stats
@@ -150,12 +149,21 @@ WHERE
 ORDER BY
     contribution_score DESC;
 ```
-<div align="center">
-<img width="100%" src="./assets/stats.svg" />
-<img width="100%" src="./assets/streak.svg" />
-<img width="100%" src="./assets/langs.svg" />
-</div>
 
+-- ── Result ─────────────────────────
+<!-- METRICS_START -->
+-- total_commits      : 0
+-- pull_requests      : 0
+-- repositories       : 0
+-- stars_received     : 0
+-- followers          : 0
+-- forks              : 0
+-- issues             : 0
+-- current_streak     : 0 days
+-- longest_streak     : 0 days
+-- top_languages      : unknown
+-- contribution_score : 0
+<!-- METRICS_END -->
 ---
 
 <!-- ── THEME: Redis CLI ────────────────────────────────── -->
