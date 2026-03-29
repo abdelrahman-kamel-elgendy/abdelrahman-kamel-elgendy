@@ -10,7 +10,7 @@
 
 ```json
 {
-    "status": 200,
+    "status_code": 200,
     "data": {
         "name": "Abdelrahman Kamel",
         "title": "Backend Developer",
