@@ -134,44 +134,24 @@ SELECT
     total_commits,
     pull_requests,
     repositories,
+    stars_received,
+    followers,
+    forks,
+    issues,
     current_streak,
     longest_streak,
-    top_languages
+    top_languages,
+    contribution_score
 FROM
     github_stats
 WHERE
     username = 'abdelrahman-kamel-elgendy'
     AND year = YEAR (CURDATE ())
 ORDER BY
-    contributions DESC;
-
--- ── Result ─────────────────────────
-<!-- METRICS_START -->
--- total_commits  : 0
--- pull_requests  : 0
--- repositories   : 0
--- current_streak : 0 days
--- longest_streak : 0 days
--- top_languages  : unknown
-<!-- METRICS_END -->
--- rows returned  : 1
--- execution time : 0.003s
--- status         : 200 OK
--- cache          : HIT
--- ──────────────────────────────────
-
--- ── Indexes used ───────────────────
--- idx_username  (seek)
--- idx_year      (seek)
--- idx_contributions (sort)
--- ──────────────────────────────────
+    contribution_score DESC;
 ```
-<div align="center">
-<!-- Stats auto-generated daily by GitHub Actions → .github/workflows/metrics.yml -->
-<img width="100%" src="./assets/stats.svg" />
-<img width="100%" src="./assets/streak.svg" />
-<img width="100%" src="./assets/langs.svg" />
-</div>
+<!-- METRICS_START -->
+<!-- METRICS_END -->
 
 ---
 

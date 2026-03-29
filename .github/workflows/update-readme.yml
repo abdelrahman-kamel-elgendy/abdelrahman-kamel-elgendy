@@ -19,7 +19,7 @@ jobs:
       # ── Step 1: Fetch real GitHub stats → inject into SQL result block ────
       - name: Fetch GitHub stats and update metrics block
         env:
-          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          METRICS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 << 'PYTHON'
           import urllib.request
@@ -27,10 +27,10 @@ jobs:
           import re
           import os
           import datetime
- 
+
           USERNAME = "abdelrahman-kamel-elgendy"
           TOKEN    = os.environ.get("METRICS_TOKEN", "")
- 
+
           def graphql(query):
               payload = json.dumps({"query": query}).encode()
               req = urllib.request.Request(
@@ -38,19 +38,22 @@ jobs:
                   data=payload,
                   headers={
                       "Authorization": f"Bearer {TOKEN}",
-                      "User-Agent":    "readme-bot",
-                      "Content-Type":  "application/json",
+                      "User-Agent": "readme-bot",
+                      "Content-Type": "application/json",
                   }
               )
               with urllib.request.urlopen(req, timeout=15) as r:
                   return json.loads(r.read())
- 
+
           try:
               year = datetime.datetime.utcnow().year
- 
+
               q = f"""
               {{
                 user(login: "{USERNAME}") {{
+                  followers {{
+                    totalCount
+                  }}
                   contributionsCollection(
                     from: "{year}-01-01T00:00:00Z"
                     to:   "{year}-12-31T23:59:59Z"
@@ -69,6 +72,11 @@ jobs:
                   repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {{
                     totalCount
                     nodes {{
+                      stargazerCount
+                      forkCount
+                      issues {{
+                        totalCount
+                      }}
                       languages(first: 5, orderBy: {{field: SIZE, direction: DESC}}) {{
                         edges {{
                           size
@@ -80,21 +88,29 @@ jobs:
                 }}
               }}
               """
- 
-              data    = graphql(q)["data"]["user"]
-              cc      = data["contributionsCollection"]
+
+              data = graphql(q)["data"]["user"]
+
+              cc = data["contributionsCollection"]
+
               commits = cc["totalCommitContributions"]
               prs     = cc["totalPullRequestContributions"]
               repos   = data["repositories"]["totalCount"]
- 
-              # ── Streaks ──────────────────────────────────────────────────
+              followers = data["followers"]["totalCount"]
+
+              stars = sum(r["stargazerCount"] for r in data["repositories"]["nodes"])
+              forks = sum(r["forkCount"] for r in data["repositories"]["nodes"])
+              issues = sum(r["issues"]["totalCount"] for r in data["repositories"]["nodes"])
+
+              # ── Streaks ───────────────────
               days = sorted(
-                  [d for week in cc["contributionCalendar"]["weeks"]
-                     for d    in week["contributionDays"]],
+                  [d for w in cc["contributionCalendar"]["weeks"]
+                    for d in w["contributionDays"]],
                   key=lambda d: d["date"]
               )
+
               today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
- 
+
               current_streak = 0
               for d in reversed(days):
                   if d["date"] > today_str:
@@ -103,56 +119,69 @@ jobs:
                       current_streak += 1
                   else:
                       break
- 
+
               longest_streak = cur = 0
               for d in days:
                   cur = (cur + 1) if d["contributionCount"] > 0 else 0
                   longest_streak = max(longest_streak, cur)
- 
-              # ── Top languages ─────────────────────────────────────────────
+
+              # ── Top languages ─────────────
               lang_sizes = {}
               for repo in data["repositories"]["nodes"]:
                   for edge in repo["languages"]["edges"]:
                       name = edge["node"]["name"]
                       lang_sizes[name] = lang_sizes.get(name, 0) + edge["size"]
+
               top_langs = ", ".join(
                   k for k, _ in sorted(lang_sizes.items(), key=lambda x: -x[1])[:5]
               ) or "N/A"
- 
+
+              # ── Contribution score (🔥)
+              score = round(
+                  commits * 0.4 +
+                  prs * 0.3 +
+                  stars * 0.2 +
+                  current_streak * 2,
+                  2
+              )
+
           except Exception as e:
-              print(f"GitHub API error: {e} — skipping metrics update")
+              print(f"GitHub API error: {e}")
               exit(0)
- 
-          # ── Build new block ───────────────────────────────────────────────
+
           def row(label, val):
-              return f"-- {label:<14}: {val}"
- 
+              return f"-- {label:<20}: {val}"
+
           new_block = "\n".join([
               "<!-- METRICS_START -->",
-              row("total_commits",  commits),
-              row("pull_requests",  prs),
-              row("repositories",   repos),
+              row("total_commits", commits),
+              row("pull_requests", prs),
+              row("repositories", repos),
+              row("stars_received", stars),
+              row("followers", followers),
+              row("forks", forks),
+              row("issues", issues),
               row("current_streak", f"{current_streak} days"),
               row("longest_streak", f"{longest_streak} days"),
-              row("top_languages",  top_langs),
+              row("top_languages", top_langs),
+              row("contribution_score", score),
               "<!-- METRICS_END -->",
           ])
- 
+
           with open("README.md") as f:
               content = f.read()
- 
+
           content = re.sub(
               r"<!-- METRICS_START -->.*?<!-- METRICS_END -->",
               new_block,
               content,
               flags=re.DOTALL,
           )
- 
+
           with open("README.md", "w") as f:
               f.write(content)
- 
-          print(f"commits={commits} prs={prs} repos={repos} "
-                f"streak={current_streak} longest={longest_streak} langs={top_langs}")
+
+          print("README updated successfully 🚀")
           PYTHON
  
       # ── Step 2: Fetch quote + pick tip → inject into log blocks ──────────
