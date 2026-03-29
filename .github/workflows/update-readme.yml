@@ -266,10 +266,16 @@ jobs:
           git config --global user.name "abdelrahman-kamel-elgendy"
           git config --global user.email "abdelrahman.kamel.elgendy@gmail.com"
 
-          # Step 1: always sync first
+          # Step 1: stash local changes (important)
+          git stash
+
+          # Step 2: get latest changes
           git pull --rebase origin main
 
-          # Step 2: apply changes
+          # Step 3: restore changes
+          git stash pop || true
+
+          # Step 4: commit
           git add README.md
 
           if git diff --cached --quiet; then
@@ -278,5 +284,5 @@ jobs:
             git commit -m "Update daily tip and quote $(date +'%Y-%m-%d')"
           fi
 
-          # Step 3: push
+          # Step 5: push
           git push
