@@ -124,6 +124,11 @@ stack:
 
 <!-- ── THEME: SQL query ────────────────────────────────── -->
 ## `metrics.sql`
+
+<table width="100%">
+<tr>
+<td valign="top" width="50%">
+
 ```sql
 -- ──────────────────────────────────
 --  Querying developer stats
@@ -133,37 +138,44 @@ SELECT
     total_commits,
     pull_requests,
     repositories,
-    stars_received,
-    followers,
-    forks,
-    issues,
     current_streak,
     longest_streak,
-    top_languages,
-    contribution_score
+    top_languages
 FROM
     github_stats
 WHERE
     username = 'abdelrahman-kamel-elgendy'
     AND year = YEAR (CURDATE ())
 ORDER BY
-    contribution_score DESC;
-```
+    contributions DESC;
 
 -- ── Result ─────────────────────────
-<!-- METRICS_START -->
--- total_commits      : 0
--- pull_requests      : 0
--- repositories       : 0
--- stars_received     : 0
--- followers          : 0
--- forks              : 0
--- issues             : 0
--- current_streak     : 0 days
--- longest_streak     : 0 days
--- top_languages      : unknown
--- contribution_score : 0
-<!-- METRICS_END -->
+-- rows returned : 1
+-- execution time: 0.003s
+-- status        : 200 OK
+-- cache         : HIT
+-- ──────────────────────────────────
+
+-- ── Indexes used ───────────────────
+-- idx_username  (seek)
+-- idx_year      (seek)
+-- idx_contributions (sort)
+-- ──────────────────────────────────
+```
+</td>
+<td valign="top" width="60%">
+<div align="center">
+
+<img width="100%" src="https://github-readme-stats.vercel.app/api?username=abdelrahman-kamel-elgendy&show_icons=true&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA&text_color=CDD6F4&rank_icon=github" />
+
+<img width="100%" src="https://streak-stats.demolab.com/?user=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&background=0D1117&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA&sideLabels=CDD6F4&currStreakNum=ffffff&sideNums=CDD6F4&dates=6b7280" />
+
+<img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&text_color=CDD6F4&layout=compact&langs_count=8" />
+
+</div>
+</td>
+</tr>
+</table>
 ---
 
 <!-- ── THEME: Redis CLI ────────────────────────────────── -->

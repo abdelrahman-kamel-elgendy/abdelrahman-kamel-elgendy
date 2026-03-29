@@ -1,190 +1,20 @@
 name: Update README Daily
- 
+
 on:
   schedule:
-    - cron: "0 1 * * *"   # 03:00 Cairo time (UTC+2)
+    - cron: "0 0 * * *"
   workflow_dispatch:
- 
+
 permissions:
   contents: write
- 
+
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
- 
       - name: Checkout repository
         uses: actions/checkout@v4
- 
-      # ── Step 1: Fetch real GitHub stats → inject into SQL result block ────
-      - name: Fetch GitHub stats and update metrics block
-        env:
-          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
-        run: |
-          python3 << 'PYTHON'
-          import urllib.request
-          import json
-          import re
-          import os
-          import datetime
 
-          USERNAME = "abdelrahman-kamel-elgendy"
-          TOKEN    = os.environ.get("METRICS_TOKEN", "")
-
-          def graphql(query):
-              payload = json.dumps({"query": query}).encode()
-              req = urllib.request.Request(
-                  "https://api.github.com/graphql",
-                  data=payload,
-                  headers={
-                      "Authorization": f"Bearer {TOKEN}",
-                      "User-Agent": "readme-bot",
-                      "Content-Type": "application/json",
-                  }
-              )
-              with urllib.request.urlopen(req, timeout=15) as r:
-                  return json.loads(r.read())
-
-          try:
-              year = datetime.datetime.utcnow().year
-
-              q = f"""
-              {{
-                user(login: "{USERNAME}") {{
-                  followers {{
-                    totalCount
-                  }}
-                  contributionsCollection(
-                    from: "{year}-01-01T00:00:00Z"
-                    to:   "{year}-12-31T23:59:59Z"
-                  ) {{
-                    totalCommitContributions
-                    totalPullRequestContributions
-                    contributionCalendar {{
-                      weeks {{
-                        contributionDays {{
-                          contributionCount
-                          date
-                        }}
-                      }}
-                    }}
-                  }}
-                  repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {{
-                    totalCount
-                    nodes {{
-                      stargazerCount
-                      forkCount
-                      issues {{
-                        totalCount
-                      }}
-                      languages(first: 5, orderBy: {{field: SIZE, direction: DESC}}) {{
-                        edges {{
-                          size
-                          node {{ name }}
-                        }}
-                      }}
-                    }}
-                  }}
-                }}
-              }}
-              """
-
-              data = graphql(q)["data"]["user"]
-
-              cc = data["contributionsCollection"]
-
-              commits = cc["totalCommitContributions"]
-              prs     = cc["totalPullRequestContributions"]
-              repos   = data["repositories"]["totalCount"]
-              followers = data["followers"]["totalCount"]
-
-              stars = sum(r["stargazerCount"] for r in data["repositories"]["nodes"])
-              forks = sum(r["forkCount"] for r in data["repositories"]["nodes"])
-              issues = sum(r["issues"]["totalCount"] for r in data["repositories"]["nodes"])
-
-              # ── Streaks ───────────────────
-              days = sorted(
-                  [d for w in cc["contributionCalendar"]["weeks"]
-                    for d in w["contributionDays"]],
-                  key=lambda d: d["date"]
-              )
-
-              today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
-
-              current_streak = 0
-              for d in reversed(days):
-                  if d["date"] > today_str:
-                      continue
-                  if d["contributionCount"] > 0:
-                      current_streak += 1
-                  else:
-                      break
-
-              longest_streak = cur = 0
-              for d in days:
-                  cur = (cur + 1) if d["contributionCount"] > 0 else 0
-                  longest_streak = max(longest_streak, cur)
-
-              # ── Top languages ─────────────
-              lang_sizes = {}
-              for repo in data["repositories"]["nodes"]:
-                  for edge in repo["languages"]["edges"]:
-                      name = edge["node"]["name"]
-                      lang_sizes[name] = lang_sizes.get(name, 0) + edge["size"]
-
-              top_langs = ", ".join(
-                  k for k, _ in sorted(lang_sizes.items(), key=lambda x: -x[1])[:5]
-              ) or "N/A"
-
-              # ── Contribution score (🔥)
-              score = round(
-                  commits * 0.4 +
-                  prs * 0.3 +
-                  stars * 0.2 +
-                  current_streak * 2,
-                  2
-              )
-
-          except Exception as e:
-              print(f"GitHub API error: {e}")
-              exit(0)
-
-          def row(label, val):
-              return f"-- {label:<20}: {val}"
-
-          new_block = "\n".join([
-              "<!-- METRICS_START -->",
-              row("total_commits", commits),
-              row("pull_requests", prs),
-              row("repositories", repos),
-              row("stars_received", stars),
-              row("followers", followers),
-              row("forks", forks),
-              row("issues", issues),
-              row("current_streak", f"{current_streak} days"),
-              row("longest_streak", f"{longest_streak} days"),
-              row("top_languages", top_langs),
-              row("contribution_score", score),
-              "<!-- METRICS_END -->",
-          ])
-
-          with open("README.md") as f:
-              content = f.read()
-
-          content = re.sub(
-              r"<!-- METRICS_START -->.*?<!-- METRICS_END -->",
-              new_block,
-              content,
-              flags=re.DOTALL,
-          )
-
-          with open("README.md", "w") as f:
-              f.write(content)
-
-          print("README updated successfully 🚀")
-          PYTHON
- 
-      # ── Step 2: Fetch quote + pick tip → inject into log blocks ──────────
       - name: Update tip and quote in README
         run: |
           python3 << 'PYTHON'
@@ -192,20 +22,21 @@ jobs:
           import urllib.request
           import datetime
           import re
- 
+
+          # --- Get current datetime ---
           now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=2)))
           ts  = now.strftime("%Y-%m-%d %H:%M:%S.") + f"{now.microsecond // 1000:03d} +02:00"
- 
+
+          # --- Pick daily tip ---
           with open('tips.json') as f:
               tips = json.load(f)
           day = now.timetuple().tm_yday - 1
           tip = tips[day % len(tips)]
- 
+
+          # --- Fetch quote from API ---
           try:
-              req = urllib.request.Request(
-                  "https://zenquotes.io/api/today",
-                  headers={"User-Agent": "Mozilla/5.0"}
-              )
+              url = "https://zenquotes.io/api/today"
+              req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
               with urllib.request.urlopen(req, timeout=10) as r:
                   data = json.loads(r.read())
               quote  = data[0]["q"]
@@ -213,26 +44,29 @@ jobs:
           except Exception:
               quote  = "First, solve the problem. Then, write the code."
               author = "John Johnson"
- 
+
           SEP = "\u2500" * 65
- 
+
           def log(level, service, msg):
               return f"[{ts} {level}] {service} {msg}"
- 
-          tip_block = "\n".join([
+
+          # --- Build tip log block ---
+          tip_lines = [
               "<!-- TIP_START -->",
               "```log",
               log("INF", "tip-service", "Fetching tip of the day..."),
-              log("INF", "tip-service", f"Source: tips.json  offset: day_of_year % {len(tips)}"),
+              log("INF", "tip-service", "Source: tips.json  offset: day_of_year % 365"),
               log("INF", "tip-service", "Status: OK  \u2192  tip loaded"),
               SEP,
               log("TIP", "tip-service", tip),
               SEP,
               "```",
               "<!-- TIP_END -->",
-          ])
- 
-          quote_block = "\n".join([
+          ]
+          tip_block = "\n".join(tip_lines)
+
+          # --- Build quote log block ---
+          quote_lines = [
               "<!-- QUOTE_START -->",
               "```log",
               log("INF", "quote-service", "Connecting to quotes upstream..."),
@@ -244,45 +78,40 @@ jobs:
               SEP,
               "```",
               "<!-- QUOTE_END -->",
-          ])
- 
+          ]
+          quote_block = "\n".join(quote_lines)
+
+          # --- Inject into README ---
           with open('README.md', 'r') as f:
               content = f.read()
- 
-          content = re.sub(r'<!-- TIP_START -->.*?<!-- TIP_END -->',
-                           tip_block, content, flags=re.DOTALL)
-          content = re.sub(r'<!-- QUOTE_START -->.*?<!-- QUOTE_END -->',
-                           quote_block, content, flags=re.DOTALL)
- 
+
+          content = re.sub(
+              r'<!-- TIP_START -->.*?<!-- TIP_END -->',
+              tip_block,
+              content, flags=re.DOTALL
+          )
+
+          content = re.sub(
+              r'<!-- QUOTE_START -->.*?<!-- QUOTE_END -->',
+              quote_block,
+              content, flags=re.DOTALL
+          )
+
           with open('README.md', 'w') as f:
               f.write(content)
- 
-          print(f"Tip: {tip}")
-          print(f"Quote: {quote} - {author}")
+
+          print("Tip: " + tip)
+          print("Quote: " + quote + " - " + author)
           PYTHON
 
       - name: Commit and push
         run: |
           git config --global user.name "abdelrahman-kamel-elgendy"
-          git config --global user.email "abdelrahman.kamel.elgendy@gmail.com"
-
-          # Step 1: stash local changes (important)
-          git stash
-
-          # Step 2: get latest changes
-          git pull --rebase origin main
-
-          # Step 3: restore changes
-          git stash pop || true
-
-          # Step 4: commit
+          git config --global user.email "abdelrahman.kamel.elgendy@github.com"
           git add README.md
-
           if git diff --cached --quiet; then
             git commit --allow-empty -m "Update daily tip and quote $(date +'%Y-%m-%d')"
           else
             git commit -m "Update daily tip and quote $(date +'%Y-%m-%d')"
           fi
-
-          # Step 5: push
           git push
