@@ -146,10 +146,18 @@ ORDER BY
     contributions DESC;
 
 -- ── Result ─────────────────────────
--- rows returned : 1
--- execution time: 0.003s
--- status        : 200 OK
--- cache         : HIT
+<!-- METRICS_START -->
+-- total_commits  : 0
+-- pull_requests  : 0
+-- repositories   : 0
+-- current_streak : 0 days
+-- longest_streak : 0 days
+-- top_languages  : unknown
+<!-- METRICS_END -->
+-- rows returned  : 1
+-- execution time : 0.003s
+-- status         : 200 OK
+-- cache          : HIT
 -- ──────────────────────────────────
 
 -- ── Indexes used ───────────────────
