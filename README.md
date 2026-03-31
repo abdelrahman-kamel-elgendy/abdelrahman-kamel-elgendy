@@ -201,11 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-03-29 20:32:20.739 +02:00 INF] tip-service Fetching tip of the day...
-[2026-03-29 20:32:20.739 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-03-29 20:32:20.739 +02:00 INF] tip-service Status: OK  →  tip loaded
-
-[2026-03-29 20:32:20.739 +02:00 TIP] tip-service Use a schema registry when working with Kafka to version and validate message schemas.
+[2026-03-31 04:31:38.278 +02:00 INF] tip-service Fetching tip of the day...
+[2026-03-31 04:31:38.278 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-03-31 04:31:38.278 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-03-31 04:31:38.278 +02:00 TIP] tip-service Use connection retries with jitter when connecting to external services at startup.
 ```
 <!-- TIP_END -->
  
@@ -216,12 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-03-29 20:32:20.739 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-03-29 20:32:20.739 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-03-29 20:32:20.739 +02:00 INF] quote-service Message received  →  quote loaded
-
-[2026-03-29 20:32:20.739 +02:00 QOT] quote-service Spend eighty percent of your time focusing on the opportunities of tomorrow rather than the problems of yesterday.
-[2026-03-29 20:32:20.739 +02:00 AUT] quote-service Brian Tracy
+[2026-03-31 04:31:38.278 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-03-31 04:31:38.278 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-03-31 04:31:38.278 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-03-31 04:31:38.278 +02:00 QOT] quote-service I thought how unpleasant it is to be locked out; and I thought how it is worse, perhaps, to be locked in.
+[2026-03-31 04:31:38.278 +02:00 AUT] quote-service Virginia Woolf
 ```
 <!-- QUOTE_END -->
 
