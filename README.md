@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-01 04:42:42.105 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-01 04:42:42.105 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-01 04:42:42.105 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-01 04:42:42.105 +02:00 TIP] tip-service Apply the open/closed principle — your code should be open for extension, closed for modification.
+[2026-04-02 04:27:50.164 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-02 04:27:50.164 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-02 04:27:50.164 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-02 04:27:50.164 +02:00 TIP] tip-service Use database views to simplify complex queries that are reused across the codebase.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-01 04:42:42.105 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-01 04:42:42.105 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-01 04:42:42.105 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-01 04:42:42.105 +02:00 QOT] quote-service It's not the men in your life that matters, it's the life in your men.
-[2026-04-01 04:42:42.105 +02:00 AUT] quote-service Mae West
+[2026-04-02 04:27:50.164 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-02 04:27:50.164 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-02 04:27:50.164 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-02 04:27:50.164 +02:00 QOT] quote-service If I can laugh, I can live.
+[2026-04-02 04:27:50.164 +02:00 AUT] quote-service Christopher Reeve
 ```
 <!-- QUOTE_END -->
 
