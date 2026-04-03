@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-02 04:27:50.164 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-02 04:27:50.164 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-02 04:27:50.164 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-02 04:27:50.164 +02:00 TIP] tip-service Use database views to simplify complex queries that are reused across the codebase.
+[2026-04-03 04:29:13.007 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-03 04:29:13.007 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-03 04:29:13.007 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-03 04:29:13.007 +02:00 TIP] tip-service Run your database migrations as part of your deployment pipeline, not manually.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-02 04:27:50.164 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-02 04:27:50.164 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-02 04:27:50.164 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-02 04:27:50.164 +02:00 QOT] quote-service If I can laugh, I can live.
-[2026-04-02 04:27:50.164 +02:00 AUT] quote-service Christopher Reeve
+[2026-04-03 04:29:13.007 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-03 04:29:13.007 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-03 04:29:13.007 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-03 04:29:13.007 +02:00 QOT] quote-service Ideas do not reach perfection in a day, no matter how much study is put upon them.
+[2026-04-03 04:29:13.007 +02:00 AUT] quote-service Alexander Graham Bell
 ```
 <!-- QUOTE_END -->
 
