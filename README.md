@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-05 04:36:16.606 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-05 04:36:16.606 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-05 04:36:16.606 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-05 04:36:16.606 +02:00 TIP] tip-service Track slow queries using your database's slow query log and optimize them proactively.
+[2026-04-06 04:37:18.622 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-06 04:37:18.622 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-06 04:37:18.622 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-06 04:37:18.622 +02:00 TIP] tip-service Use content negotiation (Accept headers) to support multiple response formats (JSON, XML).
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-05 04:36:16.606 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-05 04:36:16.606 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-05 04:36:16.606 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-05 04:36:16.606 +02:00 QOT] quote-service If you are going to achieve excellence in big things, you develop the habit in little matters.
-[2026-04-05 04:36:16.606 +02:00 AUT] quote-service Colin Powell
+[2026-04-06 04:37:18.622 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-06 04:37:18.622 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-06 04:37:18.622 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-06 04:37:18.622 +02:00 QOT] quote-service Don't wish it were easier, wish you were better.
+[2026-04-06 04:37:18.622 +02:00 AUT] quote-service Jim Rohn
 ```
 <!-- QUOTE_END -->
 
