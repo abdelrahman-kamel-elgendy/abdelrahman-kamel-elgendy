@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-08 04:33:21.910 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-08 04:33:21.910 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-08 04:33:21.910 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-08 04:33:21.910 +02:00 TIP] tip-service Use distributed tracing (Jaeger, Zipkin) to visualize request flows across microservices.
+[2026-04-09 04:28:18.419 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-09 04:28:18.419 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-09 04:28:18.419 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-09 04:28:18.419 +02:00 TIP] tip-service Keep your business logic in the service layer, not in controllers or repositories.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-08 04:33:21.910 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-08 04:33:21.910 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-08 04:33:21.910 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-08 04:33:21.910 +02:00 QOT] quote-service It's OK to have your eggs in one basket as long as you control what happens to that basket.
-[2026-04-08 04:33:21.910 +02:00 AUT] quote-service Elon Musk
+[2026-04-09 04:28:18.419 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-09 04:28:18.419 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-09 04:28:18.419 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-09 04:28:18.419 +02:00 QOT] quote-service The greatest treasures are those invisible to the eye but found by the heart.
+[2026-04-09 04:28:18.419 +02:00 AUT] quote-service Judy Garland
 ```
 <!-- QUOTE_END -->
 
