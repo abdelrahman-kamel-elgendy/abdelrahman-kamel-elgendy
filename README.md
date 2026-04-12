@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-11 04:24:52.425 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-11 04:24:52.425 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-11 04:24:52.425 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-11 04:24:52.425 +02:00 TIP] tip-service Avoid premature optimization — profile first, then optimize the actual bottleneck.
+[2026-04-12 04:42:03.227 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-12 04:42:03.227 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-12 04:42:03.227 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-12 04:42:03.227 +02:00 TIP] tip-service Use a consistent error schema (code, message, details) across all your API endpoints.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-11 04:24:52.425 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-11 04:24:52.425 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-11 04:24:52.425 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-11 04:24:52.425 +02:00 QOT] quote-service I can live without money, but I cannot live without love.
-[2026-04-11 04:24:52.425 +02:00 AUT] quote-service Judy Garland
+[2026-04-12 04:42:03.227 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-12 04:42:03.227 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-12 04:42:03.227 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-12 04:42:03.227 +02:00 QOT] quote-service Enjoy life. There's plenty of time to be dead.
+[2026-04-12 04:42:03.227 +02:00 AUT] quote-service Hans Christian Andersen
 ```
 <!-- QUOTE_END -->
 
