@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-13 04:47:47.500 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-13 04:47:47.500 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-13 04:47:47.500 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-13 04:47:47.500 +02:00 TIP] tip-service Implement webhook signature verification to ensure incoming events are authentic.
+[2026-04-14 04:40:02.700 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-14 04:40:02.700 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-14 04:40:02.700 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-14 04:40:02.700 +02:00 TIP] tip-service Use long polling as a simpler alternative to WebSockets for low-frequency real-time updates.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-13 04:47:47.500 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-13 04:47:47.500 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-13 04:47:47.500 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-13 04:47:47.500 +02:00 QOT] quote-service A mistake is only an error, it becomes a mistake when you fail to correct it.
-[2026-04-13 04:47:47.500 +02:00 AUT] quote-service John Lennon
+[2026-04-14 04:40:02.700 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-14 04:40:02.700 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-14 04:40:02.700 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-14 04:40:02.700 +02:00 QOT] quote-service Today is plenty; right now is enough. Tomorrow will come in good time. Until it does, live the depth of now.
+[2026-04-14 04:40:02.700 +02:00 AUT] quote-service Ralph Marston
 ```
 <!-- QUOTE_END -->
 
