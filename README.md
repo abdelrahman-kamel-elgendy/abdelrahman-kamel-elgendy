@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-17 04:40:22.053 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-17 04:40:22.053 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-17 04:40:22.053 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-17 04:40:22.053 +02:00 TIP] tip-service Implement exponential backoff in your retry logic to avoid thundering herd problems.
+[2026-04-18 04:31:41.600 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-18 04:31:41.600 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-18 04:31:41.600 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-18 04:31:41.600 +02:00 TIP] tip-service Use async queues for sending emails, notifications, and other non-critical side effects.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-17 04:40:22.053 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-17 04:40:22.053 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-17 04:40:22.053 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-17 04:40:22.053 +02:00 QOT] quote-service Without struggle, no progress and no result. Every breaking of habit produces a change in the machine.
-[2026-04-17 04:40:22.053 +02:00 AUT] quote-service G.I. Gurdjieff
+[2026-04-18 04:31:41.600 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-18 04:31:41.600 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-18 04:31:41.600 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-18 04:31:41.600 +02:00 QOT] quote-service Still your waters.
+[2026-04-18 04:31:41.600 +02:00 AUT] quote-service Josh Waitzkin
 ```
 <!-- QUOTE_END -->
 
