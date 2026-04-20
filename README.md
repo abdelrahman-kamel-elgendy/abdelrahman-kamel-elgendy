@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-19 04:47:04.874 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-19 04:47:04.874 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-19 04:47:04.874 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-19 04:47:04.874 +02:00 TIP] tip-service Monitor your queue depth — a growing queue is an early warning of a processing bottleneck.
+[2026-04-20 04:49:05.856 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-20 04:49:05.856 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-20 04:49:05.856 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-20 04:49:05.856 +02:00 TIP] tip-service Use column-level encryption for highly sensitive fields like SSNs or payment data.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-19 04:47:04.874 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-19 04:47:04.874 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-19 04:47:04.874 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-19 04:47:04.874 +02:00 QOT] quote-service If you go out looking for friends, you're going to find they are very scarce. If you go out to be a friend, you'll find them everywhere.
-[2026-04-19 04:47:04.874 +02:00 AUT] quote-service Zig Ziglar
+[2026-04-20 04:49:05.856 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-20 04:49:05.856 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-20 04:49:05.856 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-20 04:49:05.856 +02:00 QOT] quote-service Freedom lies in being bold.
+[2026-04-20 04:49:05.856 +02:00 AUT] quote-service Robert Frost
 ```
 <!-- QUOTE_END -->
 
