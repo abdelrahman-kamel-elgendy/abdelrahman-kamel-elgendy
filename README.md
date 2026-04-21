@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-20 04:49:05.856 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-20 04:49:05.856 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-20 04:49:05.856 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-20 04:49:05.856 +02:00 TIP] tip-service Use column-level encryption for highly sensitive fields like SSNs or payment data.
+[2026-04-21 04:41:51.128 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-21 04:41:51.128 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-21 04:41:51.128 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-21 04:41:51.128 +02:00 TIP] tip-service Prefer explicit transactions over implicit ones for clarity and correctness.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-20 04:49:05.856 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-20 04:49:05.856 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-20 04:49:05.856 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-20 04:49:05.856 +02:00 QOT] quote-service Freedom lies in being bold.
-[2026-04-20 04:49:05.856 +02:00 AUT] quote-service Robert Frost
+[2026-04-21 04:41:51.128 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-21 04:41:51.128 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-21 04:41:51.128 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-21 04:41:51.128 +02:00 QOT] quote-service Your heart is the size of an ocean. Go find yourself in its hidden depths.
+[2026-04-21 04:41:51.128 +02:00 AUT] quote-service Rumi
 ```
 <!-- QUOTE_END -->
 
