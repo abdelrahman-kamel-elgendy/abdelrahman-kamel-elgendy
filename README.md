@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-21 04:41:51.128 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-21 04:41:51.128 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-21 04:41:51.128 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-21 04:41:51.128 +02:00 TIP] tip-service Prefer explicit transactions over implicit ones for clarity and correctness.
+[2026-04-22 04:40:10.050 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-22 04:40:10.050 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-22 04:40:10.050 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-22 04:40:10.050 +02:00 TIP] tip-service Use canary deployments to test new versions with a small percentage of real traffic.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-21 04:41:51.128 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-21 04:41:51.128 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-21 04:41:51.128 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-21 04:41:51.128 +02:00 QOT] quote-service Your heart is the size of an ocean. Go find yourself in its hidden depths.
-[2026-04-21 04:41:51.128 +02:00 AUT] quote-service Rumi
+[2026-04-22 04:40:10.050 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-22 04:40:10.050 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-22 04:40:10.050 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-22 04:40:10.050 +02:00 QOT] quote-service When you judge another, you do not define them, you define yourself
+[2026-04-22 04:40:10.050 +02:00 AUT] quote-service Wayne Dyer
 ```
 <!-- QUOTE_END -->
 
