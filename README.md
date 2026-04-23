@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-22 04:40:10.050 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-22 04:40:10.050 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-22 04:40:10.050 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-22 04:40:10.050 +02:00 TIP] tip-service Use canary deployments to test new versions with a small percentage of real traffic.
+[2026-04-23 04:43:23.807 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-23 04:43:23.807 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-23 04:43:23.807 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-23 04:43:23.807 +02:00 TIP] tip-service Apply the 12-factor app methodology for building scalable, maintainable backend services.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-22 04:40:10.050 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-22 04:40:10.050 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-22 04:40:10.050 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-22 04:40:10.050 +02:00 QOT] quote-service When you judge another, you do not define them, you define yourself
-[2026-04-22 04:40:10.050 +02:00 AUT] quote-service Wayne Dyer
+[2026-04-23 04:43:23.807 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-23 04:43:23.807 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-23 04:43:23.807 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-23 04:43:23.807 +02:00 QOT] quote-service The only reason to be alive is to enjoy it.
+[2026-04-23 04:43:23.807 +02:00 AUT] quote-service Rita Mae Brown
 ```
 <!-- QUOTE_END -->
 
