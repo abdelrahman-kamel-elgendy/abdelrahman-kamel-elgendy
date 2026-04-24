@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-23 04:43:23.807 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-23 04:43:23.807 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-23 04:43:23.807 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-23 04:43:23.807 +02:00 TIP] tip-service Apply the 12-factor app methodology for building scalable, maintainable backend services.
+[2026-04-24 04:44:30.679 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-24 04:44:30.679 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-24 04:44:30.679 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-24 04:44:30.679 +02:00 TIP] tip-service Use a service mesh (Istio, Linkerd) for secure, observable service-to-service communication.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-23 04:43:23.807 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-23 04:43:23.807 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-23 04:43:23.807 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-23 04:43:23.807 +02:00 QOT] quote-service The only reason to be alive is to enjoy it.
-[2026-04-23 04:43:23.807 +02:00 AUT] quote-service Rita Mae Brown
+[2026-04-24 04:44:30.679 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-24 04:44:30.679 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-24 04:44:30.679 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-24 04:44:30.679 +02:00 QOT] quote-service You can't get to a place that you don't believe exists.
+[2026-04-24 04:44:30.679 +02:00 AUT] quote-service Unknown
 ```
 <!-- QUOTE_END -->
 
