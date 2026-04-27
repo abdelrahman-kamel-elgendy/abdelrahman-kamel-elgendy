@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-26 04:49:59.854 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-26 04:49:59.854 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-26 04:49:59.854 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-26 04:49:59.854 +02:00 TIP] tip-service Use bulk operations in your ORM to reduce the number of round trips to the database.
+[2026-04-27 04:52:59.833 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-27 04:52:59.833 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-27 04:52:59.833 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-27 04:52:59.833 +02:00 TIP] tip-service Implement proper GDPR/data-privacy handling: support data deletion and export requests.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-26 04:49:59.854 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-26 04:49:59.854 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-26 04:49:59.854 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-26 04:49:59.854 +02:00 QOT] quote-service In the middle of difficulty lies opportunity.
-[2026-04-26 04:49:59.854 +02:00 AUT] quote-service Albert Einstein
+[2026-04-27 04:52:59.833 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-27 04:52:59.833 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-27 04:52:59.833 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-27 04:52:59.833 +02:00 QOT] quote-service I'm an optimist by choice not by stupidity.
+[2026-04-27 04:52:59.833 +02:00 AUT] quote-service Yanni
 ```
 <!-- QUOTE_END -->
 
