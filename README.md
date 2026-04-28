@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-27 04:52:59.833 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-27 04:52:59.833 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-27 04:52:59.833 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-27 04:52:59.833 +02:00 TIP] tip-service Implement proper GDPR/data-privacy handling: support data deletion and export requests.
+[2026-04-28 05:21:24.879 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-28 05:21:24.879 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-28 05:21:24.879 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-28 05:21:24.879 +02:00 TIP] tip-service Use chaos engineering to proactively find weaknesses before they cause production incidents.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-27 04:52:59.833 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-27 04:52:59.833 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-27 04:52:59.833 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-27 04:52:59.833 +02:00 QOT] quote-service I'm an optimist by choice not by stupidity.
-[2026-04-27 04:52:59.833 +02:00 AUT] quote-service Yanni
+[2026-04-28 05:21:24.879 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-28 05:21:24.879 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-28 05:21:24.879 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-28 05:21:24.879 +02:00 QOT] quote-service Self-knowledge is the beginning of self-correction.
+[2026-04-28 05:21:24.879 +02:00 AUT] quote-service Norman Vincent Peale
 ```
 <!-- QUOTE_END -->
 
