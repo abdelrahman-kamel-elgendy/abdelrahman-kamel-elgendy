@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-04-29 04:57:38.993 +02:00 INF] tip-service Fetching tip of the day...
-[2026-04-29 04:57:38.993 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-04-29 04:57:38.993 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-04-29 04:57:38.993 +02:00 TIP] tip-service Apply backpressure in streaming systems to prevent fast producers from overwhelming slow consumers.
+[2026-04-30 05:20:50.132 +02:00 INF] tip-service Fetching tip of the day...
+[2026-04-30 05:20:50.132 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-04-30 05:20:50.132 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-04-30 05:20:50.132 +02:00 TIP] tip-service Use materialized views to precompute expensive queries and refresh them on a schedule.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-04-29 04:57:38.993 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-04-29 04:57:38.993 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-04-29 04:57:38.993 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-04-29 04:57:38.993 +02:00 QOT] quote-service Over time, loneliness gets inside you and doesn't go away.
-[2026-04-29 04:57:38.993 +02:00 AUT] quote-service Carlos Ruiz Zafon
+[2026-04-30 05:20:50.132 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-04-30 05:20:50.132 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-04-30 05:20:50.132 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-04-30 05:20:50.132 +02:00 QOT] quote-service Those who cannot change their minds cannot change anything.
+[2026-04-30 05:20:50.132 +02:00 AUT] quote-service George Bernard Shaw
 ```
 <!-- QUOTE_END -->
 
