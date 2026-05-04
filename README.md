@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-03 05:22:08.530 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-03 05:22:08.530 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-03 05:22:08.530 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-03 05:22:08.530 +02:00 TIP] tip-service Always handle the case where an external API call returns unexpected data.
+[2026-05-04 04:57:13.077 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-04 04:57:13.077 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-04 04:57:13.077 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-04 04:57:13.077 +02:00 TIP] tip-service Use a bulkhead pattern to isolate failures in one part of your system from others.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-03 05:22:08.530 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-03 05:22:08.530 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-03 05:22:08.530 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-03 05:22:08.530 +02:00 QOT] quote-service Your best life will not be found in comfort. It will be found in fighting for what you believe in.
-[2026-05-03 05:22:08.530 +02:00 AUT] quote-service Maxime Lagace
+[2026-05-04 04:57:13.077 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-04 04:57:13.077 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-04 04:57:13.077 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-04 04:57:13.077 +02:00 QOT] quote-service Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.
+[2026-05-04 04:57:13.077 +02:00 AUT] quote-service Sun Tzu
 ```
 <!-- QUOTE_END -->
 
