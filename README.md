@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-04 04:57:13.077 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-04 04:57:13.077 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-04 04:57:13.077 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-04 04:57:13.077 +02:00 TIP] tip-service Use a bulkhead pattern to isolate failures in one part of your system from others.
+[2026-05-05 04:49:19.232 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-05 04:49:19.232 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-05 04:49:19.232 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-05 04:49:19.232 +02:00 TIP] tip-service Apply event-driven architecture to improve resilience and decoupling between services.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-04 04:57:13.077 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-04 04:57:13.077 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-04 04:57:13.077 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-04 04:57:13.077 +02:00 QOT] quote-service Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.
-[2026-05-04 04:57:13.077 +02:00 AUT] quote-service Sun Tzu
+[2026-05-05 04:49:19.232 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-05 04:49:19.232 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-05 04:49:19.232 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-05 04:49:19.232 +02:00 QOT] quote-service Throw your heart over the bar and your body will follow.
+[2026-05-05 04:49:19.232 +02:00 AUT] quote-service Norman Vincent Peale
 ```
 <!-- QUOTE_END -->
 
