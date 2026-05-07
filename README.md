@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-06 04:55:31.872 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-06 04:55:31.872 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-06 04:55:31.872 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-06 04:55:31.872 +02:00 TIP] tip-service Use database seeding scripts to set up consistent test and development environments.
+[2026-05-07 04:56:15.774 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-07 04:56:15.774 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-07 04:56:15.774 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-07 04:56:15.774 +02:00 TIP] tip-service Implement multi-tenancy at the schema, database, or row level depending on your isolation needs.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-06 04:55:31.872 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-06 04:55:31.872 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-06 04:55:31.872 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-06 04:55:31.872 +02:00 QOT] quote-service If what you're doing is not your passion, you have nothing to lose.
-[2026-05-06 04:55:31.872 +02:00 AUT] quote-service Celestine Chua
+[2026-05-07 04:56:15.774 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-07 04:56:15.774 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-07 04:56:15.774 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-07 04:56:15.774 +02:00 QOT] quote-service It's the possibility of having a dream come true that makes life interesting.
+[2026-05-07 04:56:15.774 +02:00 AUT] quote-service Paulo Coelho
 ```
 <!-- QUOTE_END -->
 
