@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-07 04:56:15.774 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-07 04:56:15.774 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-07 04:56:15.774 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-07 04:56:15.774 +02:00 TIP] tip-service Implement multi-tenancy at the schema, database, or row level depending on your isolation needs.
+[2026-05-08 04:58:05.715 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-08 04:58:05.715 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-08 04:58:05.715 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-08 04:58:05.715 +02:00 TIP] tip-service Use shadow mode to run a new service in parallel with the old one before switching traffic.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-07 04:56:15.774 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-07 04:56:15.774 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-07 04:56:15.774 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-07 04:56:15.774 +02:00 QOT] quote-service It's the possibility of having a dream come true that makes life interesting.
-[2026-05-07 04:56:15.774 +02:00 AUT] quote-service Paulo Coelho
+[2026-05-08 04:58:05.715 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-08 04:58:05.715 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-08 04:58:05.715 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-08 04:58:05.715 +02:00 QOT] quote-service First, solve the problem. Then, write the code.
+[2026-05-08 04:58:05.715 +02:00 AUT] quote-service John Johnson
 ```
 <!-- QUOTE_END -->
 
