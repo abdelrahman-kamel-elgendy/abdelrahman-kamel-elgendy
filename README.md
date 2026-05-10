@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-09 04:53:34.618 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-09 04:53:34.618 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-09 04:53:34.618 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-09 04:53:34.618 +02:00 TIP] tip-service Avoid chatty APIs — design endpoints that return everything the client needs in one call.
+[2026-05-10 05:25:17.594 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-10 05:25:17.594 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-10 05:25:17.594 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-10 05:25:17.594 +02:00 TIP] tip-service Use a task queue (Celery, Bull) to move CPU-intensive work off your main request thread.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-09 04:53:34.618 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-09 04:53:34.618 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-09 04:53:34.618 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-09 04:53:34.618 +02:00 QOT] quote-service People often say that motivation doesn't last. Well, neither does bathing - that's why we recommend it daily.
-[2026-05-09 04:53:34.618 +02:00 AUT] quote-service Zig Ziglar
+[2026-05-10 05:25:17.594 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-10 05:25:17.594 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-10 05:25:17.594 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-10 05:25:17.594 +02:00 QOT] quote-service The majority of what you want will come from the minority of what you do.
+[2026-05-10 05:25:17.594 +02:00 AUT] quote-service Gary Keller
 ```
 <!-- QUOTE_END -->
 
