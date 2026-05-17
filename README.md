@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-16 04:58:04.898 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-16 04:58:04.898 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-16 04:58:04.898 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-16 04:58:04.898 +02:00 TIP] tip-service Use an outbox pattern to reliably publish events after a database write without dual-write issues.
+[2026-05-17 05:32:56.621 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-17 05:32:56.621 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-17 05:32:56.621 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-17 05:32:56.621 +02:00 TIP] tip-service Keep your controller thin — it should only parse input, call a service, and return output.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-16 04:58:04.898 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-16 04:58:04.898 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-16 04:58:04.898 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-16 04:58:04.898 +02:00 QOT] quote-service Go confidently in the direction of your dreams! Live the life you've imagined.
-[2026-05-16 04:58:04.898 +02:00 AUT] quote-service Henry David Thoreau
+[2026-05-17 05:32:56.621 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-17 05:32:56.621 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-17 05:32:56.621 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-17 05:32:56.621 +02:00 QOT] quote-service Genius is one percent inspiration and ninety-nine percent perspiration.
+[2026-05-17 05:32:56.621 +02:00 AUT] quote-service Thomas Edison
 ```
 <!-- QUOTE_END -->
 
