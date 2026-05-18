@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-17 05:32:56.621 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-17 05:32:56.621 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-17 05:32:56.621 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-17 05:32:56.621 +02:00 TIP] tip-service Keep your controller thin — it should only parse input, call a service, and return output.
+[2026-05-18 05:47:24.524 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-18 05:47:24.524 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-18 05:47:24.524 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-18 05:47:24.524 +02:00 TIP] tip-service Use a data lake for storing raw events cheaply before processing and structuring them.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-17 05:32:56.621 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-17 05:32:56.621 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-17 05:32:56.621 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-17 05:32:56.621 +02:00 QOT] quote-service Genius is one percent inspiration and ninety-nine percent perspiration.
-[2026-05-17 05:32:56.621 +02:00 AUT] quote-service Thomas Edison
+[2026-05-18 05:47:24.524 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-18 05:47:24.524 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-18 05:47:24.524 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-18 05:47:24.524 +02:00 QOT] quote-service The person who never made a mistake never tried anything new.
+[2026-05-18 05:47:24.524 +02:00 AUT] quote-service Albert Einstein
 ```
 <!-- QUOTE_END -->
 
