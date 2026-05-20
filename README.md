@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-19 05:38:42.116 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-19 05:38:42.116 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-19 05:38:42.116 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-19 05:38:42.116 +02:00 TIP] tip-service Implement graceful degradation — if a non-critical service fails, keep the core working.
+[2026-05-20 05:39:19.768 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-20 05:39:19.768 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-20 05:39:19.768 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-20 05:39:19.768 +02:00 TIP] tip-service Use API mocking in tests to isolate units and avoid hitting real external services.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-19 05:38:42.116 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-19 05:38:42.116 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-19 05:38:42.116 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-19 05:38:42.116 +02:00 QOT] quote-service The people who are crazy enough to think they can change the world are the ones who do.
-[2026-05-19 05:38:42.116 +02:00 AUT] quote-service Steve Jobs
+[2026-05-20 05:39:19.768 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-20 05:39:19.768 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-20 05:39:19.768 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-20 05:39:19.768 +02:00 QOT] quote-service True wisdom comes to each of us when we realize how little we understand about life, ourselves, and the world around us.
+[2026-05-20 05:39:19.768 +02:00 AUT] quote-service Socrates
 ```
 <!-- QUOTE_END -->
 
