@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-20 05:39:19.768 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-20 05:39:19.768 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-20 05:39:19.768 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-20 05:39:19.768 +02:00 TIP] tip-service Use API mocking in tests to isolate units and avoid hitting real external services.
+[2026-05-21 05:50:39.195 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-21 05:50:39.195 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-21 05:50:39.195 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-21 05:50:39.195 +02:00 TIP] tip-service Apply SOLID principles consistently to keep your codebase maintainable as it grows.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-20 05:39:19.768 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-20 05:39:19.768 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-20 05:39:19.768 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-20 05:39:19.768 +02:00 QOT] quote-service True wisdom comes to each of us when we realize how little we understand about life, ourselves, and the world around us.
-[2026-05-20 05:39:19.768 +02:00 AUT] quote-service Socrates
+[2026-05-21 05:50:39.195 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-21 05:50:39.195 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-21 05:50:39.195 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-21 05:50:39.195 +02:00 QOT] quote-service You talk when you cease to be at peace with your thoughts.
+[2026-05-21 05:50:39.195 +02:00 AUT] quote-service Kahlil Gibran
 ```
 <!-- QUOTE_END -->
 
