@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-21 05:50:39.195 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-21 05:50:39.195 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-21 05:50:39.195 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-21 05:50:39.195 +02:00 TIP] tip-service Apply SOLID principles consistently to keep your codebase maintainable as it grows.
+[2026-05-22 05:45:07.755 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-22 05:45:07.755 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-22 05:45:07.755 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-22 05:45:07.755 +02:00 TIP] tip-service Use database explain analyze (not just explain) to get actual runtime stats for queries.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-21 05:50:39.195 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-21 05:50:39.195 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-21 05:50:39.195 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-21 05:50:39.195 +02:00 QOT] quote-service You talk when you cease to be at peace with your thoughts.
-[2026-05-21 05:50:39.195 +02:00 AUT] quote-service Kahlil Gibran
+[2026-05-22 05:45:07.755 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-22 05:45:07.755 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-22 05:45:07.755 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-22 05:45:07.755 +02:00 QOT] quote-service Tomorrow is only found in the calendar of fools.
+[2026-05-22 05:45:07.755 +02:00 AUT] quote-service Og Mandino
 ```
 <!-- QUOTE_END -->
 
