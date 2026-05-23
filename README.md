@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-22 05:45:07.755 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-22 05:45:07.755 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-22 05:45:07.755 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-22 05:45:07.755 +02:00 TIP] tip-service Use database explain analyze (not just explain) to get actual runtime stats for queries.
+[2026-05-23 05:22:23.778 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-23 05:22:23.778 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-23 05:22:23.778 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-23 05:22:23.778 +02:00 TIP] tip-service Implement token revocation using a deny list stored in Redis for immediate invalidation.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-22 05:45:07.755 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-22 05:45:07.755 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-22 05:45:07.755 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-22 05:45:07.755 +02:00 QOT] quote-service Tomorrow is only found in the calendar of fools.
-[2026-05-22 05:45:07.755 +02:00 AUT] quote-service Og Mandino
+[2026-05-23 05:22:23.778 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-23 05:22:23.778 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-23 05:22:23.778 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-23 05:22:23.778 +02:00 QOT] quote-service First, solve the problem. Then, write the code.
+[2026-05-23 05:22:23.778 +02:00 AUT] quote-service John Johnson
 ```
 <!-- QUOTE_END -->
 
