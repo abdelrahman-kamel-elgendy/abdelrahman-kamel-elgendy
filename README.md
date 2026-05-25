@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-24 05:41:03.645 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-24 05:41:03.645 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-24 05:41:03.645 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-24 05:41:03.645 +02:00 TIP] tip-service Use a message broker for guaranteed delivery instead of direct HTTP calls between services.
+[2026-05-25 05:55:47.524 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-25 05:55:47.524 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-25 05:55:47.524 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-25 05:55:47.524 +02:00 TIP] tip-service Apply defensive programming — never assume external input is in the expected format.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-24 05:41:03.645 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-24 05:41:03.645 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-24 05:41:03.645 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-24 05:41:03.645 +02:00 QOT] quote-service Presents are made for the pleasure of who gives them, not the merits of who receives them.
-[2026-05-24 05:41:03.645 +02:00 AUT] quote-service Carlos Ruiz Zafon
+[2026-05-25 05:55:47.524 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-25 05:55:47.524 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-25 05:55:47.524 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-25 05:55:47.524 +02:00 QOT] quote-service The secret of happiness, you see, is not found in seeking more, but in developing the capacity to enjoy less.
+[2026-05-25 05:55:47.524 +02:00 AUT] quote-service Dan Millman
 ```
 <!-- QUOTE_END -->
 
