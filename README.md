@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-27 05:55:36.367 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-27 05:55:36.367 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-27 05:55:36.367 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-27 05:55:36.367 +02:00 TIP] tip-service Monitor p95/p99 latencies, not just averages — tail latencies reveal the worst user experience.
+[2026-05-28 05:42:03.341 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-28 05:42:03.341 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-28 05:42:03.341 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-28 05:42:03.341 +02:00 TIP] tip-service Implement pessimistic locking when conflicting updates are frequent and must be prevented.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-27 05:55:36.367 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-27 05:55:36.367 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-27 05:55:36.367 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-27 05:55:36.367 +02:00 QOT] quote-service Being wrong opens us up to the possibility of change.
-[2026-05-27 05:55:36.367 +02:00 AUT] quote-service Mark Manson
+[2026-05-28 05:42:03.341 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-28 05:42:03.341 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-28 05:42:03.341 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-28 05:42:03.341 +02:00 QOT] quote-service You just can't beat the person who never gives up.
+[2026-05-28 05:42:03.341 +02:00 AUT] quote-service Babe Ruth
 ```
 <!-- QUOTE_END -->
 
