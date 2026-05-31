@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-05-30 05:30:46.975 +02:00 INF] tip-service Fetching tip of the day...
-[2026-05-30 05:30:46.975 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-05-30 05:30:46.975 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-05-30 05:30:46.975 +02:00 TIP] tip-service Apply the strangler fig pattern to gradually replace a legacy system with a new one.
+[2026-05-31 05:57:14.738 +02:00 INF] tip-service Fetching tip of the day...
+[2026-05-31 05:57:14.738 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-05-31 05:57:14.738 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-05-31 05:57:14.738 +02:00 TIP] tip-service Use immutable infrastructure — replace servers instead of updating them in place.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-05-30 05:30:46.975 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-05-30 05:30:46.975 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-05-30 05:30:46.975 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-05-30 05:30:46.975 +02:00 QOT] quote-service Confidence is not a guarantee of success, but a pattern of thinking that will improve your likelihood of success, a tenacious search for ways to make things work.
-[2026-05-30 05:30:46.975 +02:00 AUT] quote-service John Eliot
+[2026-05-31 05:57:14.738 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-05-31 05:57:14.738 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-05-31 05:57:14.738 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-05-31 05:57:14.738 +02:00 QOT] quote-service First, solve the problem. Then, write the code.
+[2026-05-31 05:57:14.738 +02:00 AUT] quote-service John Johnson
 ```
 <!-- QUOTE_END -->
 
