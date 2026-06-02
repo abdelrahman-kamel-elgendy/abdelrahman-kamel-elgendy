@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-01 06:10:44.525 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-01 06:10:44.525 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-01 06:10:44.525 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-01 06:10:44.525 +02:00 TIP] tip-service Implement multi-region deployment for high availability and disaster recovery.
+[2026-06-02 06:04:07.896 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-02 06:04:07.896 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-02 06:04:07.896 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-02 06:04:07.896 +02:00 TIP] tip-service Use write-behind caching to batch database writes for improved throughput.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-01 06:10:44.525 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-01 06:10:44.525 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-01 06:10:44.525 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-01 06:10:44.525 +02:00 QOT] quote-service Continuous effort - not strength or intelligence - is the key to unlocking our potential.
-[2026-06-01 06:10:44.525 +02:00 AUT] quote-service Winston Churchill
+[2026-06-02 06:04:07.896 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-02 06:04:07.896 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-02 06:04:07.896 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-02 06:04:07.896 +02:00 QOT] quote-service The only thing worse than being blind is having sight but no vision.
+[2026-06-02 06:04:07.896 +02:00 AUT] quote-service Helen Keller
 ```
 <!-- QUOTE_END -->
 
