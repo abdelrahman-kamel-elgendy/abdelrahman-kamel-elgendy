@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-03 06:13:32.069 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-03 06:13:32.069 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-03 06:13:32.069 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-03 06:13:32.069 +02:00 TIP] tip-service Apply the ambassador pattern to handle cross-cutting concerns like auth and logging in a proxy.
+[2026-06-04 06:06:55.747 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-04 06:06:55.747 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-04 06:06:55.747 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-04 06:06:55.747 +02:00 TIP] tip-service Use event replay to rebuild read models or migrate data to a new format.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-03 06:13:32.069 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-03 06:13:32.069 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-03 06:13:32.069 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-03 06:13:32.069 +02:00 QOT] quote-service You are always your own best guru, your own best teacher, the answers are always inside you.
-[2026-06-03 06:13:32.069 +02:00 AUT] quote-service Sathya Sai Baba
+[2026-06-04 06:06:55.747 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-04 06:06:55.747 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-04 06:06:55.747 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-04 06:06:55.747 +02:00 QOT] quote-service Expect the best of yourself, and then do what is necessary to make it a reality.
+[2026-06-04 06:06:55.747 +02:00 AUT] quote-service Ralph Marston
 ```
 <!-- QUOTE_END -->
 
