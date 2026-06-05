@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-04 06:06:55.747 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-04 06:06:55.747 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-04 06:06:55.747 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-04 06:06:55.747 +02:00 TIP] tip-service Use event replay to rebuild read models or migrate data to a new format.
+[2026-06-05 05:53:16.593 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-05 05:53:16.593 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-05 05:53:16.593 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-05 05:53:16.593 +02:00 TIP] tip-service Implement zero-downtime database migrations using expand-contract pattern.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-04 06:06:55.747 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-04 06:06:55.747 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-04 06:06:55.747 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-04 06:06:55.747 +02:00 QOT] quote-service Expect the best of yourself, and then do what is necessary to make it a reality.
-[2026-06-04 06:06:55.747 +02:00 AUT] quote-service Ralph Marston
+[2026-06-05 05:53:16.593 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-05 05:53:16.593 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-05 05:53:16.593 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-05 05:53:16.593 +02:00 QOT] quote-service One of the most difficult things is not to change society - but to change yourself.
+[2026-06-05 05:53:16.593 +02:00 AUT] quote-service Nelson Mandela
 ```
 <!-- QUOTE_END -->
 
