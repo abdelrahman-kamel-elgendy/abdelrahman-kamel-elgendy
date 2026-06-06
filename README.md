@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-05 05:53:16.593 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-05 05:53:16.593 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-05 05:53:16.593 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-05 05:53:16.593 +02:00 TIP] tip-service Implement zero-downtime database migrations using expand-contract pattern.
+[2026-06-06 05:35:13.233 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-06 05:35:13.233 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-06 05:35:13.233 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-06 05:35:13.233 +02:00 TIP] tip-service Use consistent hashing to distribute load evenly across cache nodes.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-05 05:53:16.593 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-05 05:53:16.593 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-05 05:53:16.593 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-05 05:53:16.593 +02:00 QOT] quote-service One of the most difficult things is not to change society - but to change yourself.
-[2026-06-05 05:53:16.593 +02:00 AUT] quote-service Nelson Mandela
+[2026-06-06 05:35:13.233 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-06 05:35:13.233 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-06 05:35:13.233 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-06 05:35:13.233 +02:00 QOT] quote-service The man who asks a question is a fool for a minute, the man who does not ask is a fool for life.
+[2026-06-06 05:35:13.233 +02:00 AUT] quote-service Confucius
 ```
 <!-- QUOTE_END -->
 
