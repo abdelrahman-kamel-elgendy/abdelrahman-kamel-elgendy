@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-06 05:35:13.233 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-06 05:35:13.233 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-06 05:35:13.233 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-06 05:35:13.233 +02:00 TIP] tip-service Use consistent hashing to distribute load evenly across cache nodes.
+[2026-06-07 06:01:59.782 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-07 06:01:59.782 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-07 06:01:59.782 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-07 06:01:59.782 +02:00 TIP] tip-service Apply the sidecar pattern to attach helper processes (logging, monitoring) to your service.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-06 05:35:13.233 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-06 05:35:13.233 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-06 05:35:13.233 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-06 05:35:13.233 +02:00 QOT] quote-service The man who asks a question is a fool for a minute, the man who does not ask is a fool for life.
-[2026-06-06 05:35:13.233 +02:00 AUT] quote-service Confucius
+[2026-06-07 06:01:59.782 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-07 06:01:59.782 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-07 06:01:59.782 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-07 06:01:59.782 +02:00 QOT] quote-service A lot of people have gone further than they thought they could because someone else thought they could.
+[2026-06-07 06:01:59.782 +02:00 AUT] quote-service Zig Ziglar
 ```
 <!-- QUOTE_END -->
 
