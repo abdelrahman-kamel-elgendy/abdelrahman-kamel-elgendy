@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-08 06:06:06.107 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-08 06:06:06.107 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-08 06:06:06.107 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-08 06:06:06.107 +02:00 TIP] tip-service Use a time-series database (InfluxDB, TimescaleDB) for metrics and monitoring data.
+[2026-06-09 05:35:59.335 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-09 05:35:59.335 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-09 05:35:59.335 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-09 05:35:59.335 +02:00 TIP] tip-service Implement API response envelopes for consistency: { data, meta, errors }.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-08 06:06:06.107 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-08 06:06:06.107 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-08 06:06:06.107 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-08 06:06:06.107 +02:00 QOT] quote-service I like the dreams of the future better than the history of the past.
-[2026-06-08 06:06:06.107 +02:00 AUT] quote-service Thomas Jefferson
+[2026-06-09 05:35:59.335 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-09 05:35:59.335 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-09 05:35:59.335 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-09 05:35:59.335 +02:00 QOT] quote-service Given the choice between the experience of pain and nothing, I would choose pain.
+[2026-06-09 05:35:59.335 +02:00 AUT] quote-service William Faulkner
 ```
 <!-- QUOTE_END -->
 
