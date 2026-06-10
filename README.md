@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-09 05:35:59.335 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-09 05:35:59.335 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-09 05:35:59.335 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-09 05:35:59.335 +02:00 TIP] tip-service Implement API response envelopes for consistency: { data, meta, errors }.
+[2026-06-10 05:50:04.615 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-10 05:50:04.615 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-10 05:50:04.615 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-10 05:50:04.615 +02:00 TIP] tip-service Use database connection pooling with a max pool size appropriate for your server's resources.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-09 05:35:59.335 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-09 05:35:59.335 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-09 05:35:59.335 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-09 05:35:59.335 +02:00 QOT] quote-service Given the choice between the experience of pain and nothing, I would choose pain.
-[2026-06-09 05:35:59.335 +02:00 AUT] quote-service William Faulkner
+[2026-06-10 05:50:04.615 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-10 05:50:04.615 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-10 05:50:04.615 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-10 05:50:04.615 +02:00 QOT] quote-service Short cuts make long delays.
+[2026-06-10 05:50:04.615 +02:00 AUT] quote-service J.R.R. Tolkien
 ```
 <!-- QUOTE_END -->
 
