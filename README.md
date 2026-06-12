@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-11 06:03:22.706 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-11 06:03:22.706 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-11 06:03:22.706 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-11 06:03:22.706 +02:00 TIP] tip-service Apply the aggregator pattern to combine responses from multiple services into one.
+[2026-06-12 06:03:57.127 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-12 06:03:57.127 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-12 06:03:57.127 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-12 06:03:57.127 +02:00 TIP] tip-service Use GraphQL subscriptions for real-time data when you're already using GraphQL.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-11 06:03:22.706 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-11 06:03:22.706 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-11 06:03:22.706 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-11 06:03:22.706 +02:00 QOT] quote-service Every man desires to live long, but no man wishes to be old.
-[2026-06-11 06:03:22.706 +02:00 AUT] quote-service Jonathan Swift
+[2026-06-12 06:03:57.127 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-12 06:03:57.127 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-12 06:03:57.127 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-12 06:03:57.127 +02:00 QOT] quote-service The future depends on what you do today.
+[2026-06-12 06:03:57.127 +02:00 AUT] quote-service Mahatma Gandhi
 ```
 <!-- QUOTE_END -->
 
