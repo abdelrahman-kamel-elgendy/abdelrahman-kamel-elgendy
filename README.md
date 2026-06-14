@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-13 05:52:10.623 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-13 05:52:10.623 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-13 05:52:10.623 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-13 05:52:10.623 +02:00 TIP] tip-service Implement proper TLS certificate management and auto-renewal with Let's Encrypt.
+[2026-06-14 06:10:46.222 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-14 06:10:46.222 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-14 06:10:46.222 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-14 06:10:46.222 +02:00 TIP] tip-service Use a service registry (Consul, Eureka) for dynamic service discovery in microservices.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-13 05:52:10.623 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-13 05:52:10.623 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-13 05:52:10.623 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-13 05:52:10.623 +02:00 QOT] quote-service You can't build a reputation on what you are going to do.
-[2026-06-13 05:52:10.623 +02:00 AUT] quote-service Henry Ford
+[2026-06-14 06:10:46.222 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-14 06:10:46.222 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-14 06:10:46.222 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-14 06:10:46.222 +02:00 QOT] quote-service Anger begins with folly, and ends with repentance.
+[2026-06-14 06:10:46.222 +02:00 AUT] quote-service Beverly Sills
 ```
 <!-- QUOTE_END -->
 
