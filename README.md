@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-16 06:16:18.065 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-16 06:16:18.065 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-16 06:16:18.065 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-16 06:16:18.065 +02:00 TIP] tip-service Use database streaming for processing large result sets without loading them into memory.
+[2026-06-17 06:12:59.067 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-17 06:12:59.067 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-17 06:12:59.067 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-17 06:12:59.067 +02:00 TIP] tip-service Implement rate limiting per user, per IP, and per endpoint for fine-grained control.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-16 06:16:18.065 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-16 06:16:18.065 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-16 06:16:18.065 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-16 06:16:18.065 +02:00 QOT] quote-service The road to success is always under construction..
-[2026-06-16 06:16:18.065 +02:00 AUT] quote-service Lily Tomlin
+[2026-06-17 06:12:59.067 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-17 06:12:59.067 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-17 06:12:59.067 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-17 06:12:59.067 +02:00 QOT] quote-service Never whine, never complain, never try to justify yourself.
+[2026-06-17 06:12:59.067 +02:00 AUT] quote-service Robert Greene
 ```
 <!-- QUOTE_END -->
 
