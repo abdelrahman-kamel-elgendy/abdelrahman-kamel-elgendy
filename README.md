@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-18 06:04:02.714 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-18 06:04:02.714 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-18 06:04:02.714 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-18 06:04:02.714 +02:00 TIP] tip-service Use a proxy cache like Nginx for caching responses from your application server.
+[2026-06-19 06:22:57.676 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-19 06:22:57.676 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-19 06:22:57.676 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-19 06:22:57.676 +02:00 TIP] tip-service Apply the backends for frontends (BFF) pattern to tailor APIs to specific client needs.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-18 06:04:02.714 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-18 06:04:02.714 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-18 06:04:02.714 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-18 06:04:02.714 +02:00 QOT] quote-service First, solve the problem. Then, write the code.
-[2026-06-18 06:04:02.714 +02:00 AUT] quote-service John Johnson
+[2026-06-19 06:22:57.676 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-19 06:22:57.676 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-19 06:22:57.676 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-19 06:22:57.676 +02:00 QOT] quote-service All we have to decide is what to do with the time that is given to us.
+[2026-06-19 06:22:57.676 +02:00 AUT] quote-service J.R.R. Tolkien
 ```
 <!-- QUOTE_END -->
 
