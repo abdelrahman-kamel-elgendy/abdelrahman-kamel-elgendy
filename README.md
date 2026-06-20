@@ -135,9 +135,11 @@ stack:
 --  from github.db
 -- ──────────────────────────────────
 SELECT
+    total_stars,
     total_commits,
     pull_requests,
-    repositories,
+    total_issues,
+    contributed_to,
     current_streak,
     longest_streak,
     top_languages
