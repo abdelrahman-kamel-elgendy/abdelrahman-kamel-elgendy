@@ -201,10 +201,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-19 06:22:57.676 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-19 06:22:57.676 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-19 06:22:57.676 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-19 06:22:57.676 +02:00 TIP] tip-service Apply the backends for frontends (BFF) pattern to tailor APIs to specific client needs.
+[2026-06-20 05:45:30.784 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-20 05:45:30.784 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-20 05:45:30.784 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-20 05:45:30.784 +02:00 TIP] tip-service Use a distributed lock (Redis Redlock) to prevent concurrent execution of critical sections.
 ```
 <!-- TIP_END -->
  
@@ -215,11 +215,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-19 06:22:57.676 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-19 06:22:57.676 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-19 06:22:57.676 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-19 06:22:57.676 +02:00 QOT] quote-service All we have to decide is what to do with the time that is given to us.
-[2026-06-19 06:22:57.676 +02:00 AUT] quote-service J.R.R. Tolkien
+[2026-06-20 05:45:30.784 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-20 05:45:30.784 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-20 05:45:30.784 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-20 05:45:30.784 +02:00 QOT] quote-service Let us rather run the risk of wearing out than rusting out.
+[2026-06-20 05:45:30.784 +02:00 AUT] quote-service Theodore Roosevelt
 ```
 <!-- QUOTE_END -->
 
