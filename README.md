@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-21 06:18:18.849 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-21 06:18:18.849 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-21 06:18:18.849 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-21 06:18:18.849 +02:00 TIP] tip-service Implement request coalescing to combine multiple identical requests into one upstream call.
+[2026-06-22 06:20:04.194 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-22 06:20:04.194 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-22 06:20:04.194 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-22 06:20:04.194 +02:00 TIP] tip-service Use database replication lag monitoring to detect when replicas fall behind.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-21 06:18:18.849 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-21 06:18:18.849 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-21 06:18:18.849 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-21 06:18:18.849 +02:00 QOT] quote-service Only when you can be extremely pliable and soft can you be extremely hard and strong.
-[2026-06-21 06:18:18.849 +02:00 AUT] quote-service Zen Proverb
+[2026-06-22 06:20:04.194 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-22 06:20:04.194 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-22 06:20:04.194 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-22 06:20:04.194 +02:00 QOT] quote-service Argue for your limitations and sure enough, they're yours.
+[2026-06-22 06:20:04.194 +02:00 AUT] quote-service Richard Bach
 ```
 <!-- QUOTE_END -->
 
