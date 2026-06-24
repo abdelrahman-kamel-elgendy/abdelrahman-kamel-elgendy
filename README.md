@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-23 05:38:21.685 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-23 05:38:21.685 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-23 05:38:21.685 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-23 05:38:21.685 +02:00 TIP] tip-service Apply the throttle pattern to limit resource consumption per user or tenant.
+[2026-06-24 05:39:24.750 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-24 05:39:24.750 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-24 05:39:24.750 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-24 05:39:24.750 +02:00 TIP] tip-service Use async database drivers to prevent blocking your event loop in Node.js applications.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-23 05:38:21.685 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-23 05:38:21.685 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-23 05:38:21.685 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-23 05:38:21.685 +02:00 QOT] quote-service You may be one person in this world, but to one person you may mean the world.
-[2026-06-23 05:38:21.685 +02:00 AUT] quote-service Unknown
+[2026-06-24 05:39:24.750 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-24 05:39:24.750 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-24 05:39:24.750 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-24 05:39:24.750 +02:00 QOT] quote-service You're on earth. There's no cure for that.
+[2026-06-24 05:39:24.750 +02:00 AUT] quote-service Samuel Beckett
 ```
 <!-- QUOTE_END -->
 
