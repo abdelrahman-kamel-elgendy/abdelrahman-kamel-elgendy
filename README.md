@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-25 05:38:43.109 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-25 05:38:43.109 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-25 05:38:43.109 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-25 05:38:43.109 +02:00 TIP] tip-service Implement proper cascading deletes at the database level, not just in application code.
+[2026-06-26 05:49:09.231 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-26 05:49:09.231 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-26 05:49:09.231 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-26 05:49:09.231 +02:00 TIP] tip-service Use a content addressable storage approach for deduplicating file uploads.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-25 05:38:43.109 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-25 05:38:43.109 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-25 05:38:43.109 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-25 05:38:43.109 +02:00 QOT] quote-service The best fighter is never angry.
-[2026-06-25 05:38:43.109 +02:00 AUT] quote-service Lao Tzu
+[2026-06-26 05:49:09.231 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-26 05:49:09.231 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-26 05:49:09.231 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-26 05:49:09.231 +02:00 QOT] quote-service It is dangerous to be right in matters on which the established authorities are wrong.
+[2026-06-26 05:49:09.231 +02:00 AUT] quote-service Voltaire
 ```
 <!-- QUOTE_END -->
 
