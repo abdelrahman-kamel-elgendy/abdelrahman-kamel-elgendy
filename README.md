@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-27 05:32:12.990 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-27 05:32:12.990 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-27 05:32:12.990 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-27 05:32:12.990 +02:00 TIP] tip-service Apply the compensating transaction pattern to undo completed steps in a failed saga.
+[2026-06-28 05:55:20.930 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-28 05:55:20.930 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-28 05:55:20.930 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-28 05:55:20.930 +02:00 TIP] tip-service Use connection draining when shutting down service instances to avoid dropping requests.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-27 05:32:12.990 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-27 05:32:12.990 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-27 05:32:12.990 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-27 05:32:12.990 +02:00 QOT] quote-service Do Something. If it works, do more of it. If it doesn't, do something else.
-[2026-06-27 05:32:12.990 +02:00 AUT] quote-service Franklin D. Roosevelt
+[2026-06-28 05:55:20.930 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-28 05:55:20.930 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-28 05:55:20.930 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-28 05:55:20.930 +02:00 QOT] quote-service Truth is the offspring of silence and meditation.
+[2026-06-28 05:55:20.930 +02:00 AUT] quote-service Isaac Newton
 ```
 <!-- QUOTE_END -->
 
