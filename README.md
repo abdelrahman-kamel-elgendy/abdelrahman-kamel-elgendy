@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-28 05:55:20.930 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-28 05:55:20.930 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-28 05:55:20.930 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-28 05:55:20.930 +02:00 TIP] tip-service Use connection draining when shutting down service instances to avoid dropping requests.
+[2026-06-29 06:00:52.282 +02:00 INF] tip-service Fetching tip of the day...
+[2026-06-29 06:00:52.282 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-06-29 06:00:52.282 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-06-29 06:00:52.282 +02:00 TIP] tip-service Implement proper HTTP caching with Cache-Control headers to reduce load on your API.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-28 05:55:20.930 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-28 05:55:20.930 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-28 05:55:20.930 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-28 05:55:20.930 +02:00 QOT] quote-service Truth is the offspring of silence and meditation.
-[2026-06-28 05:55:20.930 +02:00 AUT] quote-service Isaac Newton
+[2026-06-29 06:00:52.282 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-06-29 06:00:52.282 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-06-29 06:00:52.282 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-06-29 06:00:52.282 +02:00 QOT] quote-service All leaders are readers.
+[2026-06-29 06:00:52.282 +02:00 AUT] quote-service Jim Rohn
 ```
 <!-- QUOTE_END -->
 
