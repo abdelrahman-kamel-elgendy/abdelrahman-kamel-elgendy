@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-06-30 05:42:42.298 +02:00 INF] tip-service Fetching tip of the day...
-[2026-06-30 05:42:42.298 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-06-30 05:42:42.298 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-06-30 05:42:42.298 +02:00 TIP] tip-service Use a search engine (Elasticsearch, Meilisearch) for full-text search instead of LIKE queries.
+[2026-07-01 05:58:51.493 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-01 05:58:51.493 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-01 05:58:51.493 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-01 05:58:51.493 +02:00 TIP] tip-service Apply the scatter-gather pattern to fan out requests and aggregate results.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-06-30 05:42:42.298 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-06-30 05:42:42.298 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-06-30 05:42:42.298 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-06-30 05:42:42.298 +02:00 QOT] quote-service To create more positive results in your life, replace 'if only' with 'next time'.
-[2026-06-30 05:42:42.298 +02:00 AUT] quote-service Celestine Chua
+[2026-07-01 05:58:51.493 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-01 05:58:51.493 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-01 05:58:51.493 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-01 05:58:51.493 +02:00 QOT] quote-service People who say it cannot be done should not interrupt those who are doing it.
+[2026-07-01 05:58:51.493 +02:00 AUT] quote-service George Bernard Shaw
 ```
 <!-- QUOTE_END -->
 
