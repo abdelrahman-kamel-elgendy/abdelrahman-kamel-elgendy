@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-01 05:58:51.493 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-01 05:58:51.493 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-01 05:58:51.493 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-01 05:58:51.493 +02:00 TIP] tip-service Apply the scatter-gather pattern to fan out requests and aggregate results.
+[2026-07-02 05:39:23.612 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-02 05:39:23.612 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-02 05:39:23.612 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-02 05:39:23.612 +02:00 TIP] tip-service Use database hot standby for fast failover with minimal data loss.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-01 05:58:51.493 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-01 05:58:51.493 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-01 05:58:51.493 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-01 05:58:51.493 +02:00 QOT] quote-service People who say it cannot be done should not interrupt those who are doing it.
-[2026-07-01 05:58:51.493 +02:00 AUT] quote-service George Bernard Shaw
+[2026-07-02 05:39:23.612 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-02 05:39:23.612 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-02 05:39:23.612 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-02 05:39:23.612 +02:00 QOT] quote-service No one ever said life was fair. Just Eventful.
+[2026-07-02 05:39:23.612 +02:00 AUT] quote-service Carol Burnett
 ```
 <!-- QUOTE_END -->
 
