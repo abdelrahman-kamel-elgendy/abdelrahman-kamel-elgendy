@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-02 05:39:23.612 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-02 05:39:23.612 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-02 05:39:23.612 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-02 05:39:23.612 +02:00 TIP] tip-service Use database hot standby for fast failover with minimal data loss.
+[2026-07-03 05:20:23.595 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-03 05:20:23.595 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-03 05:20:23.595 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-03 05:20:23.595 +02:00 TIP] tip-service Implement request hedging — send duplicate requests to multiple servers and use the fastest.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-02 05:39:23.612 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-02 05:39:23.612 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-02 05:39:23.612 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-02 05:39:23.612 +02:00 QOT] quote-service No one ever said life was fair. Just Eventful.
-[2026-07-02 05:39:23.612 +02:00 AUT] quote-service Carol Burnett
+[2026-07-03 05:20:23.595 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-03 05:20:23.595 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-03 05:20:23.595 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-03 05:20:23.595 +02:00 QOT] quote-service First, solve the problem. Then, write the code.
+[2026-07-03 05:20:23.595 +02:00 AUT] quote-service John Johnson
 ```
 <!-- QUOTE_END -->
 
