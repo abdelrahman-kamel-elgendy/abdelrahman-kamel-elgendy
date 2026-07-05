@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-04 05:14:28.972 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-04 05:14:28.972 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-04 05:14:28.972 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-04 05:14:28.972 +02:00 TIP] tip-service Use column store databases for analytics workloads requiring aggregation across many rows.
+[2026-07-05 05:29:22.672 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-05 05:29:22.672 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-05 05:29:22.672 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-05 05:29:22.672 +02:00 TIP] tip-service Apply the anti-corruption layer pattern when integrating with legacy systems.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-04 05:14:28.972 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-04 05:14:28.972 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-04 05:14:28.972 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-04 05:14:28.972 +02:00 QOT] quote-service Patience is bitter, but its fruit is sweet.
-[2026-07-04 05:14:28.972 +02:00 AUT] quote-service Aristotle
+[2026-07-05 05:29:22.672 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-05 05:29:22.672 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-05 05:29:22.672 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-05 05:29:22.672 +02:00 QOT] quote-service One of the advantages of being disorganized is that one is always having surprising discoveries.
+[2026-07-05 05:29:22.672 +02:00 AUT] quote-service A.A. Milne
 ```
 <!-- QUOTE_END -->
 
