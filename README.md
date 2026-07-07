@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-06 05:37:05.630 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-06 05:37:05.630 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-06 05:37:05.630 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-06 05:37:05.630 +02:00 TIP] tip-service Use advisory locks in PostgreSQL for application-level mutual exclusion.
+[2026-07-07 05:27:56.512 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-07 05:27:56.512 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-07 05:27:56.512 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-07 05:27:56.512 +02:00 TIP] tip-service Implement proper 4xx vs 5xx error handling — 4xx is the client's fault, 5xx is yours.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-06 05:37:05.630 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-06 05:37:05.630 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-06 05:37:05.630 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-06 05:37:05.630 +02:00 QOT] quote-service Don't take yourself too seriously, pretty soon you can find the humor in our everyday lives.
-[2026-07-06 05:37:05.630 +02:00 AUT] quote-service Betty White
+[2026-07-07 05:27:56.512 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-07 05:27:56.512 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-07 05:27:56.512 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-07 05:27:56.512 +02:00 QOT] quote-service It is easy to love your friend, but sometimes the hardest lesson to learn is to love your enemy.
+[2026-07-07 05:27:56.512 +02:00 AUT] quote-service Sun Tzu
 ```
 <!-- QUOTE_END -->
 
