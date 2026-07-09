@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-08 04:44:50.901 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-08 04:44:50.901 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-08 04:44:50.901 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-08 04:44:50.901 +02:00 TIP] tip-service Use a workflow engine (Temporal, Conductor) for long-running, multi-step business processes.
+[2026-07-09 05:21:18.962 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-09 05:21:18.962 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-09 05:21:18.962 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-09 05:21:18.962 +02:00 TIP] tip-service Apply the cache-aside pattern to manually manage what gets cached and when.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-08 04:44:50.901 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-08 04:44:50.901 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-08 04:44:50.901 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-08 04:44:50.901 +02:00 QOT] quote-service Letting go means to come to the realization that some people are a part of your history, but not a part of your destiny.
-[2026-07-08 04:44:50.901 +02:00 AUT] quote-service Steve Maraboli
+[2026-07-09 05:21:18.962 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-09 05:21:18.962 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-09 05:21:18.962 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-09 05:21:18.962 +02:00 QOT] quote-service When you've got nothing, you've got nothing to lose.
+[2026-07-09 05:21:18.962 +02:00 AUT] quote-service Bob Dylan
 ```
 <!-- QUOTE_END -->
 
