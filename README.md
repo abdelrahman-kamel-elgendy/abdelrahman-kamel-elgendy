@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-10 05:23:28.702 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-10 05:23:28.702 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-10 05:23:28.702 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-10 05:23:28.702 +02:00 TIP] tip-service Use partial responses (sparse fieldsets) to let clients request only the fields they need.
+[2026-07-11 04:41:44.807 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-11 04:41:44.807 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-11 04:41:44.807 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-11 04:41:44.807 +02:00 TIP] tip-service Implement change data capture (CDC) to stream database changes to other systems.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-10 05:23:28.702 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-10 05:23:28.702 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-10 05:23:28.702 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-10 05:23:28.702 +02:00 QOT] quote-service When something comes from within, when it is a part of you, you have no choice but to live it, to express it.
-[2026-07-10 05:23:28.702 +02:00 AUT] quote-service Kamal Ravikant
+[2026-07-11 04:41:44.807 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-11 04:41:44.807 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-11 04:41:44.807 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-11 04:41:44.807 +02:00 QOT] quote-service Stuff your eyes with wonder... live as if you'd drop dead in ten seconds. See the world. It's more fantastic than any dream made or paid for in factories.
+[2026-07-11 04:41:44.807 +02:00 AUT] quote-service Ray Bradbury
 ```
 <!-- QUOTE_END -->
 
