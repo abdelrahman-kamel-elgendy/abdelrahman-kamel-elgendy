@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-12 04:49:37.312 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-12 04:49:37.312 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-12 04:49:37.312 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-12 04:49:37.312 +02:00 TIP] tip-service Use a graph database (Neo4j) for data with complex, deeply nested relationships.
+[2026-07-13 04:51:07.093 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-13 04:51:07.093 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-13 04:51:07.093 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-13 04:51:07.093 +02:00 TIP] tip-service Apply the proxy pattern to add behavior (auth, logging) transparently to a service.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-12 04:49:37.312 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-12 04:49:37.312 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-12 04:49:37.312 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-12 04:49:37.312 +02:00 QOT] quote-service Success is a consequence and must not be a goal.
-[2026-07-12 04:49:37.312 +02:00 AUT] quote-service Gustave Flaubert
+[2026-07-13 04:51:07.093 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-13 04:51:07.093 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-13 04:51:07.093 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-13 04:51:07.093 +02:00 QOT] quote-service Words, once they are printed, have a life of their own.
+[2026-07-13 04:51:07.093 +02:00 AUT] quote-service Carol Burnett
 ```
 <!-- QUOTE_END -->
 
