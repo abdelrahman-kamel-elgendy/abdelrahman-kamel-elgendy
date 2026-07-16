@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-15 04:30:25.109 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-15 04:30:25.109 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-15 04:30:25.109 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-15 04:30:25.109 +02:00 TIP] tip-service Implement webhook retries with exponential backoff and a dead letter queue for failures.
+[2026-07-16 04:38:35.783 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-16 04:38:35.783 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-16 04:38:35.783 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-16 04:38:35.783 +02:00 TIP] tip-service Use server-side cursors for iterating large datasets without loading everything into memory.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-15 04:30:25.109 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-15 04:30:25.109 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-15 04:30:25.109 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-15 04:30:25.109 +02:00 QOT] quote-service First, solve the problem. Then, write the code.
-[2026-07-15 04:30:25.109 +02:00 AUT] quote-service John Johnson
+[2026-07-16 04:38:35.783 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-16 04:38:35.783 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-16 04:38:35.783 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-16 04:38:35.783 +02:00 QOT] quote-service Knowing others is wisdom, knowing yourself is enlightenment.
+[2026-07-16 04:38:35.783 +02:00 AUT] quote-service Lao Tzu
 ```
 <!-- QUOTE_END -->
 
