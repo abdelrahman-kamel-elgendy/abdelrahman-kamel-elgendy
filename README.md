@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-16 04:38:35.783 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-16 04:38:35.783 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-16 04:38:35.783 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-16 04:38:35.783 +02:00 TIP] tip-service Use server-side cursors for iterating large datasets without loading everything into memory.
+[2026-07-17 04:41:15.790 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-17 04:41:15.790 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-17 04:41:15.790 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-17 04:41:15.790 +02:00 TIP] tip-service Apply the correlation ID pattern to link logs across services for a single user request.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-16 04:38:35.783 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-16 04:38:35.783 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-16 04:38:35.783 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-16 04:38:35.783 +02:00 QOT] quote-service Knowing others is wisdom, knowing yourself is enlightenment.
-[2026-07-16 04:38:35.783 +02:00 AUT] quote-service Lao Tzu
+[2026-07-17 04:41:15.790 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-17 04:41:15.790 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-17 04:41:15.790 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-17 04:41:15.790 +02:00 QOT] quote-service Death and life have their determined appointments; riches and honors depend upon heaven.
+[2026-07-17 04:41:15.790 +02:00 AUT] quote-service Confucius
 ```
 <!-- QUOTE_END -->
 
