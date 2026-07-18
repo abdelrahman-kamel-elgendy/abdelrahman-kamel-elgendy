@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-17 04:41:15.790 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-17 04:41:15.790 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-17 04:41:15.790 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-17 04:41:15.790 +02:00 TIP] tip-service Apply the correlation ID pattern to link logs across services for a single user request.
+[2026-07-18 04:32:00.663 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-18 04:32:00.663 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-18 04:32:00.663 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-18 04:32:00.663 +02:00 TIP] tip-service Use database connection health checks to detect and remove stale connections from the pool.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-17 04:41:15.790 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-17 04:41:15.790 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-17 04:41:15.790 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-17 04:41:15.790 +02:00 QOT] quote-service Death and life have their determined appointments; riches and honors depend upon heaven.
-[2026-07-17 04:41:15.790 +02:00 AUT] quote-service Confucius
+[2026-07-18 04:32:00.663 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-18 04:32:00.663 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-18 04:32:00.663 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-18 04:32:00.663 +02:00 QOT] quote-service Would you rather live your life according to the approval of others or aligned with your truth and your dreams?
+[2026-07-18 04:32:00.663 +02:00 AUT] quote-service Robin Sharma
 ```
 <!-- QUOTE_END -->
 
