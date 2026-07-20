@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-19 04:46:12.964 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-19 04:46:12.964 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-19 04:46:12.964 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-19 04:46:12.964 +02:00 TIP] tip-service Implement proper multipart file upload handling with size and type validation.
+[2026-07-20 05:38:41.365 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-20 05:38:41.365 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-20 05:38:41.365 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-20 05:38:41.365 +02:00 TIP] tip-service Use a policy engine (OPA, Casbin) for complex authorization rules instead of if-else chains.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-19 04:46:12.964 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-19 04:46:12.964 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-19 04:46:12.964 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-19 04:46:12.964 +02:00 QOT] quote-service The truth... It is a beautiful and terrible thing, and should therefore be treated with great caution.
-[2026-07-19 04:46:12.964 +02:00 AUT] quote-service Albus Dumbledore
+[2026-07-20 05:38:41.365 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-20 05:38:41.365 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-20 05:38:41.365 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-20 05:38:41.365 +02:00 QOT] quote-service An action committed in anger is an action doomed to failure.
+[2026-07-20 05:38:41.365 +02:00 AUT] quote-service Genghis Khan
 ```
 <!-- QUOTE_END -->
 
