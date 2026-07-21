@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-20 05:38:41.365 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-20 05:38:41.365 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-20 05:38:41.365 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-20 05:38:41.365 +02:00 TIP] tip-service Use a policy engine (OPA, Casbin) for complex authorization rules instead of if-else chains.
+[2026-07-21 04:43:50.128 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-21 04:43:50.128 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-21 04:43:50.128 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-21 04:43:50.128 +02:00 TIP] tip-service Apply the retry budget pattern to prevent too many retries from overwhelming a service.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-20 05:38:41.365 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-20 05:38:41.365 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-20 05:38:41.365 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-20 05:38:41.365 +02:00 QOT] quote-service An action committed in anger is an action doomed to failure.
-[2026-07-20 05:38:41.365 +02:00 AUT] quote-service Genghis Khan
+[2026-07-21 04:43:50.128 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-21 04:43:50.128 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-21 04:43:50.128 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-21 04:43:50.128 +02:00 QOT] quote-service Do Something. If it works, do more of it. If it doesn't, do something else.
+[2026-07-21 04:43:50.128 +02:00 AUT] quote-service Franklin D. Roosevelt
 ```
 <!-- QUOTE_END -->
 
