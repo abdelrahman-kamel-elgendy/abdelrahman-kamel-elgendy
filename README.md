@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-22 04:41:33.991 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-22 04:41:33.991 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-22 04:41:33.991 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-22 04:41:33.991 +02:00 TIP] tip-service Use point-in-time recovery (PITR) for databases to restore to any moment in time.
+[2026-07-23 04:46:50.918 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-23 04:46:50.918 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-23 04:46:50.918 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-23 04:46:50.918 +02:00 TIP] tip-service Implement audit logging for all write operations in sensitive domains.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-22 04:41:33.991 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-22 04:41:33.991 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-22 04:41:33.991 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-22 04:41:33.991 +02:00 QOT] quote-service Nothing makes a man broad-minded like adversity.
-[2026-07-22 04:41:33.991 +02:00 AUT] quote-service Will Rogers
+[2026-07-23 04:46:50.918 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-23 04:46:50.918 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-23 04:46:50.918 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-23 04:46:50.918 +02:00 QOT] quote-service You have the potential for greatness.
+[2026-07-23 04:46:50.918 +02:00 AUT] quote-service Steve Harvey
 ```
 <!-- QUOTE_END -->
 
