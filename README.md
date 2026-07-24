@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-23 04:46:50.918 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-23 04:46:50.918 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-23 04:46:50.918 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-23 04:46:50.918 +02:00 TIP] tip-service Implement audit logging for all write operations in sensitive domains.
+[2026-07-24 04:42:31.452 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-24 04:42:31.452 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-24 04:42:31.452 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-24 04:42:31.452 +02:00 TIP] tip-service Use a cache warming strategy to pre-populate caches after a deployment.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-23 04:46:50.918 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-23 04:46:50.918 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-23 04:46:50.918 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-23 04:46:50.918 +02:00 QOT] quote-service You have the potential for greatness.
-[2026-07-23 04:46:50.918 +02:00 AUT] quote-service Steve Harvey
+[2026-07-24 04:42:31.452 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-24 04:42:31.452 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-24 04:42:31.452 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-24 04:42:31.452 +02:00 QOT] quote-service Change is hard at first, messy in the middle and gorgeous at the end.
+[2026-07-24 04:42:31.452 +02:00 AUT] quote-service Robin Sharma
 ```
 <!-- QUOTE_END -->
 
