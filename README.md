@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-24 04:42:31.452 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-24 04:42:31.452 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-24 04:42:31.452 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-24 04:42:31.452 +02:00 TIP] tip-service Use a cache warming strategy to pre-populate caches after a deployment.
+[2026-07-25 04:41:20.132 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-25 04:41:20.132 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-25 04:41:20.132 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-25 04:41:20.132 +02:00 TIP] tip-service Apply the command pattern to encapsulate operations as objects for queuing and logging.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-24 04:42:31.452 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-24 04:42:31.452 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-24 04:42:31.452 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-24 04:42:31.452 +02:00 QOT] quote-service Change is hard at first, messy in the middle and gorgeous at the end.
-[2026-07-24 04:42:31.452 +02:00 AUT] quote-service Robin Sharma
+[2026-07-25 04:41:20.132 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-25 04:41:20.132 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-25 04:41:20.132 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-25 04:41:20.132 +02:00 QOT] quote-service It is amazing what you can accomplish if you do not care who gets the credit.
+[2026-07-25 04:41:20.132 +02:00 AUT] quote-service Harry S. Truman
 ```
 <!-- QUOTE_END -->
 
