@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-25 04:41:20.132 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-25 04:41:20.132 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-25 04:41:20.132 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-25 04:41:20.132 +02:00 TIP] tip-service Apply the command pattern to encapsulate operations as objects for queuing and logging.
+[2026-07-26 04:49:55.454 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-26 04:49:55.454 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-26 04:49:55.454 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-26 04:49:55.454 +02:00 TIP] tip-service Use database query hints sparingly — they can make the optimizer's job harder.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-25 04:41:20.132 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-25 04:41:20.132 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-25 04:41:20.132 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-25 04:41:20.132 +02:00 QOT] quote-service It is amazing what you can accomplish if you do not care who gets the credit.
-[2026-07-25 04:41:20.132 +02:00 AUT] quote-service Harry S. Truman
+[2026-07-26 04:49:55.454 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-26 04:49:55.454 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-26 04:49:55.454 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-26 04:49:55.454 +02:00 QOT] quote-service Let us rather run the risk of wearing out than rusting out.
+[2026-07-26 04:49:55.454 +02:00 AUT] quote-service Theodore Roosevelt
 ```
 <!-- QUOTE_END -->
 
