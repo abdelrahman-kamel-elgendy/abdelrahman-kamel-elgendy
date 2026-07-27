@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-26 04:49:55.454 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-26 04:49:55.454 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-26 04:49:55.454 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-26 04:49:55.454 +02:00 TIP] tip-service Use database query hints sparingly — they can make the optimizer's job harder.
+[2026-07-27 04:57:39.722 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-27 04:57:39.722 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-27 04:57:39.722 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-27 04:57:39.722 +02:00 TIP] tip-service Implement proper ACID compliance verification in your transaction-heavy workflows.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-26 04:49:55.454 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-26 04:49:55.454 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-26 04:49:55.454 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-26 04:49:55.454 +02:00 QOT] quote-service Let us rather run the risk of wearing out than rusting out.
-[2026-07-26 04:49:55.454 +02:00 AUT] quote-service Theodore Roosevelt
+[2026-07-27 04:57:39.722 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-27 04:57:39.722 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-27 04:57:39.722 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-27 04:57:39.722 +02:00 QOT] quote-service But better die than live mechanically a life that is a repetition of repetitions.
+[2026-07-27 04:57:39.722 +02:00 AUT] quote-service D. H. Lawrence
 ```
 <!-- QUOTE_END -->
 
