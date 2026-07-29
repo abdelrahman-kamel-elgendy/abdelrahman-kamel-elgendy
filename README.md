@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-28 04:34:14.520 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-28 04:34:14.520 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-28 04:34:14.520 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-28 04:34:14.520 +02:00 TIP] tip-service Use a feature store for managing and serving machine learning features at scale.
+[2026-07-29 04:40:12.436 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-29 04:40:12.436 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-29 04:40:12.436 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-29 04:40:12.436 +02:00 TIP] tip-service Apply the claim check pattern to pass large payloads by reference instead of by value.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-28 04:34:14.520 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-28 04:34:14.520 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-28 04:34:14.520 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-28 04:34:14.520 +02:00 QOT] quote-service Be kind, for everyone you meet is fighting a harder battle.
-[2026-07-28 04:34:14.520 +02:00 AUT] quote-service Plato
+[2026-07-29 04:40:12.436 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-29 04:40:12.436 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-29 04:40:12.436 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-29 04:40:12.436 +02:00 QOT] quote-service If you let your head get too big, it'll break your neck.
+[2026-07-29 04:40:12.436 +02:00 AUT] quote-service Elvis Presley
 ```
 <!-- QUOTE_END -->
 
