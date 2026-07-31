@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-30 04:26:21.795 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-30 04:26:21.795 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-30 04:26:21.795 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-30 04:26:21.795 +02:00 TIP] tip-service Use query result streaming to send data to clients as it arrives from the database.
+[2026-07-31 04:51:24.267 +02:00 INF] tip-service Fetching tip of the day...
+[2026-07-31 04:51:24.267 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-07-31 04:51:24.267 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-07-31 04:51:24.267 +02:00 TIP] tip-service Implement database query whitelisting in production to prevent arbitrary query execution.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-30 04:26:21.795 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-30 04:26:21.795 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-30 04:26:21.795 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-30 04:26:21.795 +02:00 QOT] quote-service It isn't that they can't see the solution. It is that they can't see the problem.
-[2026-07-30 04:26:21.795 +02:00 AUT] quote-service Gilbert Chesterton
+[2026-07-31 04:51:24.267 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-07-31 04:51:24.267 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-07-31 04:51:24.267 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-07-31 04:51:24.267 +02:00 QOT] quote-service New beginnings are disguised as painful endings.
+[2026-07-31 04:51:24.267 +02:00 AUT] quote-service Lao Tzu
 ```
 <!-- QUOTE_END -->
 
