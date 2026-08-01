@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-07-31 04:51:24.267 +02:00 INF] tip-service Fetching tip of the day...
-[2026-07-31 04:51:24.267 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-07-31 04:51:24.267 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-07-31 04:51:24.267 +02:00 TIP] tip-service Implement database query whitelisting in production to prevent arbitrary query execution.
+[2026-08-01 04:50:12.092 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-01 04:50:12.092 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-01 04:50:12.092 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-01 04:50:12.092 +02:00 TIP] tip-service Use a scheduler with lock (e.g. quartz with a DB lock) to prevent duplicate job runs in a cluster.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-07-31 04:51:24.267 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-07-31 04:51:24.267 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-07-31 04:51:24.267 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-07-31 04:51:24.267 +02:00 QOT] quote-service New beginnings are disguised as painful endings.
-[2026-07-31 04:51:24.267 +02:00 AUT] quote-service Lao Tzu
+[2026-08-01 04:50:12.092 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-01 04:50:12.092 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-01 04:50:12.092 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-01 04:50:12.092 +02:00 QOT] quote-service Expect the best of yourself, and then do what is necessary to make it a reality.
+[2026-08-01 04:50:12.092 +02:00 AUT] quote-service Ralph Marston
 ```
 <!-- QUOTE_END -->
 
