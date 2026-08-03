@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-02 04:49:19.629 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-02 04:49:19.629 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-02 04:49:19.629 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-02 04:49:19.629 +02:00 TIP] tip-service Apply the API facade pattern to simplify complex subsystems behind a clean interface.
+[2026-08-03 04:50:25.987 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-03 04:50:25.987 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-03 04:50:25.987 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-03 04:50:25.987 +02:00 TIP] tip-service Use document databases (MongoDB) for highly variable or nested data structures.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-02 04:49:19.629 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-02 04:49:19.629 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-02 04:49:19.629 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-02 04:49:19.629 +02:00 QOT] quote-service Yesterday is history, tomorrow is a mystery, today is God's gift, that's why we call it the present.
-[2026-08-02 04:49:19.629 +02:00 AUT] quote-service Joan Rivers
+[2026-08-03 04:50:25.987 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-03 04:50:25.987 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-03 04:50:25.987 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-03 04:50:25.987 +02:00 QOT] quote-service It all depends on what you choose to believe.
+[2026-08-03 04:50:25.987 +02:00 AUT] quote-service Spencer Johnson
 ```
 <!-- QUOTE_END -->
 
