@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-03 04:50:25.987 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-03 04:50:25.987 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-03 04:50:25.987 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-03 04:50:25.987 +02:00 TIP] tip-service Use document databases (MongoDB) for highly variable or nested data structures.
+[2026-08-04 04:33:48.933 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-04 04:33:48.933 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-04 04:33:48.933 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-04 04:33:48.933 +02:00 TIP] tip-service Implement proper back-pressure handling in your streaming pipelines.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-03 04:50:25.987 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-03 04:50:25.987 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-03 04:50:25.987 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-03 04:50:25.987 +02:00 QOT] quote-service It all depends on what you choose to believe.
-[2026-08-03 04:50:25.987 +02:00 AUT] quote-service Spencer Johnson
+[2026-08-04 04:33:48.933 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-04 04:33:48.933 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-04 04:33:48.933 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-04 04:33:48.933 +02:00 QOT] quote-service Love never keeps a man from pursuing his destiny.
+[2026-08-04 04:33:48.933 +02:00 AUT] quote-service Paulo Coelho
 ```
 <!-- QUOTE_END -->
 
