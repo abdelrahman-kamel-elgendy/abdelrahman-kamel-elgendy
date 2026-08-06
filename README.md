@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-05 04:32:55.524 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-05 04:32:55.524 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-05 04:32:55.524 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-05 04:32:55.524 +02:00 TIP] tip-service Use rolling deployments to update instances gradually and detect issues early.
+[2026-08-06 04:35:38.433 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-06 04:35:38.433 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-06 04:35:38.433 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-06 04:35:38.433 +02:00 TIP] tip-service Apply the chain of responsibility pattern to process requests through a pipeline of handlers.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-05 04:32:55.524 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-05 04:32:55.524 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-05 04:32:55.524 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-05 04:32:55.524 +02:00 QOT] quote-service It is the nature of the wise to resist pleasures, but the foolish to be a slave to them.
-[2026-08-05 04:32:55.524 +02:00 AUT] quote-service Epictetus
+[2026-08-06 04:35:38.433 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-06 04:35:38.433 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-06 04:35:38.433 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-06 04:35:38.433 +02:00 QOT] quote-service Talk sense to a fool and he calls you foolish.
+[2026-08-06 04:35:38.433 +02:00 AUT] quote-service Euripides
 ```
 <!-- QUOTE_END -->
 
