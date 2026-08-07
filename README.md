@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-06 04:35:38.433 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-06 04:35:38.433 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-06 04:35:38.433 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-06 04:35:38.433 +02:00 TIP] tip-service Apply the chain of responsibility pattern to process requests through a pipeline of handlers.
+[2026-08-07 04:40:47.876 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-07 04:40:47.876 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-07 04:40:47.876 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-07 04:40:47.876 +02:00 TIP] tip-service Use database query parameterization even for non-user-input values as a best practice.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-06 04:35:38.433 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-06 04:35:38.433 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-06 04:35:38.433 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-06 04:35:38.433 +02:00 QOT] quote-service Talk sense to a fool and he calls you foolish.
-[2026-08-06 04:35:38.433 +02:00 AUT] quote-service Euripides
+[2026-08-07 04:40:47.876 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-07 04:40:47.876 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-07 04:40:47.876 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-07 04:40:47.876 +02:00 QOT] quote-service Ability is a poor man's wealth.
+[2026-08-07 04:40:47.876 +02:00 AUT] quote-service John Wooden
 ```
 <!-- QUOTE_END -->
 
