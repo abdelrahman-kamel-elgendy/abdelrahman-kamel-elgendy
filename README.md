@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-08 03:40:32.373 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-08 03:40:32.373 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-08 03:40:32.373 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-08 03:40:32.373 +02:00 TIP] tip-service Implement proper session fixation prevention by regenerating session IDs after login.
+[2026-08-09 03:45:39.737 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-09 03:45:39.737 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-09 03:45:39.737 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-09 03:45:39.737 +02:00 TIP] tip-service Use multi-version concurrency control (MVCC) databases for high-read, high-write workloads.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-08 03:40:32.373 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-08 03:40:32.373 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-08 03:40:32.373 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-08 03:40:32.373 +02:00 QOT] quote-service The greatest discovery of all time is that a person can change their future by merely changing their attitude.
-[2026-08-08 03:40:32.373 +02:00 AUT] quote-service Oprah Winfrey
+[2026-08-09 03:45:39.737 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-09 03:45:39.737 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-09 03:45:39.737 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-09 03:45:39.737 +02:00 QOT] quote-service Magic is believing in yourself, if you can do that, you can make anything happen.
+[2026-08-09 03:45:39.737 +02:00 AUT] quote-service Johann Wolfgang von Goethe
 ```
 <!-- QUOTE_END -->
 
