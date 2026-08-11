@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-10 03:49:35.777 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-10 03:49:35.777 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-10 03:49:35.777 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-10 03:49:35.777 +02:00 TIP] tip-service Apply the mediator pattern to reduce direct dependencies between components.
+[2026-08-11 03:46:05.228 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-11 03:46:05.228 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-11 03:46:05.228 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-11 03:46:05.228 +02:00 TIP] tip-service Use a dedicated metrics server (Prometheus, Datadog) instead of logging metrics as text.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-10 03:49:35.777 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-10 03:49:35.777 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-10 03:49:35.777 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-10 03:49:35.777 +02:00 QOT] quote-service Correct what you can. Learn from what you can't.
-[2026-08-10 03:49:35.777 +02:00 AUT] quote-service Toni Morrison
+[2026-08-11 03:46:05.228 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-11 03:46:05.228 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-11 03:46:05.228 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-11 03:46:05.228 +02:00 QOT] quote-service Still your waters.
+[2026-08-11 03:46:05.228 +02:00 AUT] quote-service Josh Waitzkin
 ```
 <!-- QUOTE_END -->
 
