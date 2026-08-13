@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-12 03:57:49.283 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-12 03:57:49.283 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-12 03:57:49.283 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-12 03:57:49.283 +02:00 TIP] tip-service Implement lazy initialization for expensive resources to improve startup time.
+[2026-08-13 04:00:19.832 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-13 04:00:19.832 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-13 04:00:19.832 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-13 04:00:19.832 +02:00 TIP] tip-service Use database row-level security to enforce data access policies at the database level.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-12 03:57:49.283 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-12 03:57:49.283 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-12 03:57:49.283 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-12 03:57:49.283 +02:00 QOT] quote-service Sadness is but a wall between two gardens.
-[2026-08-12 03:57:49.283 +02:00 AUT] quote-service Kahlil Gibran
+[2026-08-13 04:00:19.832 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-13 04:00:19.832 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-13 04:00:19.832 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-13 04:00:19.832 +02:00 QOT] quote-service Keep your face to the sunshine and you cannot see the shadows.
+[2026-08-13 04:00:19.832 +02:00 AUT] quote-service Helen Keller
 ```
 <!-- QUOTE_END -->
 
