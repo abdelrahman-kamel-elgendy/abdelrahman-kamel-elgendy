@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-13 04:00:19.832 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-13 04:00:19.832 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-13 04:00:19.832 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-13 04:00:19.832 +02:00 TIP] tip-service Use database row-level security to enforce data access policies at the database level.
+[2026-08-14 03:58:06.353 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-14 03:58:06.353 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-14 03:58:06.353 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-14 03:58:06.353 +02:00 TIP] tip-service Apply the façade pattern to wrap legacy code in a clean, modern interface.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-13 04:00:19.832 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-13 04:00:19.832 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-13 04:00:19.832 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-13 04:00:19.832 +02:00 QOT] quote-service Keep your face to the sunshine and you cannot see the shadows.
-[2026-08-13 04:00:19.832 +02:00 AUT] quote-service Helen Keller
+[2026-08-14 03:58:06.353 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-14 03:58:06.353 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-14 03:58:06.353 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-14 03:58:06.353 +02:00 QOT] quote-service Extraordinary results happen only when you give the best you have to become the best you can be at your most important work.
+[2026-08-14 03:58:06.353 +02:00 AUT] quote-service Gary Keller
 ```
 <!-- QUOTE_END -->
 
