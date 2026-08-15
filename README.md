@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-14 03:58:06.353 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-14 03:58:06.353 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-14 03:58:06.353 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-14 03:58:06.353 +02:00 TIP] tip-service Apply the façade pattern to wrap legacy code in a clean, modern interface.
+[2026-08-15 03:14:29.500 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-15 03:14:29.500 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-15 03:14:29.500 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-15 03:14:29.500 +02:00 TIP] tip-service Use token bucket or leaky bucket algorithms for smooth rate limiting.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-14 03:58:06.353 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-14 03:58:06.353 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-14 03:58:06.353 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-14 03:58:06.353 +02:00 QOT] quote-service Extraordinary results happen only when you give the best you have to become the best you can be at your most important work.
-[2026-08-14 03:58:06.353 +02:00 AUT] quote-service Gary Keller
+[2026-08-15 03:14:29.500 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-15 03:14:29.500 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-15 03:14:29.500 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-15 03:14:29.500 +02:00 QOT] quote-service Man suffers only because he takes seriously what the gods made for fun.
+[2026-08-15 03:14:29.500 +02:00 AUT] quote-service Alan Watts
 ```
 <!-- QUOTE_END -->
 
