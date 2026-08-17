@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-16 03:19:02.318 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-16 03:19:02.318 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-16 03:19:02.318 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-16 03:19:02.318 +02:00 TIP] tip-service Implement proper OAuth 2.0 flows — client credentials for service-to-service, PKCE for SPAs.
+[2026-08-17 03:16:09.055 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-17 03:16:09.055 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-17 03:16:09.055 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-17 03:16:09.055 +02:00 TIP] tip-service Use database archiving to move old data to cold storage and keep tables lean.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-16 03:19:02.318 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-16 03:19:02.318 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-16 03:19:02.318 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-16 03:19:02.318 +02:00 QOT] quote-service Motivation is what gets you started. Habit is what keeps you going.
-[2026-08-16 03:19:02.318 +02:00 AUT] quote-service Jim Rohn
+[2026-08-17 03:16:09.055 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-17 03:16:09.055 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-17 03:16:09.055 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-17 03:16:09.055 +02:00 QOT] quote-service Your happiness is what truly matters most. Do what you have to do in order to be happy.
+[2026-08-17 03:16:09.055 +02:00 AUT] quote-service Brian Tracy
 ```
 <!-- QUOTE_END -->
 
