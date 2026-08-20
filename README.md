@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-19 03:15:14.287 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-19 03:15:14.287 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-19 03:15:14.287 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-19 03:15:14.287 +02:00 TIP] tip-service Use request signing (HMAC) to verify the integrity and authenticity of API requests.
+[2026-08-20 03:14:09.724 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-20 03:14:09.724 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-20 03:14:09.724 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-20 03:14:09.724 +02:00 TIP] tip-service Implement read-your-writes consistency to avoid confusing users after they submit data.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-19 03:15:14.287 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-19 03:15:14.287 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-19 03:15:14.287 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-19 03:15:14.287 +02:00 QOT] quote-service Why change? Everyone has his own style. When you have found it, you should stick to it.
-[2026-08-19 03:15:14.287 +02:00 AUT] quote-service Audrey Hepburn
+[2026-08-20 03:14:09.724 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-20 03:14:09.724 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-20 03:14:09.724 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-20 03:14:09.724 +02:00 QOT] quote-service No matter how tall the mountain is, it cannot block the sun.
+[2026-08-20 03:14:09.724 +02:00 AUT] quote-service Chinese Proverb
 ```
 <!-- QUOTE_END -->
 
