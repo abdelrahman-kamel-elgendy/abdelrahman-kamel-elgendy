@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-22 03:13:55.182 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-22 03:13:55.182 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-22 03:13:55.182 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-22 03:13:55.182 +02:00 TIP] tip-service Apply the gateway aggregation pattern to reduce client round trips in microservice architectures.
+[2026-08-23 03:20:11.205 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-23 03:20:11.205 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-23 03:20:11.205 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-23 03:20:11.205 +02:00 TIP] tip-service Use database statement timeouts to kill long-running queries before they impact performance.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-22 03:13:55.182 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-22 03:13:55.182 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-22 03:13:55.182 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-22 03:13:55.182 +02:00 QOT] quote-service Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.
-[2026-08-22 03:13:55.182 +02:00 AUT] quote-service Nikola Tesla
+[2026-08-23 03:20:11.205 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-23 03:20:11.205 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-23 03:20:11.205 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-23 03:20:11.205 +02:00 QOT] quote-service The biggest adventure you can ever take is to live the life of your dreams.
+[2026-08-23 03:20:11.205 +02:00 AUT] quote-service Oprah Winfrey
 ```
 <!-- QUOTE_END -->
 
