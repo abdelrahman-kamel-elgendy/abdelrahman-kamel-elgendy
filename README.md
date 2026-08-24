@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-23 03:20:11.205 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-23 03:20:11.205 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-23 03:20:11.205 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-23 03:20:11.205 +02:00 TIP] tip-service Use database statement timeouts to kill long-running queries before they impact performance.
+[2026-08-24 03:17:56.623 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-24 03:17:56.623 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-24 03:17:56.623 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-24 03:17:56.623 +02:00 TIP] tip-service Implement proper multitenancy isolation testing to ensure one tenant can't access another's data.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-23 03:20:11.205 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-23 03:20:11.205 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-23 03:20:11.205 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-23 03:20:11.205 +02:00 QOT] quote-service The biggest adventure you can ever take is to live the life of your dreams.
-[2026-08-23 03:20:11.205 +02:00 AUT] quote-service Oprah Winfrey
+[2026-08-24 03:17:56.623 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-24 03:17:56.623 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-24 03:17:56.623 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-24 03:17:56.623 +02:00 QOT] quote-service The quicker you let go of old cheese, the sooner you find new cheese.
+[2026-08-24 03:17:56.623 +02:00 AUT] quote-service Spencer Johnson
 ```
 <!-- QUOTE_END -->
 
