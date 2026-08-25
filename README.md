@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-24 03:17:56.623 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-24 03:17:56.623 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-24 03:17:56.623 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-24 03:17:56.623 +02:00 TIP] tip-service Implement proper multitenancy isolation testing to ensure one tenant can't access another's data.
+[2026-08-25 03:15:53.511 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-25 03:15:53.511 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-25 03:15:53.511 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-25 03:15:53.511 +02:00 TIP] tip-service Use a log aggregation platform (ELK, Loki) to centralize and search logs across services.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-24 03:17:56.623 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-24 03:17:56.623 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-24 03:17:56.623 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-24 03:17:56.623 +02:00 QOT] quote-service The quicker you let go of old cheese, the sooner you find new cheese.
-[2026-08-24 03:17:56.623 +02:00 AUT] quote-service Spencer Johnson
+[2026-08-25 03:15:53.511 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-25 03:15:53.511 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-25 03:15:53.511 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-25 03:15:53.511 +02:00 QOT] quote-service Mistakes are painful when they happen, but years later a collection of mistakes is what is called experience.
+[2026-08-25 03:15:53.511 +02:00 AUT] quote-service Denis Waitley
 ```
 <!-- QUOTE_END -->
 
