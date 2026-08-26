@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-25 03:15:53.511 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-25 03:15:53.511 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-25 03:15:53.511 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-25 03:15:53.511 +02:00 TIP] tip-service Use a log aggregation platform (ELK, Loki) to centralize and search logs across services.
+[2026-08-26 03:18:45.980 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-26 03:18:45.980 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-26 03:18:45.980 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-26 03:18:45.980 +02:00 TIP] tip-service Apply the observer pattern to notify multiple components of state changes without coupling.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-25 03:15:53.511 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-25 03:15:53.511 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-25 03:15:53.511 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-25 03:15:53.511 +02:00 QOT] quote-service Mistakes are painful when they happen, but years later a collection of mistakes is what is called experience.
-[2026-08-25 03:15:53.511 +02:00 AUT] quote-service Denis Waitley
+[2026-08-26 03:18:45.980 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-26 03:18:45.980 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-26 03:18:45.980 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-26 03:18:45.980 +02:00 QOT] quote-service A thing constructed can only be loved after it is constructed; but a thing created is loved before it exists.
+[2026-08-26 03:18:45.980 +02:00 AUT] quote-service Charles Dickens
 ```
 <!-- QUOTE_END -->
 
