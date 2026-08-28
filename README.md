@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-27 09:54:31.290 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-27 09:54:31.290 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-27 09:54:31.290 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-27 09:54:31.290 +02:00 TIP] tip-service Use write amplification awareness when designing storage systems for SSDs.
+[2026-08-28 11:58:36.682 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-28 11:58:36.682 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-28 11:58:36.682 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-28 11:58:36.682 +02:00 TIP] tip-service Implement proper backfill strategies when adding new columns to large tables.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-27 09:54:31.290 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-27 09:54:31.290 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-27 09:54:31.290 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-27 09:54:31.290 +02:00 QOT] quote-service Bad things are not the worst things that an happen to us. NOTHING is the worst thing that can happen to us.
-[2026-08-27 09:54:31.290 +02:00 AUT] quote-service Richard Bach
+[2026-08-28 11:58:36.682 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-28 11:58:36.682 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-28 11:58:36.682 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-28 11:58:36.682 +02:00 QOT] quote-service Whatever you decide to do, make sure it makes you happy.
+[2026-08-28 11:58:36.682 +02:00 AUT] quote-service Paulo Coelho
 ```
 <!-- QUOTE_END -->
 
