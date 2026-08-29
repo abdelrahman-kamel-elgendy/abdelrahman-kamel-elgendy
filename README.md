@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-28 11:58:36.682 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-28 11:58:36.682 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-28 11:58:36.682 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-28 11:58:36.682 +02:00 TIP] tip-service Implement proper backfill strategies when adding new columns to large tables.
+[2026-08-29 07:57:35.447 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-29 07:57:35.447 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-29 07:57:35.447 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-29 07:57:35.447 +02:00 TIP] tip-service Use a graph of trust for establishing service-to-service authentication via mTLS.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-28 11:58:36.682 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-28 11:58:36.682 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-28 11:58:36.682 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-28 11:58:36.682 +02:00 QOT] quote-service Whatever you decide to do, make sure it makes you happy.
-[2026-08-28 11:58:36.682 +02:00 AUT] quote-service Paulo Coelho
+[2026-08-29 07:57:35.447 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-29 07:57:35.447 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-29 07:57:35.447 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-29 07:57:35.447 +02:00 QOT] quote-service Don't put off living to next week, next month, next year or next decade. The only time you're ever living is in this moment.
+[2026-08-29 07:57:35.447 +02:00 AUT] quote-service Celestine Chua
 ```
 <!-- QUOTE_END -->
 
