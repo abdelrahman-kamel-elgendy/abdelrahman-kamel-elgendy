@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-29 07:57:35.447 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-29 07:57:35.447 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-29 07:57:35.447 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-29 07:57:35.447 +02:00 TIP] tip-service Use a graph of trust for establishing service-to-service authentication via mTLS.
+[2026-08-30 06:02:36.826 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-30 06:02:36.826 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-30 06:02:36.826 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-30 06:02:36.826 +02:00 TIP] tip-service Apply the pipes and filters pattern to build composable data processing pipelines.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-29 07:57:35.447 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-29 07:57:35.447 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-29 07:57:35.447 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-29 07:57:35.447 +02:00 QOT] quote-service Don't put off living to next week, next month, next year or next decade. The only time you're ever living is in this moment.
-[2026-08-29 07:57:35.447 +02:00 AUT] quote-service Celestine Chua
+[2026-08-30 06:02:36.826 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-30 06:02:36.826 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-30 06:02:36.826 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-30 06:02:36.826 +02:00 QOT] quote-service Keep your eyes on the goal, and just keep taking the next step towards completing it.
+[2026-08-30 06:02:36.826 +02:00 AUT] quote-service John Carmack
 ```
 <!-- QUOTE_END -->
 
