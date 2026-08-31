@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-30 06:02:36.826 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-30 06:02:36.826 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-30 06:02:36.826 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-30 06:02:36.826 +02:00 TIP] tip-service Apply the pipes and filters pattern to build composable data processing pipelines.
+[2026-08-31 06:08:10.915 +02:00 INF] tip-service Fetching tip of the day...
+[2026-08-31 06:08:10.915 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-08-31 06:08:10.915 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-08-31 06:08:10.915 +02:00 TIP] tip-service Use database foreign key constraints to enforce referential integrity at the database level.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-30 06:02:36.826 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-30 06:02:36.826 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-30 06:02:36.826 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-30 06:02:36.826 +02:00 QOT] quote-service Keep your eyes on the goal, and just keep taking the next step towards completing it.
-[2026-08-30 06:02:36.826 +02:00 AUT] quote-service John Carmack
+[2026-08-31 06:08:10.915 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-08-31 06:08:10.915 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-08-31 06:08:10.915 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-08-31 06:08:10.915 +02:00 QOT] quote-service To a mind that is still, the entire universe surrenders.
+[2026-08-31 06:08:10.915 +02:00 AUT] quote-service Zhuangzi
 ```
 <!-- QUOTE_END -->
 
