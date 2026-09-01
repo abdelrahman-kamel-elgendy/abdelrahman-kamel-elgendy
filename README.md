@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-08-31 06:08:10.915 +02:00 INF] tip-service Fetching tip of the day...
-[2026-08-31 06:08:10.915 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-08-31 06:08:10.915 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-08-31 06:08:10.915 +02:00 TIP] tip-service Use database foreign key constraints to enforce referential integrity at the database level.
+[2026-09-01 05:55:58.895 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-01 05:55:58.895 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-01 05:55:58.895 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-01 05:55:58.895 +02:00 TIP] tip-service Implement proper CORS preflight caching to reduce unnecessary OPTIONS requests.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-08-31 06:08:10.915 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-08-31 06:08:10.915 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-08-31 06:08:10.915 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-08-31 06:08:10.915 +02:00 QOT] quote-service To a mind that is still, the entire universe surrenders.
-[2026-08-31 06:08:10.915 +02:00 AUT] quote-service Zhuangzi
+[2026-09-01 05:55:58.895 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-01 05:55:58.895 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-01 05:55:58.895 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-01 05:55:58.895 +02:00 QOT] quote-service Stop wasting time defending your problems and work on addressing them instead.
+[2026-09-01 05:55:58.895 +02:00 AUT] quote-service Celestine Chua
 ```
 <!-- QUOTE_END -->
 
