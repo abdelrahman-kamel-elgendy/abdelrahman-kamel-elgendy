@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-02 05:15:52.651 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-02 05:15:52.651 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-02 05:15:52.651 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-02 05:15:52.651 +02:00 TIP] tip-service Use leader election (Raft, ZooKeeper) to coordinate distributed tasks with a single master.
+[2026-09-03 05:18:03.350 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-03 05:18:03.350 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-03 05:18:03.350 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-03 05:18:03.350 +02:00 TIP] tip-service Apply the decorator pattern to add behavior to existing objects without changing their class.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-02 05:15:52.651 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-02 05:15:52.651 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-02 05:15:52.651 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-02 05:15:52.651 +02:00 QOT] quote-service Force has no place where there is need of skill.
-[2026-09-02 05:15:52.651 +02:00 AUT] quote-service Herodotus
+[2026-09-03 05:18:03.350 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-03 05:18:03.350 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-03 05:18:03.350 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-03 05:18:03.350 +02:00 QOT] quote-service If you don't find the time, if you don't do the work, you don't get the results.
+[2026-09-03 05:18:03.350 +02:00 AUT] quote-service Arnold Schwarzenegger
 ```
 <!-- QUOTE_END -->
 
