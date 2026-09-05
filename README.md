@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-04 05:16:04.290 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-04 05:16:04.290 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-04 05:16:04.290 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-04 05:16:04.290 +02:00 TIP] tip-service Use columnar storage (Parquet, ORC) for efficient analytical queries on large datasets.
+[2026-09-05 05:19:19.875 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-05 05:19:19.875 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-05 05:19:19.875 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-05 05:19:19.875 +02:00 TIP] tip-service Implement proper secret rotation without downtime using versioned secrets.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-04 05:16:04.290 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-04 05:16:04.290 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-04 05:16:04.290 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-04 05:16:04.290 +02:00 QOT] quote-service Do good by stealth, and blush to find it fame.
-[2026-09-04 05:16:04.290 +02:00 AUT] quote-service Alexander Pope
+[2026-09-05 05:19:19.875 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-05 05:19:19.875 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-05 05:19:19.875 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-05 05:19:19.875 +02:00 QOT] quote-service However difficult life may seem, there is always something you can do and succeed at.
+[2026-09-05 05:19:19.875 +02:00 AUT] quote-service Stephen Hawking
 ```
 <!-- QUOTE_END -->
 
