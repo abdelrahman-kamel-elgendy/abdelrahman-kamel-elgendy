@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-06 05:18:53.256 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-06 05:18:53.256 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-06 05:18:53.256 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-06 05:18:53.256 +02:00 TIP] tip-service Use a shared-nothing architecture to maximize horizontal scalability.
+[2026-09-07 05:17:27.812 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-07 05:17:27.812 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-07 05:17:27.812 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-07 05:17:27.812 +02:00 TIP] tip-service Apply the priority queue pattern to process high-priority tasks before low-priority ones.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-06 05:18:53.256 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-06 05:18:53.256 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-06 05:18:53.256 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-06 05:18:53.256 +02:00 QOT] quote-service A man with outward courage dares to die: a man with inner courage dares to live.
-[2026-09-06 05:18:53.256 +02:00 AUT] quote-service Lao Tzu
+[2026-09-07 05:17:27.812 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-07 05:17:27.812 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-07 05:17:27.812 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-07 05:17:27.812 +02:00 QOT] quote-service The greatest treasures are those invisible to the eye but found by the heart.
+[2026-09-07 05:17:27.812 +02:00 AUT] quote-service Judy Garland
 ```
 <!-- QUOTE_END -->
 
