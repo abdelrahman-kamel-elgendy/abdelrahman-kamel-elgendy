@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-07 05:17:27.812 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-07 05:17:27.812 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-07 05:17:27.812 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-07 05:17:27.812 +02:00 TIP] tip-service Apply the priority queue pattern to process high-priority tasks before low-priority ones.
+[2026-09-08 05:24:48.403 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-08 05:24:48.403 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-08 05:24:48.403 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-08 05:24:48.403 +02:00 TIP] tip-service Use database JSON columns carefully — they're flexible but not as fast as normalized columns.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-07 05:17:27.812 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-07 05:17:27.812 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-07 05:17:27.812 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-07 05:17:27.812 +02:00 QOT] quote-service The greatest treasures are those invisible to the eye but found by the heart.
-[2026-09-07 05:17:27.812 +02:00 AUT] quote-service Judy Garland
+[2026-09-08 05:24:48.403 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-08 05:24:48.403 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-08 05:24:48.403 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-08 05:24:48.403 +02:00 QOT] quote-service High thoughts must have high language.
+[2026-09-08 05:24:48.403 +02:00 AUT] quote-service Aristophanes
 ```
 <!-- QUOTE_END -->
 
