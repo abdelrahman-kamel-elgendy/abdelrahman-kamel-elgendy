@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-09 05:28:35.497 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-09 05:28:35.497 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-09 05:28:35.497 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-09 05:28:35.497 +02:00 TIP] tip-service Implement proper end-to-end encryption for highly sensitive data in transit and at rest.
+[2026-09-10 05:26:30.582 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-10 05:26:30.582 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-10 05:26:30.582 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-10 05:26:30.582 +02:00 TIP] tip-service Use a query cache invalidation strategy based on entity types to avoid stale data.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-09 05:28:35.497 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-09 05:28:35.497 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-09 05:28:35.497 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-09 05:28:35.497 +02:00 QOT] quote-service We are all like the bright moon, we still have our darker side.
-[2026-09-09 05:28:35.497 +02:00 AUT] quote-service Kahlil Gibran
+[2026-09-10 05:26:30.582 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-10 05:26:30.582 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-10 05:26:30.582 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-10 05:26:30.582 +02:00 QOT] quote-service Simple words, repeated daily, can change your life.
+[2026-09-10 05:26:30.582 +02:00 AUT] quote-service Maxime Lagace
 ```
 <!-- QUOTE_END -->
 
