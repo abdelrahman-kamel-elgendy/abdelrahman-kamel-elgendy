@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-10 05:26:30.582 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-10 05:26:30.582 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-10 05:26:30.582 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-10 05:26:30.582 +02:00 TIP] tip-service Use a query cache invalidation strategy based on entity types to avoid stale data.
+[2026-09-11 05:23:43.832 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-11 05:23:43.832 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-11 05:23:43.832 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-11 05:23:43.832 +02:00 TIP] tip-service Apply the composite pattern to treat individual objects and collections uniformly.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-10 05:26:30.582 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-10 05:26:30.582 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-10 05:26:30.582 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-10 05:26:30.582 +02:00 QOT] quote-service Simple words, repeated daily, can change your life.
-[2026-09-10 05:26:30.582 +02:00 AUT] quote-service Maxime Lagace
+[2026-09-11 05:23:43.832 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-11 05:23:43.832 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-11 05:23:43.832 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-11 05:23:43.832 +02:00 QOT] quote-service It is secondary whether we choose belief or defiance. What is precious is that we are always able to choose.
+[2026-09-11 05:23:43.832 +02:00 AUT] quote-service Ming-Dao Deng
 ```
 <!-- QUOTE_END -->
 
