@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-11 05:23:43.832 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-11 05:23:43.832 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-11 05:23:43.832 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-11 05:23:43.832 +02:00 TIP] tip-service Apply the composite pattern to treat individual objects and collections uniformly.
+[2026-09-12 05:29:03.918 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-12 05:29:03.918 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-12 05:29:03.918 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-12 05:29:03.918 +02:00 TIP] tip-service Use a database proxy (PgBouncer, ProxySQL) to pool connections at the infrastructure level.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-11 05:23:43.832 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-11 05:23:43.832 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-11 05:23:43.832 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-11 05:23:43.832 +02:00 QOT] quote-service It is secondary whether we choose belief or defiance. What is precious is that we are always able to choose.
-[2026-09-11 05:23:43.832 +02:00 AUT] quote-service Ming-Dao Deng
+[2026-09-12 05:29:03.918 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-12 05:29:03.918 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-12 05:29:03.918 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-12 05:29:03.918 +02:00 QOT] quote-service He who leaves the game wins it.
+[2026-09-12 05:29:03.918 +02:00 AUT] quote-service Nicolas Chamfort
 ```
 <!-- QUOTE_END -->
 
