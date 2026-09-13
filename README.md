@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-12 05:29:03.918 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-12 05:29:03.918 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-12 05:29:03.918 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-12 05:29:03.918 +02:00 TIP] tip-service Use a database proxy (PgBouncer, ProxySQL) to pool connections at the infrastructure level.
+[2026-09-13 05:35:10.154 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-13 05:35:10.154 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-13 05:35:10.154 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-13 05:35:10.154 +02:00 TIP] tip-service Implement proper graceful shutdown hooks to close DB connections and flush queues cleanly.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-12 05:29:03.918 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-12 05:29:03.918 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-12 05:29:03.918 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-12 05:29:03.918 +02:00 QOT] quote-service He who leaves the game wins it.
-[2026-09-12 05:29:03.918 +02:00 AUT] quote-service Nicolas Chamfort
+[2026-09-13 05:35:10.154 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-13 05:35:10.154 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-13 05:35:10.154 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-13 05:35:10.154 +02:00 QOT] quote-service Everyday is a second chance.
+[2026-09-13 05:35:10.154 +02:00 AUT] quote-service Unknown
 ```
 <!-- QUOTE_END -->
 
