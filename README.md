@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-13 05:35:10.154 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-13 05:35:10.154 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-13 05:35:10.154 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-13 05:35:10.154 +02:00 TIP] tip-service Implement proper graceful shutdown hooks to close DB connections and flush queues cleanly.
+[2026-09-14 05:44:37.980 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-14 05:44:37.980 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-14 05:44:37.980 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-14 05:44:37.980 +02:00 TIP] tip-service Use tail-based sampling in distributed tracing to keep traces for slow or failed requests.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-13 05:35:10.154 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-13 05:35:10.154 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-13 05:35:10.154 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-13 05:35:10.154 +02:00 QOT] quote-service Everyday is a second chance.
-[2026-09-13 05:35:10.154 +02:00 AUT] quote-service Unknown
+[2026-09-14 05:44:37.980 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-14 05:44:37.980 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-14 05:44:37.980 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-14 05:44:37.980 +02:00 QOT] quote-service If you spend too much time thinking about a thing, you'll never get it done.
+[2026-09-14 05:44:37.980 +02:00 AUT] quote-service Bruce Lee
 ```
 <!-- QUOTE_END -->
 
