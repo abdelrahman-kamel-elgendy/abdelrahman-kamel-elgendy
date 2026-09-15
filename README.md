@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-14 05:44:37.980 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-14 05:44:37.980 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-14 05:44:37.980 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-14 05:44:37.980 +02:00 TIP] tip-service Use tail-based sampling in distributed tracing to keep traces for slow or failed requests.
+[2026-09-15 05:45:16.446 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-15 05:45:16.446 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-15 05:45:16.446 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-15 05:45:16.446 +02:00 TIP] tip-service Apply the adapter pattern to make incompatible interfaces work together.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-14 05:44:37.980 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-14 05:44:37.980 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-14 05:44:37.980 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-14 05:44:37.980 +02:00 QOT] quote-service If you spend too much time thinking about a thing, you'll never get it done.
-[2026-09-14 05:44:37.980 +02:00 AUT] quote-service Bruce Lee
+[2026-09-15 05:45:16.446 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-15 05:45:16.446 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-15 05:45:16.446 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-15 05:45:16.446 +02:00 QOT] quote-service Knowing yourself is the beginning of all wisdom.
+[2026-09-15 05:45:16.446 +02:00 AUT] quote-service Aristotle
 ```
 <!-- QUOTE_END -->
 
