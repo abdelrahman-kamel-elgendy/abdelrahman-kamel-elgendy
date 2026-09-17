@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-16 05:42:00.457 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-16 05:42:00.457 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-16 05:42:00.457 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-16 05:42:00.457 +02:00 TIP] tip-service Use database sequences instead of MAX(id)+1 to avoid race conditions in ID generation.
+[2026-09-17 05:47:16.444 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-17 05:47:16.444 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-17 05:47:16.444 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-17 05:47:16.444 +02:00 TIP] tip-service Implement proper input length validation to prevent resource exhaustion attacks.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-16 05:42:00.457 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-16 05:42:00.457 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-16 05:42:00.457 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-16 05:42:00.457 +02:00 QOT] quote-service Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new.
-[2026-09-16 05:42:00.457 +02:00 AUT] quote-service Brian Tracy
+[2026-09-17 05:47:16.444 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-17 05:47:16.444 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-17 05:47:16.444 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-17 05:47:16.444 +02:00 QOT] quote-service When things go wrong, don't go with them.
+[2026-09-17 05:47:16.444 +02:00 AUT] quote-service Elvis Presley
 ```
 <!-- QUOTE_END -->
 
