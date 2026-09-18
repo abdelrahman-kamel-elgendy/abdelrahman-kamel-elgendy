@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-17 05:47:16.444 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-17 05:47:16.444 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-17 05:47:16.444 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-17 05:47:16.444 +02:00 TIP] tip-service Implement proper input length validation to prevent resource exhaustion attacks.
+[2026-09-18 05:33:41.654 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-18 05:33:41.654 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-18 05:33:41.654 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-18 05:33:41.654 +02:00 TIP] tip-service Use a dedicated config server (Spring Cloud Config, Consul) for centralized configuration.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-17 05:47:16.444 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-17 05:47:16.444 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-17 05:47:16.444 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-17 05:47:16.444 +02:00 QOT] quote-service When things go wrong, don't go with them.
-[2026-09-17 05:47:16.444 +02:00 AUT] quote-service Elvis Presley
+[2026-09-18 05:33:41.654 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-18 05:33:41.654 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-18 05:33:41.654 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-18 05:33:41.654 +02:00 QOT] quote-service Till it has loved, no man or woman can become itself.
+[2026-09-18 05:33:41.654 +02:00 AUT] quote-service Emily Dickinson
 ```
 <!-- QUOTE_END -->
 
