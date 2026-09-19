@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-18 05:33:41.654 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-18 05:33:41.654 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-18 05:33:41.654 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-18 05:33:41.654 +02:00 TIP] tip-service Use a dedicated config server (Spring Cloud Config, Consul) for centralized configuration.
+[2026-09-19 05:31:33.687 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-19 05:31:33.687 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-19 05:31:33.687 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-19 05:31:33.687 +02:00 TIP] tip-service Apply the flyweight pattern to reduce memory usage for large numbers of similar objects.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-18 05:33:41.654 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-18 05:33:41.654 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-18 05:33:41.654 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-18 05:33:41.654 +02:00 QOT] quote-service Till it has loved, no man or woman can become itself.
-[2026-09-18 05:33:41.654 +02:00 AUT] quote-service Emily Dickinson
+[2026-09-19 05:31:33.687 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-19 05:31:33.687 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-19 05:31:33.687 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-19 05:31:33.687 +02:00 QOT] quote-service Make your mind your own business.
+[2026-09-19 05:31:33.687 +02:00 AUT] quote-service Jack Butcher
 ```
 <!-- QUOTE_END -->
 
