@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-20 05:46:51.516 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-20 05:46:51.516 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-20 05:46:51.516 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-20 05:46:51.516 +02:00 TIP] tip-service Use database index-only scans by ensuring your index covers all selected columns.
+[2026-09-21 05:42:50.264 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-21 05:42:50.264 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-21 05:42:50.264 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-21 05:42:50.264 +02:00 TIP] tip-service Implement proper API versioning deprecation timelines — give consumers at least 6 months.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-20 05:46:51.516 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-20 05:46:51.516 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-20 05:46:51.516 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-20 05:46:51.516 +02:00 QOT] quote-service A person without a sense of humor is like a wagon without springs, jolted by every pebble in the road.
-[2026-09-20 05:46:51.516 +02:00 AUT] quote-service Henry Ward Beecher
+[2026-09-21 05:42:50.264 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-21 05:42:50.264 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-21 05:42:50.264 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-21 05:42:50.264 +02:00 QOT] quote-service The smallest act of kindness is worth more than the greatest intention.
+[2026-09-21 05:42:50.264 +02:00 AUT] quote-service Kahlil Gibran
 ```
 <!-- QUOTE_END -->
 
