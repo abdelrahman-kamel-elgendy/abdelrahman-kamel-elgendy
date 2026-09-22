@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-21 05:42:50.264 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-21 05:42:50.264 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-21 05:42:50.264 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-21 05:42:50.264 +02:00 TIP] tip-service Implement proper API versioning deprecation timelines — give consumers at least 6 months.
+[2026-09-22 05:40:54.968 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-22 05:40:54.968 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-22 05:40:54.968 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-22 05:40:54.968 +02:00 TIP] tip-service Use a circuit breaker dashboard to visualize the health of inter-service dependencies.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-21 05:42:50.264 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-21 05:42:50.264 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-21 05:42:50.264 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-21 05:42:50.264 +02:00 QOT] quote-service The smallest act of kindness is worth more than the greatest intention.
-[2026-09-21 05:42:50.264 +02:00 AUT] quote-service Kahlil Gibran
+[2026-09-22 05:40:54.968 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-22 05:40:54.968 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-22 05:40:54.968 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-22 05:40:54.968 +02:00 QOT] quote-service Every man's work, whether it be literature or music or pictures or architecture or anything else, is always a portrait of himself.
+[2026-09-22 05:40:54.968 +02:00 AUT] quote-service Samuel Butler
 ```
 <!-- QUOTE_END -->
 
