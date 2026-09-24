@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-23 05:40:03.197 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-23 05:40:03.197 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-23 05:40:03.197 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-23 05:40:03.197 +02:00 TIP] tip-service Apply the template method pattern to define a skeleton algorithm with customizable steps.
+[2026-09-24 05:31:03.978 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-24 05:31:03.978 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-24 05:31:03.978 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-24 05:31:03.978 +02:00 TIP] tip-service Use database ANALYZE to update statistics and help the query planner make better decisions.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-23 05:40:03.197 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-23 05:40:03.197 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-23 05:40:03.197 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-23 05:40:03.197 +02:00 QOT] quote-service When we strive to become better than we are, everything around us becomes better, too.
-[2026-09-23 05:40:03.197 +02:00 AUT] quote-service Paulo Coelho
+[2026-09-24 05:31:03.978 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-24 05:31:03.978 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-24 05:31:03.978 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-24 05:31:03.978 +02:00 QOT] quote-service You are what you believe in. You become that which you believe you can become.
+[2026-09-24 05:31:03.978 +02:00 AUT] quote-service Bhagavad Gita
 ```
 <!-- QUOTE_END -->
 
