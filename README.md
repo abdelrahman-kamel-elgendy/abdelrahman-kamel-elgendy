@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-24 05:31:03.978 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-24 05:31:03.978 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-24 05:31:03.978 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-24 05:31:03.978 +02:00 TIP] tip-service Use database ANALYZE to update statistics and help the query planner make better decisions.
+[2026-09-25 05:48:05.056 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-25 05:48:05.056 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-25 05:48:05.056 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-25 05:48:05.056 +02:00 TIP] tip-service Implement proper multi-factor authentication for admin and sensitive user accounts.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-24 05:31:03.978 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-24 05:31:03.978 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-24 05:31:03.978 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-24 05:31:03.978 +02:00 QOT] quote-service You are what you believe in. You become that which you believe you can become.
-[2026-09-24 05:31:03.978 +02:00 AUT] quote-service Bhagavad Gita
+[2026-09-25 05:48:05.056 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-25 05:48:05.056 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-25 05:48:05.056 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-25 05:48:05.056 +02:00 QOT] quote-service Give so much away people insist on paying you.
+[2026-09-25 05:48:05.056 +02:00 AUT] quote-service Jack Butcher
 ```
 <!-- QUOTE_END -->
 
