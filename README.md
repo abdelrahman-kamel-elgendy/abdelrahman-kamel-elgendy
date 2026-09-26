@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-25 05:48:05.056 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-25 05:48:05.056 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-25 05:48:05.056 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-25 05:48:05.056 +02:00 TIP] tip-service Implement proper multi-factor authentication for admin and sensitive user accounts.
+[2026-09-26 05:53:58.086 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-26 05:53:58.086 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-26 05:53:58.086 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-26 05:53:58.086 +02:00 TIP] tip-service Use a distributed cache with replication to avoid a single point of failure.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-25 05:48:05.056 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-25 05:48:05.056 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-25 05:48:05.056 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-25 05:48:05.056 +02:00 QOT] quote-service Give so much away people insist on paying you.
-[2026-09-25 05:48:05.056 +02:00 AUT] quote-service Jack Butcher
+[2026-09-26 05:53:58.086 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-26 05:53:58.086 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-26 05:53:58.086 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-26 05:53:58.086 +02:00 QOT] quote-service If you get up one more time than you fall, you will make it through.
+[2026-09-26 05:53:58.086 +02:00 AUT] quote-service Chinese Proverb
 ```
 <!-- QUOTE_END -->
 
