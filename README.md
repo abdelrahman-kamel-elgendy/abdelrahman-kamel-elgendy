@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-26 05:53:58.086 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-26 05:53:58.086 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-26 05:53:58.086 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-26 05:53:58.086 +02:00 TIP] tip-service Use a distributed cache with replication to avoid a single point of failure.
+[2026-09-27 06:03:58.819 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-27 06:03:58.819 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-27 06:03:58.819 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-27 06:03:58.819 +02:00 TIP] tip-service Apply the strategy pattern to swap algorithms or behaviors at runtime.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-26 05:53:58.086 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-26 05:53:58.086 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-26 05:53:58.086 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-26 05:53:58.086 +02:00 QOT] quote-service If you get up one more time than you fall, you will make it through.
-[2026-09-26 05:53:58.086 +02:00 AUT] quote-service Chinese Proverb
+[2026-09-27 06:03:58.819 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-27 06:03:58.819 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-27 06:03:58.819 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-27 06:03:58.819 +02:00 QOT] quote-service Don't let your learning lead to knowledge. Let your learning lead to action.
+[2026-09-27 06:03:58.819 +02:00 AUT] quote-service Jim Rohn
 ```
 <!-- QUOTE_END -->
 
