@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-28 06:05:13.675 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-28 06:05:13.675 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-28 06:05:13.675 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-28 06:05:13.675 +02:00 TIP] tip-service Use database triggers only for cross-cutting concerns that must always be enforced.
+[2026-09-29 06:38:10.791 +02:00 INF] tip-service Fetching tip of the day...
+[2026-09-29 06:38:10.791 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-09-29 06:38:10.791 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-09-29 06:38:10.791 +02:00 TIP] tip-service Implement proper API contract testing (Pact) to catch breaking changes before deployment.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-28 06:05:13.675 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-28 06:05:13.675 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-28 06:05:13.675 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-28 06:05:13.675 +02:00 QOT] quote-service One mistake does not have to rule a person's entire life.
-[2026-09-28 06:05:13.675 +02:00 AUT] quote-service Joyce Meyer
+[2026-09-29 06:38:10.791 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-09-29 06:38:10.791 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-09-29 06:38:10.791 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-09-29 06:38:10.791 +02:00 QOT] quote-service Silence is a source of great strength.
+[2026-09-29 06:38:10.791 +02:00 AUT] quote-service Lao Tzu
 ```
 <!-- QUOTE_END -->
 
