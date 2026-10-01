@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-09-30 06:22:08.498 +02:00 INF] tip-service Fetching tip of the day...
-[2026-09-30 06:22:08.498 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-09-30 06:22:08.498 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-09-30 06:22:08.498 +02:00 TIP] tip-service Use a dedicated service for sending notifications to decouple it from your core business logic.
+[2026-10-01 06:33:42.088 +02:00 INF] tip-service Fetching tip of the day...
+[2026-10-01 06:33:42.088 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-10-01 06:33:42.088 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-10-01 06:33:42.088 +02:00 TIP] tip-service Apply the iterator pattern to provide a uniform way to traverse different data structures.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-09-30 06:22:08.498 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-09-30 06:22:08.498 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-09-30 06:22:08.498 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-09-30 06:22:08.498 +02:00 QOT] quote-service If you've made a mistake, it's better just to laugh at it.
-[2026-09-30 06:22:08.498 +02:00 AUT] quote-service Zen Proverb
+[2026-10-01 06:33:42.088 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-01 06:33:42.088 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-10-01 06:33:42.088 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-10-01 06:33:42.088 +02:00 QOT] quote-service When you stop questioning, you stop learning.
+[2026-10-01 06:33:42.088 +02:00 AUT] quote-service Lolly Daskal
 ```
 <!-- QUOTE_END -->
 
