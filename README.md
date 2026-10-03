@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-02 06:26:08.713 +02:00 INF] tip-service Fetching tip of the day...
-[2026-10-02 06:26:08.713 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-10-02 06:26:08.713 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-10-02 06:26:08.713 +02:00 TIP] tip-service Use database hot-warm-cold storage tiers to balance cost and performance for aging data.
+[2026-10-03 06:08:30.499 +02:00 INF] tip-service Fetching tip of the day...
+[2026-10-03 06:08:30.499 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-10-03 06:08:30.499 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-10-03 06:08:30.499 +02:00 TIP] tip-service Implement proper load testing before every major release using tools like k6 or Locust.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-02 06:26:08.713 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-02 06:26:08.713 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-10-02 06:26:08.713 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-10-02 06:26:08.713 +02:00 QOT] quote-service I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear.
-[2026-10-02 06:26:08.713 +02:00 AUT] quote-service Nelson Mandela
+[2026-10-03 06:08:30.499 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-03 06:08:30.499 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-10-03 06:08:30.499 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-10-03 06:08:30.499 +02:00 QOT] quote-service We are born from a quiet sleep, and we die to a calm awakening
+[2026-10-03 06:08:30.499 +02:00 AUT] quote-service Zhuangzi
 ```
 <!-- QUOTE_END -->
 
