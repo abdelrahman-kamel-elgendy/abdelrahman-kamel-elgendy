@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-03 06:08:30.499 +02:00 INF] tip-service Fetching tip of the day...
-[2026-10-03 06:08:30.499 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-10-03 06:08:30.499 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-10-03 06:08:30.499 +02:00 TIP] tip-service Implement proper load testing before every major release using tools like k6 or Locust.
+[2026-10-04 06:40:43.203 +02:00 INF] tip-service Fetching tip of the day...
+[2026-10-04 06:40:43.203 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-10-04 06:40:43.203 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-10-04 06:40:43.203 +02:00 TIP] tip-service Use a schema migration tool (Flyway, Liquibase) to version-control your database schema.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-03 06:08:30.499 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-03 06:08:30.499 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-10-03 06:08:30.499 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-10-03 06:08:30.499 +02:00 QOT] quote-service We are born from a quiet sleep, and we die to a calm awakening
-[2026-10-03 06:08:30.499 +02:00 AUT] quote-service Zhuangzi
+[2026-10-04 06:40:43.203 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-04 06:40:43.203 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-10-04 06:40:43.203 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-10-04 06:40:43.203 +02:00 QOT] quote-service Would you rather learn to deal with the truth now than be forced to do so later on?
+[2026-10-04 06:40:43.203 +02:00 AUT] quote-service Celestine Chua
 ```
 <!-- QUOTE_END -->
 
