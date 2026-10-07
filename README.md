@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-06 07:14:31.269 +02:00 INF] tip-service Fetching tip of the day...
-[2026-10-06 07:14:31.269 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-10-06 07:14:31.269 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-10-06 07:14:31.269 +02:00 TIP] tip-service Use database full-text search indexes (GIN in PostgreSQL) for text search queries.
+[2026-10-07 06:42:41.377 +02:00 INF] tip-service Fetching tip of the day...
+[2026-10-07 06:42:41.377 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-10-07 06:42:41.377 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-10-07 06:42:41.377 +02:00 TIP] tip-service Implement proper certificate pinning for mobile apps connecting to your backend.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-06 07:14:31.269 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-06 07:14:31.269 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-10-06 07:14:31.269 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-10-06 07:14:31.269 +02:00 QOT] quote-service A gentleman is one who puts more into the world than he takes out.
-[2026-10-06 07:14:31.269 +02:00 AUT] quote-service George Bernard Shaw
+[2026-10-07 06:42:41.377 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-07 06:42:41.377 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-10-07 06:42:41.377 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-10-07 06:42:41.377 +02:00 QOT] quote-service Be happy now, without reason - or you never will be at all.
+[2026-10-07 06:42:41.377 +02:00 AUT] quote-service Dan Millman
 ```
 <!-- QUOTE_END -->
 
