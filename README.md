@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-07 06:42:41.377 +02:00 INF] tip-service Fetching tip of the day...
-[2026-10-07 06:42:41.377 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-10-07 06:42:41.377 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-10-07 06:42:41.377 +02:00 TIP] tip-service Implement proper certificate pinning for mobile apps connecting to your backend.
+[2026-10-08 06:53:10.856 +02:00 INF] tip-service Fetching tip of the day...
+[2026-10-08 06:53:10.856 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-10-08 06:53:10.856 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-10-08 06:53:10.856 +02:00 TIP] tip-service Use a blue-green or canary strategy for zero-downtime database schema migrations.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-07 06:42:41.377 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-07 06:42:41.377 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-10-07 06:42:41.377 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-10-07 06:42:41.377 +02:00 QOT] quote-service Be happy now, without reason - or you never will be at all.
-[2026-10-07 06:42:41.377 +02:00 AUT] quote-service Dan Millman
+[2026-10-08 06:53:10.856 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-08 06:53:10.856 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-10-08 06:53:10.856 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-10-08 06:53:10.856 +02:00 QOT] quote-service Success is not how high you have climbed, but how you make a positive difference to the world.
+[2026-10-08 06:53:10.856 +02:00 AUT] quote-service Roy T. Bennett
 ```
 <!-- QUOTE_END -->
 
