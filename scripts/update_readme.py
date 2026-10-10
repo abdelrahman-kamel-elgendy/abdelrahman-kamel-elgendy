@@ -64,8 +64,8 @@ def build_tip_block(ts: str, tip: str) -> str:
         "```log",
         f"[{ts} INF] {svc} Fetching tip of the day...",
         f"[{ts} INF] {svc} GET {TIP_URL}  200 OK",
-        f"[{ts} INF] {svc} Status: OK  \u2192  tip loaded",     
-        f"[{ts} TIP] {svc} {tip}",
+        f"[{ts} INF] {svc} Message received \u2192 tip loaded",     
+        f"[{ts} TIP] {svc} Tip \u2192 {tip}",
         "```",
         "<!-- TIP_END -->",
     ])
@@ -76,7 +76,7 @@ def build_quote_block(ts: str, quote: str, author: str, error: str | None) -> st
     if error is None:
         status = [
             f"[{ts} INF] {svc} GET {QUOTE_URL}  200 OK",
-            f"[{ts} INF] {svc} Message received  \u2192  quote loaded",
+            f"[{ts} INF] {svc} Message received \u2192 quote loaded",
         ]
     else:
         status = [
@@ -88,8 +88,8 @@ def build_quote_block(ts: str, quote: str, author: str, error: str | None) -> st
         "```log",
         f"[{ts} INF] {svc} Connecting to quotes upstream...",
         *status,
-        f"[{ts} QOT] {svc} \"{quote}\"",
-        f"[{ts} AUT:] {svc} Author = {author} ",
+        f"[{ts} QOT] {svc} Quote \u2192 \"{quote}\"",
+        f"[{ts} AUT:] {svc} Author \u2192 {author} ",
         "```",
         "<!-- QUOTE_END -->",
     ])
