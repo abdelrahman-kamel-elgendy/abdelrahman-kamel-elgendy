@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+"""Update the daily tip and quote blocks in README.md."""
 import json
 import re
 import sys
