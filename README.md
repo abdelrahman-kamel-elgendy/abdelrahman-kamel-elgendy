@@ -173,25 +173,6 @@ ORDER BY
 </table>
 ---
 
-<!-- ── THEME: Redis CLI ────────────────────────────────── -->
-## `CMD`
-
-```redis
-127.0.0.1:6379> KEYS activity:*
-1) "activity: contribution_graph"
-2) "activity: streak"
-3) "activity: last_commit"
-
-127.0.0.1:6379> GET activity:contribution_graph
-# ── rendering below ───────────────────────────
-```
-
-<div align="center">
-    <img src="./activity-graph.svg" width="100%" alt="GitHub Activity Graph" />
-</div>
-
----
-
 <!-- ── THEME: Application log ─────────────────────────── -->
 ## `daily-backend-tip.log`
  
