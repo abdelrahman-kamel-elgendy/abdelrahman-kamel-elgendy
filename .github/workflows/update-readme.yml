@@ -2,7 +2,7 @@ name: Update README Daily
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # 00:00 UTC (02:00/03:00 Cairo)
+    - cron: "0 0 * * *" # 00:00 UTC (02:00/03:00 Cairo)
   workflow_dispatch:
 
 permissions:
@@ -54,6 +54,7 @@ jobs:
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Open pull request (if none is open)
+        id: pr
         if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -61,18 +62,23 @@ jobs:
           existing=$(gh pr list --head "$UPDATE_BRANCH" --base "$BASE_BRANCH" \
                        --state open --json number --jq '.[0].number')
           if [ -z "$existing" ]; then
-            gh pr create \
+            pr_url=$(gh pr create \
               --base "$BASE_BRANCH" \
               --head "$UPDATE_BRANCH" \
               --title "Update daily tip and quote $(TZ=Africa/Cairo date +'%Y-%m-%d')" \
-              --body "Automated daily README update."
+              --body "Automated daily README update.")
+            pr_number=$(gh pr view "$pr_url" --json number --jq '.number')
           else
             echo "PR #$existing already open, branch updated."
+            pr_number="$existing"
           fi
+          echo "number=$pr_number" >> "$GITHUB_OUTPUT"
 
       - name: Approve pull request
         if: steps.commit.outputs.changed == 'true'
         env:
-          GH_TOKEN: ${{ secrets.PR_APPROVER_TOKEN }}   # your PAT, NOT github.token
-          GH_REPO: ${{ github.repository }}
-        run: gh pr review "$UPDATE_BRANCH" --approve --body "Auto-approved: daily README update."
+          GH_TOKEN: ${{ secrets.PR_APPROVER_TOKEN }}
+        run: |
+          gh pr review "${{ steps.pr.outputs.number }}" \
+            --approve \
+            --body "Auto-approved: daily README update."
