@@ -15,6 +15,7 @@ TIPS = ROOT / "tips.json"
 
 TZ = ZoneInfo("Africa/Cairo")
 QUOTE_URL = "https://zenquotes.io/api/today"
+TIP_URL = "https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json"
 FALLBACK_QUOTE = ("First, solve the problem. Then, write the code.", "John Johnson")
 RETRIES = 3
 
@@ -62,6 +63,7 @@ def build_tip_block(ts: str, tip: str) -> str:
         "<!-- TIP_START -->",
         "```log",
         f"[{ts} INF] {svc} Fetching tip of the day...",
+        f"[{ts} INF] {svc} GET {TIP_URL}  200 OK",
         f"[{ts} INF] {svc} Status: OK  \u2192  tip loaded",     
         f"[{ts} TIP] {svc} {tip}",
         "```",
@@ -87,7 +89,7 @@ def build_quote_block(ts: str, quote: str, author: str, error: str | None) -> st
         f"[{ts} INF] {svc} Connecting to quotes upstream...",
         *status,
         f"[{ts} QOT] {svc} \"{quote}\"",
-        f"[{ts} AUT:] {svc} {author} ",
+        f"[{ts} AUT:] {svc} Author = {author} ",
         "```",
         "<!-- QUOTE_END -->",
     ])
