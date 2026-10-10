@@ -51,16 +51,11 @@
 ## `stack.yml`
  
 <div align="center">
-<table width="80%">
+<table width="100%">
 <tr>
 <td valign="middle" width="50%">
  
 ```yaml
-developer:
-  name: Abdelrahman Kamel
-  title: Backend Developer
-  status: production-ready
-
 stack:
   languages:
     - C#
@@ -91,28 +86,26 @@ stack:
 </td>
 <td valign="middle" width="50%">
 <div align="center">
- 
-**Languages**
- 
+
+ ```yaml
+Languages
+```
 <img src="https://skillicons.dev/icons?i=cs,java,js,ts,py&theme=dark" />
  
-<br/><br/>
- 
-**Frameworks & Runtimes**
- 
+ ```yaml
+Frameworks & Runtimes
+```
 <img src="https://skillicons.dev/icons?i=dotnet,spring,nodejs,nestjs&theme=dark" />
- 
-<br/><br/>
- 
-**Databases & ORMs**
- 
-<img src="https://skillicons.dev/icons?i=mysql,mongodb,redis,prisma&theme=dark" />
- 
-<br/><br/>
- 
-**DevOps & Tools**
- 
-<img src="https://skillicons.dev/icons?i=docker,git,github,postman&theme=dark" />
+
+ ```yaml
+Databases & ORMs
+```
+<img src="https://skillicons.dev/icons?i=mysql,prisma,mongodb,redis&theme=dark" />
+
+ ```yaml
+DevOps & Tools
+```
+<img src="https://skillicons.dev/icons?i=git,github,docker,postman&theme=dark" />
  
 </div>
 </td>
@@ -185,16 +178,16 @@ ORDER BY
 
 ```redis
 127.0.0.1:6379> KEYS activity:*
-1) "activity:contribution_graph"
-2) "activity:streak"
-3) "activity:last_commit"
+1) "activity: contribution_graph"
+2) "activity: streak"
+3) "activity: last_commit"
 
 127.0.0.1:6379> GET activity:contribution_graph
 # ── rendering below ───────────────────────────
 ```
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=abdelrahman-kamel-elgendy&bg_color=0D1117&color=A78BFA&line=A78BFA&point=ffffff&area=true&hide_border=true" width="100%"/>
+    <img src="./activity-graph.svg" width="100%" alt="GitHub Activity Graph" />
 </div>
 
 ---
