@@ -203,10 +203,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-09 06:56:13.148 +02:00 INF] tip-service Fetching tip of the day...
-[2026-10-09 06:56:13.148 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
-[2026-10-09 06:56:13.148 +02:00 INF] tip-service Status: OK  →  tip loaded
-[2026-10-09 06:56:13.148 +02:00 TIP] tip-service Apply the visitor pattern to add operations to object structures without modifying them.
+[2026-10-10 06:41:58.989 +02:00 INF] tip-service Fetching tip of the day...
+[2026-10-10 06:41:58.989 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
+[2026-10-10 06:41:58.989 +02:00 INF] tip-service Status: OK  →  tip loaded
+[2026-10-10 06:41:58.989 +02:00 TIP] tip-service Use database query tagging to identify which application code generated a slow query.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-09 06:56:13.148 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-09 06:56:13.148 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
-[2026-10-09 06:56:13.148 +02:00 INF] quote-service Message received  →  quote loaded
-[2026-10-09 06:56:13.148 +02:00 QOT] quote-service The first thing you learn in life is you're a fool. The last thing you learn in life is you're the same fool.
-[2026-10-09 06:56:13.148 +02:00 AUT] quote-service Ray Bradbury
+[2026-10-10 06:41:58.989 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-10 06:41:58.989 +02:00 INF] quote-service GET https://zenquotes.io/api/today  →  200 OK
+[2026-10-10 06:41:58.989 +02:00 INF] quote-service Message received  →  quote loaded
+[2026-10-10 06:41:58.989 +02:00 QOT] quote-service Ability is a poor man's wealth.
+[2026-10-10 06:41:58.989 +02:00 AUT] quote-service John Wooden
 ```
 <!-- QUOTE_END -->
 
