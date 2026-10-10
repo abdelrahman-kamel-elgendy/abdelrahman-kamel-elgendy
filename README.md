@@ -149,13 +149,11 @@ ORDER BY
 -- execution time: 0.003s
 -- status        : 200 OK
 -- cache         : HIT
--- ──────────────────────────────────
 
 -- ── Indexes used ───────────────────
 -- idx_username  (seek)
 -- idx_year      (seek)
 -- idx_contributions (sort)
--- ──────────────────────────────────
 ```
 </td>
 <td valign="top" width="60%">
