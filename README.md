@@ -180,7 +180,7 @@ ORDER BY
 ```log
 [2026-10-10 13:09:49.950 +03:00 INF] tip-service Fetching tip of the day...
 [2026-10-10 13:09:49.950 +03:00 INF] tip-service Status: OK  →  tip loaded
-[2026-10-10 13:09:49.950 +03:00 TIP] tip-service Use read replicas to offload heavy read queries from your primary database.
+[2026-10-10 13:09:49.950 +03:00 TIP] tip-service Use read replicas xto offload heavy read queries from your primary database.
 ```
 <!-- TIP_END -->
  
