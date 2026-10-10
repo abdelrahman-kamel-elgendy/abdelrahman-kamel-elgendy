@@ -89,7 +89,7 @@ def build_quote_block(ts: str, quote: str, author: str, error: str | None) -> st
         f"[{ts} INF] {svc} Connecting to quotes upstream...",
         *status,
         f"[{ts} QOT] {svc} Quote \u2192 \"{quote}\"",
-        f"[{ts} AUT:] {svc} Author \u2192 {author} ",
+        f"[{ts} AUT] {svc} Author \u2192 {author} ",
         "```",
         "<!-- QUOTE_END -->",
     ])
