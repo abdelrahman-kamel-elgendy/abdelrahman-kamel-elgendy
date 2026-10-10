@@ -10,31 +10,59 @@ permissions:
 
 concurrency:
   group: update-readme
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
+
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Update tip and quote in README
-        run: python3 scripts/update_readme.py
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
 
-      - name: Commit and push
-        env:
-          GIT_NAME: abdelrahman-kamel-elgendy
-          GIT_EMAIL: abdelrahman.kamel.elgendy@gmail.com
+      - name: Install Dependencies
+        if: hashFiles('requirements.txt') != ''
         run: |
-          git config user.name  "$GIT_NAME"
-          git config user.email "$GIT_EMAIL"
-          git add README.md
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-            exit 0
+          pip install -r requirements.txt
+
+      - name: Update README
+        run: |
+          echo "Updating README..."
+          python scripts/update_readme.py
+
+      - name: Check Changes
+        id: changes
+        run: |
+          if git diff --quiet README.md; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
-          git commit -m "Update daily tip and quote $(TZ=Africa/Cairo date +'%Y-%m-%d')"
-          git pull --rebase --autostash
-          git push
+
+      - name: Commit Changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+          git commit -m "docs: update daily tip & quote ($(TZ=Africa/Cairo date +'%Y-%m-%d'))"
+
+      - name: Push Changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git pull --rebase origin ${{ github.ref_name }}
+          git push origin HEAD:${{ github.ref_name }}
+
+      - name: No Changes
+        if: steps.changes.outputs.changed == 'false'
+        run: echo "README is already up to date."
