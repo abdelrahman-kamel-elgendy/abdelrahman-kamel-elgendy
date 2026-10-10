@@ -198,7 +198,6 @@ ORDER BY
 <!-- TIP_START -->
 ```log
 [2026-10-10 06:41:58.989 +02:00 INF] tip-service Fetching tip of the day...
-[2026-10-10 06:41:58.989 +02:00 INF] tip-service Source: tips.json  offset: day_of_year % 365
 [2026-10-10 06:41:58.989 +02:00 INF] tip-service Status: OK  →  tip loaded
 [2026-10-10 06:41:58.989 +02:00 TIP] tip-service Use database query tagging to identify which application code generated a slow query.
 ```
