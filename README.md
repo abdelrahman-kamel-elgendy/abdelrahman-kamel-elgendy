@@ -176,10 +176,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-11 07:26:54.752 +03:00 INF] tip-service Fetching tip of the day...
-[2026-10-11 07:26:54.752 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-10-11 07:26:54.752 +03:00 INF] tip-service Message received → tip loaded
-[2026-10-11 07:26:54.752 +03:00 TIP] tip-service Tip → Data migrations should be backward-compatible — never rename or drop columns in one step.
+[2026-10-12 07:42:29.855 +03:00 INF] tip-service Fetching tip of the day...
+[2026-10-12 07:42:29.855 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-10-12 07:42:29.855 +03:00 INF] tip-service Message received → tip loaded
+[2026-10-12 07:42:29.855 +03:00 TIP] tip-service Tip → Use optimistic locking to handle concurrent updates without heavy database locks.
 ```
 <!-- TIP_END -->
  
@@ -190,11 +190,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-11 07:26:54.752 +03:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-11 07:26:54.752 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-10-11 07:26:54.752 +03:00 INF] quote-service Message received → quote loaded
-[2026-10-11 07:26:54.752 +03:00 QOT] quote-service Quote → "You only live once, but if you do it right, once is enough."
-[2026-10-11 07:26:54.752 +03:00 AUT] quote-service Author → Mae West 
+[2026-10-12 07:42:29.855 +03:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-12 07:42:29.855 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-10-12 07:42:29.855 +03:00 INF] quote-service Message received → quote loaded
+[2026-10-12 07:42:29.855 +03:00 QOT] quote-service Quote → "Those who know, do. Those that understand, teach."
+[2026-10-12 07:42:29.855 +03:00 AUT] quote-service Author → Aristotle 
 ```
 <!-- QUOTE_END -->
 
