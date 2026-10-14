@@ -176,10 +176,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-13 08:47:13.386 +03:00 INF] tip-service Fetching tip of the day...
-[2026-10-13 08:47:13.386 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-10-13 08:47:13.386 +03:00 INF] tip-service Message received → tip loaded
-[2026-10-13 08:47:13.386 +03:00 TIP] tip-service Tip → Never log sensitive data like passwords, tokens, or PII.
+[2026-10-14 06:50:35.286 +03:00 INF] tip-service Fetching tip of the day...
+[2026-10-14 06:50:35.286 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-10-14 06:50:35.286 +03:00 INF] tip-service Message received → tip loaded
+[2026-10-14 06:50:35.286 +03:00 TIP] tip-service Tip → Use a CDN to serve static assets closer to users.
 ```
 <!-- TIP_END -->
  
@@ -190,11 +190,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-13 08:47:13.386 +03:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-13 08:47:13.386 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-10-13 08:47:13.386 +03:00 INF] quote-service Message received → quote loaded
-[2026-10-13 08:47:13.386 +03:00 QOT] quote-service Quote → "Life can be the scariest and most beautiful thing simultaneously."
-[2026-10-13 08:47:13.386 +03:00 AUT] quote-service Author → Maxime Lagace 
+[2026-10-14 06:50:35.286 +03:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-14 06:50:35.286 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-10-14 06:50:35.286 +03:00 INF] quote-service Message received → quote loaded
+[2026-10-14 06:50:35.286 +03:00 QOT] quote-service Quote → "Genius is one percent inspiration and ninety-nine percent perspiration."
+[2026-10-14 06:50:35.286 +03:00 AUT] quote-service Author → Thomas Edison 
 ```
 <!-- QUOTE_END -->
 
