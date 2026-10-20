@@ -176,10 +176,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-19 06:34:51.989 +03:00 INF] tip-service Fetching tip of the day...
-[2026-10-19 06:34:51.989 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-10-19 06:34:51.989 +03:00 INF] tip-service Message received → tip loaded
-[2026-10-19 06:34:51.989 +03:00 TIP] tip-service Tip → Use a staging environment that mirrors production before deploying changes.
+[2026-10-20 06:45:37.611 +03:00 INF] tip-service Fetching tip of the day...
+[2026-10-20 06:45:37.611 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-10-20 06:45:37.611 +03:00 INF] tip-service Message received → tip loaded
+[2026-10-20 06:45:37.611 +03:00 TIP] tip-service Tip → Avoid storing computed values in the database — compute them at read time or cache them.
 ```
 <!-- TIP_END -->
  
@@ -190,11 +190,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-19 06:34:51.989 +03:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-19 06:34:51.989 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-10-19 06:34:51.989 +03:00 INF] quote-service Message received → quote loaded
-[2026-10-19 06:34:51.989 +03:00 QOT] quote-service Quote → "The secret of change is to focus all your energy not on fighting the old, but on building the new."
-[2026-10-19 06:34:51.989 +03:00 AUT] quote-service Author → Colin R. Davis 
+[2026-10-20 06:45:37.611 +03:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-20 06:45:37.611 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-10-20 06:45:37.611 +03:00 INF] quote-service Message received → quote loaded
+[2026-10-20 06:45:37.611 +03:00 QOT] quote-service Quote → "Success is about doing the right thing, not about doing everything right."
+[2026-10-20 06:45:37.611 +03:00 AUT] quote-service Author → Gary Keller 
 ```
 <!-- QUOTE_END -->
 
