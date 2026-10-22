@@ -176,10 +176,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-21 06:36:39.232 +03:00 INF] tip-service Fetching tip of the day...
-[2026-10-21 06:36:39.232 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-10-21 06:36:39.232 +03:00 INF] tip-service Message received → tip loaded
-[2026-10-21 06:36:39.232 +03:00 TIP] tip-service Tip → Use bulk inserts instead of looping individual INSERTs for large datasets.
+[2026-10-22 06:36:23.891 +03:00 INF] tip-service Fetching tip of the day...
+[2026-10-22 06:36:23.891 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-10-22 06:36:23.891 +03:00 INF] tip-service Message received → tip loaded
+[2026-10-22 06:36:23.891 +03:00 TIP] tip-service Tip → Separate your configuration from your code using a config service or environment files.
 ```
 <!-- TIP_END -->
  
@@ -190,11 +190,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-21 06:36:39.232 +03:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-21 06:36:39.232 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-10-21 06:36:39.232 +03:00 INF] quote-service Message received → quote loaded
-[2026-10-21 06:36:39.232 +03:00 QOT] quote-service Quote → "Each day your life grows a day shorter. Make every move count."
-[2026-10-21 06:36:39.232 +03:00 AUT] quote-service Author → Ming-Dao Deng 
+[2026-10-22 06:36:23.891 +03:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-22 06:36:23.891 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-10-22 06:36:23.891 +03:00 INF] quote-service Message received → quote loaded
+[2026-10-22 06:36:23.891 +03:00 QOT] quote-service Quote → "The secret of getting started is breaking your complex, overwhelming tasks into small manageable tasks, and then starting on the first one."
+[2026-10-22 06:36:23.891 +03:00 AUT] quote-service Author → Mark Twain 
 ```
 <!-- QUOTE_END -->
 
