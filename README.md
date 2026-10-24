@@ -176,10 +176,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-23 06:41:05.891 +03:00 INF] tip-service Fetching tip of the day...
-[2026-10-23 06:41:05.891 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-10-23 06:41:05.891 +03:00 INF] tip-service Message received → tip loaded
-[2026-10-23 06:41:05.891 +03:00 TIP] tip-service Tip → Implement proper error handling middleware to return consistent error response shapes.
+[2026-10-24 06:35:07.812 +03:00 INF] tip-service Fetching tip of the day...
+[2026-10-24 06:35:07.812 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-10-24 06:35:07.812 +03:00 INF] tip-service Message received → tip loaded
+[2026-10-24 06:35:07.812 +03:00 TIP] tip-service Tip → Use dead letter queues to catch and inspect messages that failed processing.
 ```
 <!-- TIP_END -->
  
@@ -190,11 +190,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-23 06:41:05.891 +03:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-23 06:41:05.891 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-10-23 06:41:05.891 +03:00 INF] quote-service Message received → quote loaded
-[2026-10-23 06:41:05.891 +03:00 QOT] quote-service Quote → "If someone betrays you once, it's their fault; if they betray you twice, it's your fault."
-[2026-10-23 06:41:05.891 +03:00 AUT] quote-service Author → Eleanor Roosevelt 
+[2026-10-24 06:35:07.812 +03:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-24 06:35:07.812 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-10-24 06:35:07.812 +03:00 INF] quote-service Message received → quote loaded
+[2026-10-24 06:35:07.812 +03:00 QOT] quote-service Quote → "There are more quarrels smothered by just shutting your mouth, and holding it shut, than by all the wisdom in the world."
+[2026-10-24 06:35:07.812 +03:00 AUT] quote-service Author → Henry Ward Beecher 
 ```
 <!-- QUOTE_END -->
 
