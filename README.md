@@ -176,10 +176,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-25 06:32:19.804 +03:00 INF] tip-service Fetching tip of the day...
-[2026-10-25 06:32:19.804 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-10-25 06:32:19.804 +03:00 INF] tip-service Message received → tip loaded
-[2026-10-25 06:32:19.804 +03:00 TIP] tip-service Tip → Service discovery lets microservices find each other dynamically without hardcoded URLs.
+[2026-10-26 06:34:53.313 +03:00 INF] tip-service Fetching tip of the day...
+[2026-10-26 06:34:53.313 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-10-26 06:34:53.313 +03:00 INF] tip-service Message received → tip loaded
+[2026-10-26 06:34:53.313 +03:00 TIP] tip-service Tip → Use partial indexes to index only the subset of rows you actually query.
 ```
 <!-- TIP_END -->
  
@@ -190,11 +190,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-25 06:32:19.804 +03:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-25 06:32:19.804 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-10-25 06:32:19.804 +03:00 INF] quote-service Message received → quote loaded
-[2026-10-25 06:32:19.804 +03:00 QOT] quote-service Quote → "The wiser you get, the less you care to look like a fool."
-[2026-10-25 06:32:19.804 +03:00 AUT] quote-service Author → Maxime Lagace 
+[2026-10-26 06:34:53.313 +03:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-26 06:34:53.313 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-10-26 06:34:53.313 +03:00 INF] quote-service Message received → quote loaded
+[2026-10-26 06:34:53.313 +03:00 QOT] quote-service Quote → "Loving thoughts and actions are clearly beneficial for our physical and mental health."
+[2026-10-26 06:34:53.313 +03:00 AUT] quote-service Author → Dalai Lama 
 ```
 <!-- QUOTE_END -->
 
