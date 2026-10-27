@@ -176,10 +176,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-26 06:34:53.313 +03:00 INF] tip-service Fetching tip of the day...
-[2026-10-26 06:34:53.313 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-10-26 06:34:53.313 +03:00 INF] tip-service Message received → tip loaded
-[2026-10-26 06:34:53.313 +03:00 TIP] tip-service Tip → Use partial indexes to index only the subset of rows you actually query.
+[2026-10-27 06:59:48.764 +03:00 INF] tip-service Fetching tip of the day...
+[2026-10-27 06:59:48.764 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-10-27 06:59:48.764 +03:00 INF] tip-service Message received → tip loaded
+[2026-10-27 06:59:48.764 +03:00 TIP] tip-service Tip → Prefer query builders or parameterized queries over string concatenation to prevent SQL injection.
 ```
 <!-- TIP_END -->
  
@@ -190,11 +190,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-26 06:34:53.313 +03:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-26 06:34:53.313 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-10-26 06:34:53.313 +03:00 INF] quote-service Message received → quote loaded
-[2026-10-26 06:34:53.313 +03:00 QOT] quote-service Quote → "Loving thoughts and actions are clearly beneficial for our physical and mental health."
-[2026-10-26 06:34:53.313 +03:00 AUT] quote-service Author → Dalai Lama 
+[2026-10-27 06:59:48.764 +03:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-27 06:59:48.764 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-10-27 06:59:48.764 +03:00 INF] quote-service Message received → quote loaded
+[2026-10-27 06:59:48.764 +03:00 QOT] quote-service Quote → "Still your waters."
+[2026-10-27 06:59:48.764 +03:00 AUT] quote-service Author → Josh Waitzkin 
 ```
 <!-- QUOTE_END -->
 
