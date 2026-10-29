@@ -176,10 +176,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-28 07:24:23.399 +03:00 INF] tip-service Fetching tip of the day...
-[2026-10-28 07:24:23.399 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-10-28 07:24:23.399 +03:00 INF] tip-service Message received → tip loaded
-[2026-10-28 07:24:23.399 +03:00 TIP] tip-service Tip → Use a secrets manager (Vault, AWS Secrets Manager) instead of storing secrets in .env files.
+[2026-10-29 07:42:50.244 +03:00 INF] tip-service Fetching tip of the day...
+[2026-10-29 07:42:50.244 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-10-29 07:42:50.244 +03:00 INF] tip-service Message received → tip loaded
+[2026-10-29 07:42:50.244 +03:00 TIP] tip-service Tip → Blue-green deployments let you switch traffic between two identical environments with zero downtime.
 ```
 <!-- TIP_END -->
  
@@ -190,11 +190,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-28 07:24:23.399 +03:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-28 07:24:23.399 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-10-28 07:24:23.399 +03:00 INF] quote-service Message received → quote loaded
-[2026-10-28 07:24:23.399 +03:00 QOT] quote-service Quote → "What we dwell on is who we become."
-[2026-10-28 07:24:23.399 +03:00 AUT] quote-service Author → Oprah Winfrey 
+[2026-10-29 07:42:50.244 +03:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-29 07:42:50.244 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-10-29 07:42:50.244 +03:00 INF] quote-service Message received → quote loaded
+[2026-10-29 07:42:50.244 +03:00 QOT] quote-service Quote → "The more reasons you have for achieving your goal, the more determined you will become."
+[2026-10-29 07:42:50.244 +03:00 AUT] quote-service Author → Brian Tracy 
 ```
 <!-- QUOTE_END -->
 
