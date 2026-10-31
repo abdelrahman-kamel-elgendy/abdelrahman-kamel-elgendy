@@ -176,10 +176,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-30 06:42:23.258 +02:00 INF] tip-service Fetching tip of the day...
-[2026-10-30 06:42:23.258 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-10-30 06:42:23.258 +02:00 INF] tip-service Message received → tip loaded
-[2026-10-30 06:42:23.258 +02:00 TIP] tip-service Tip → Use structured logging levels: DEBUG, INFO, WARN, ERROR — and filter by level in production.
+[2026-10-31 06:26:45.583 +02:00 INF] tip-service Fetching tip of the day...
+[2026-10-31 06:26:45.583 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-10-31 06:26:45.583 +02:00 INF] tip-service Message received → tip loaded
+[2026-10-31 06:26:45.583 +02:00 TIP] tip-service Tip → Implement API timeouts at the gateway level as a safety net for all services.
 ```
 <!-- TIP_END -->
  
@@ -190,11 +190,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-30 06:42:23.258 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-30 06:42:23.258 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-10-30 06:42:23.258 +02:00 INF] quote-service Message received → quote loaded
-[2026-10-30 06:42:23.258 +02:00 QOT] quote-service Quote → "Distant water does not put out a nearby fire."
-[2026-10-30 06:42:23.258 +02:00 AUT] quote-service Author → Chinese Proverb 
+[2026-10-31 06:26:45.583 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-10-31 06:26:45.583 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-10-31 06:26:45.583 +02:00 INF] quote-service Message received → quote loaded
+[2026-10-31 06:26:45.583 +02:00 QOT] quote-service Quote → "When you believe in a thing, believe in it all the way, implicitly and unquestionable."
+[2026-10-31 06:26:45.583 +02:00 AUT] quote-service Author → Walt Disney 
 ```
 <!-- QUOTE_END -->
 
