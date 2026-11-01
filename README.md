@@ -111,8 +111,11 @@ stack:
 
 <!-- ── THEME: SQL query ────────────────────────────────── -->
 <!-- ═══════════════════ GITHUB ANALYTICS ═══════════════════
-     Left: SQL query with a real result set (snapshot as of 2026-11-01).
-     Right: live widgets for stars, streak graphic and top languages.
+     Three rows, one per widget: each SQL block is generated daily by
+     scripts/update_metrics.py between its START/END markers.
+       STATS  -> GitHub Stats card
+       STREAK -> Streak card
+       LANGS  -> Most Used Languages card
 -->
 ## `metrics.sql`
 
@@ -120,55 +123,49 @@ stack:
 <tr>
 <td valign="top" width="50%">
 
-<!-- METRICS_START -->
+<!-- STATS_START -->
 ```sql
--- ──────────────────────────────────
---  Querying developer stats
---  from github.db
--- ──────────────────────────────────
-SELECT
-    total_commits,
-    commits_this_year,
-    total_contributions,
-    pull_requests,
-    merged_pull_requests,
-    total_issues,
-    current_streak,
-    longest_streak
-FROM
-    github_stats
-WHERE
-    username = 'abdelrahman-kamel-elgendy'
-    AND year = YEAR(CURDATE());
-
--- ── Result ─────────────────────────
--- as of 2026-11-01
--- +----------------------+--------+
--- | total_commits        |    563 |
--- | commits_this_year    |    450 |
--- | total_contributions  |    639 |
--- | pull_requests        |     28 |
--- | merged_pull_requests |     28 |
--- | total_issues         |      0 |
--- | current_streak       |  216 d |
--- | longest_streak       |  216 d |
--- +----------------------+--------+
--- streak window: 2026-03-31 → 2026-11-01
--- 1 row in set
+-- populated by scripts/update_metrics.py on the next workflow run
 ```
-<!-- METRICS_END -->
+<!-- STATS_END -->
 
 </td>
-<td valign="top" width="50%">
-<div align="center">
+<td valign="middle" width="50%" align="center">
 
 <img width="100%" src="https://github-stats-extended.vercel.app/api?username=abdelrahman-kamel-elgendy&show_icons=true&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&icon_color=7C3AED&text_color=CDD6F4&rank_icon=github" alt="GitHub Stats"/>
 
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+<!-- STREAK_START -->
+```sql
+-- populated by scripts/update_metrics.py on the next workflow run
+```
+<!-- STREAK_END -->
+
+</td>
+<td valign="middle" width="50%" align="center">
+
 <img width="100%" src="https://streak-stats.demolab.com?user=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&background=0D1117&ring=A78BFA&fire=7C3AED&currStreakLabel=A78BFA&sideLabels=CDD6F4&currStreakNum=FFFFFF&sideNums=CDD6F4&dates=6B7280" alt="GitHub Streak"/>
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+<!-- LANGS_START -->
+```sql
+-- populated by scripts/update_metrics.py on the next workflow run
+```
+<!-- LANGS_END -->
+
+</td>
+<td valign="middle" width="50%" align="center">
 
 <img width="100%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&text_color=CDD6F4&layout=compact" alt="Top Languages"/>
 
-</div>
 </td>
 </tr>
 </table>
@@ -180,10 +177,10 @@ WHERE
  
 <!-- TIP_START -->
 ```log
-[2026-11-01 17:25:17.901 +02:00 INF] tip-service Fetching tip of the day...
-[2026-11-01 17:25:17.901 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-11-01 17:25:17.901 +02:00 INF] tip-service Message received → tip loaded
-[2026-11-01 17:25:17.901 +02:00 TIP] tip-service Tip → Database connection strings should never appear in source code or logs.
+[2026-11-01 06:45:59.648 +02:00 INF] tip-service Fetching tip of the day...
+[2026-11-01 06:45:59.648 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-11-01 06:45:59.648 +02:00 INF] tip-service Message received → tip loaded
+[2026-11-01 06:45:59.648 +02:00 TIP] tip-service Tip → Database connection strings should never appear in source code or logs.
 ```
 <!-- TIP_END -->
  
@@ -194,11 +191,11 @@ WHERE
  
 <!-- QUOTE_START -->
 ```log
-[2026-11-01 17:25:17.901 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-11-01 17:25:17.901 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-11-01 17:25:17.901 +02:00 INF] quote-service Message received → quote loaded
-[2026-11-01 17:25:17.901 +02:00 QOT] quote-service Quote → "When something comes from within, when it is a part of you, you have no choice but to live it, to express it."
-[2026-11-01 17:25:17.901 +02:00 AUT] quote-service Author → Kamal Ravikant 
+[2026-11-01 06:45:59.648 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-11-01 06:45:59.648 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-11-01 06:45:59.648 +02:00 INF] quote-service Message received → quote loaded
+[2026-11-01 06:45:59.648 +02:00 QOT] quote-service Quote → "When something comes from within, when it is a part of you, you have no choice but to live it, to express it."
+[2026-11-01 06:45:59.648 +02:00 AUT] quote-service Author → Kamal Ravikant 
 ```
 <!-- QUOTE_END -->
 
