@@ -176,10 +176,10 @@ ORDER BY
  
 <!-- TIP_START -->
 ```log
-[2026-10-10 13:54:30.240 +03:00 INF] tip-service Fetching tip of the day...
-[2026-10-10 13:54:30.240 +03:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-10-10 13:54:30.240 +03:00 INF] tip-service Message received → tip loaded
-[2026-10-10 13:54:30.240 +03:00 TIP] tip-service Tip → Use read replicas to offload heavy read queries from your primary database.
+[2026-11-01 06:45:59.648 +02:00 INF] tip-service Fetching tip of the day...
+[2026-11-01 06:45:59.648 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-11-01 06:45:59.648 +02:00 INF] tip-service Message received → tip loaded
+[2026-11-01 06:45:59.648 +02:00 TIP] tip-service Tip → Database connection strings should never appear in source code or logs.
 ```
 <!-- TIP_END -->
  
@@ -190,11 +190,11 @@ ORDER BY
  
 <!-- QUOTE_START -->
 ```log
-[2026-10-10 13:54:30.240 +03:00 INF] quote-service Connecting to quotes upstream...
-[2026-10-10 13:54:30.240 +03:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-10-10 13:54:30.240 +03:00 INF] quote-service Message received → quote loaded
-[2026-10-10 13:54:30.240 +03:00 QOT] quote-service Quote → "Ability is a poor man's wealth."
-[2026-10-10 13:54:30.240 +03:00 AUT] quote-service Author → John Wooden 
+[2026-11-01 06:45:59.648 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-11-01 06:45:59.648 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-11-01 06:45:59.648 +02:00 INF] quote-service Message received → quote loaded
+[2026-11-01 06:45:59.648 +02:00 QOT] quote-service Quote → "When something comes from within, when it is a part of you, you have no choice but to live it, to express it."
+[2026-11-01 06:45:59.648 +02:00 AUT] quote-service Author → Kamal Ravikant 
 ```
 <!-- QUOTE_END -->
 
