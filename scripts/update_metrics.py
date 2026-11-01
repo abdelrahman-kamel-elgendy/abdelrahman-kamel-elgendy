@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Regenerates three SQL-style blocks in README.md from live GitHub data:
 
-  STATS   -> next to the GitHub Stats card
   STREAK  -> next to the Streak card
   LANGS   -> next to the Most Used Languages card
 
@@ -167,32 +166,6 @@ def fence(sql):
     return "```sql\n" + sql.strip("\n") + "\n```"
 
 
-def render_stats(user, data, today):
-    rows = [
-        ("total_stars", data["stars"]),
-        ("total_commits", data["total_commits"]),
-        ("commits_this_year", data["commits_this_year"]),
-        ("pull_requests", data["pull_requests"]),
-        ("merged_pull_requests", data["merged_pull_requests"]),
-        ("total_issues", data["total_issues"]),
-    ]
-    return fence(f"""-- ── github_stats ─────────────────
-SELECT
-    total_stars,
-    total_commits,
-    commits_this_year,
-    pull_requests,
-    merged_pull_requests,
-    total_issues
-FROM
-    github_stats
-WHERE
-    username = '{user}';
-
--- ── Result ({today}) ──
-{ascii_table(["metric", "value"], rows)}
--- 6 rows in set""")
-
 
 def render_streak(user, data, today):
     s = streaks(data["days"], today)
@@ -267,7 +240,6 @@ def main():
 
     data = fetch(token, user)
     blocks = {
-        "STATS": render_stats(user, data, today),
         "STREAK": render_streak(user, data, today),
         "LANGS": render_langs(user, data, today),
     }
