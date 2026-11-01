@@ -109,19 +109,7 @@ stack:
 
 ---
 
-<!-- ── THEME: SQL query ────────────────────────────────── -->
-<!-- ═══════════════════ GITHUB ANALYTICS ═══════════════════
-     Three rows, one per widget: each SQL block is generated daily by
-     scripts/update_metrics.py between its START/END markers.
-       STATS  -> GitHub Stats card
-       STREAK -> Streak card
-       LANGS  -> Most Used Languages card
--->
 ## `metrics.sql`
-
-<table width="100%">
-<tr>
-<td valign="top" width="50%">
 
 <!-- STATS_START -->
 ```sql
@@ -153,15 +141,8 @@ WHERE
 ```
 <!-- STATS_END -->
 
-</td>
-<td valign="middle" width="50%" align="center">
-
 <img width="100%" src="https://github-stats-extended.vercel.app/api?username=abdelrahman-kamel-elgendy&show_icons=true&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&icon_color=7C3AED&text_color=CDD6F4&rank_icon=github" alt="GitHub Stats"/>
 
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
 
 <!-- STREAK_START -->
 ```sql
@@ -193,15 +174,9 @@ WHERE
 ```
 <!-- STREAK_END -->
 
-</td>
-<td valign="middle" width="50%" align="center">
 
 <img width="100%" src="https://streak-stats.demolab.com?user=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&background=0D1117&ring=A78BFA&fire=7C3AED&currStreakLabel=A78BFA&sideLabels=CDD6F4&currStreakNum=FFFFFF&sideNums=CDD6F4&dates=6B7280" alt="GitHub Streak"/>
 
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
 
 <!-- LANGS_START -->
 ```sql
@@ -234,16 +209,6 @@ LIMIT 6;
 -- 6 rows in set
 ```
 <!-- LANGS_END -->
-
-</td>
-<td valign="middle" width="50%" align="center">
-
-<img width="100%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&text_color=CDD6F4&layout=compact" alt="Top Languages"/>
-
-</td>
-</tr>
-</table>
-
 ---
 
 <!-- ── THEME: Application log ─────────────────────────── -->
