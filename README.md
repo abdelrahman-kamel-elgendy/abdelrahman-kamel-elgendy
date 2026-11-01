@@ -13,27 +13,26 @@
     "status_code": 200,
     "data": {
         "name": "Abdelrahman Kamel",
-        "title": "Backend Developer",
-        "location": "Egypt 🇪🇬  [UTC+2]",
-        "uptime": "available 24/7 for cool projects",
+        "title": "Full Stack Developer",
         "core_skills": [
             "RESTful & GraphQL API Design",
             "Microservices & Event-Driven Architecture",
             "Database Modeling & Query Optimization",
-            "Auth Systems  (JWT · OAuth2 · Sessions)"
+            "Auth Systems  (JWT · OAuth2 · Sessions)",
+            "Frontend Development  (Angular · TypeScript)"
         ],
         "currently": {
-            "building": "Scalable backend systems",
+            "building": "Full stack apps: .NET APIs + Angular clients",
             "learning": [
                 "System Design patterns",
                 "AWS Cloud"
             ],
             "focus_on": [
                 "REST APIs",
-                "Microservices",
+                "Angular",
                 "System Design"
             ],
-            "open_to": "Exciting backend opportunities"
+            "open_to": "Exciting full stack opportunities"
         },
         "config": {
             "coffee_dependency": true,
@@ -69,6 +68,7 @@ stack:
     - Spring
     - NodeJS
     - NestJS
+    - Angular
 
   databases_and_orms:
     - MySQL
@@ -95,7 +95,7 @@ Languages
  ```yaml
 Frameworks & Runtimes
 ```
-<img src="https://skillicons.dev/icons?i=dotnet,spring,nodejs,nestjs&theme=dark" />
+<img src="https://skillicons.dev/icons?i=dotnet,spring,nodejs,nestjs,angular&theme=dark" />
 
  ```yaml
 Databases & ORMs
@@ -159,11 +159,11 @@ ORDER BY
 <td valign="top" width="60%">
 <div align="center">
 
-<img width="100%" src="https://github-readme-stats.vercel.app/api?username=abdelrahman-kamel-elgendy&show_icons=true&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA&text_color=CDD6F4&rank_icon=github" alt="GitHub Stats" />
+<img width="100%" src="https://github-stats-extended.vercel.app/api?username=abdelrahman-kamel-elgendy&show_icons=true&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA&text_color=CDD6F4&rank_icon=github" alt="GitHub Stats" />
 
 <img width="100%" src="https://streak-stats.demolab.com?user=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&background=0D1117&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA&sideLabels=CDD6F4&currStreakNum=FFFFFF&sideNums=CDD6F4&dates=6B7280" alt="GitHub Streak Stats" />
 
-<img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&text_color=CDD6F4&layout=compact" alt="Top Languages" />
+<img width="100%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&text_color=CDD6F4&layout=compact" alt="Top Languages" />
 
 </div>
 </td>
