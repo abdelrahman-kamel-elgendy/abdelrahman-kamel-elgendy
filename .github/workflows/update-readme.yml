@@ -23,6 +23,9 @@ jobs:
       - name: Update tip and quote in README
         run: python3 scripts/update_readme.py
 
+      - name: Update metrics in README
+        run: python3 scripts/update_metrics.py
+
       - name: Commit and push
         env:
           GIT_NAME: abdelrahman-kamel-elgendy
@@ -35,6 +38,6 @@ jobs:
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "Update daily tip and quote $(TZ=Africa/Cairo date +'%Y-%m-%d')"
+          git commit -m "Update daily readme $(TZ=Africa/Cairo date +'%Y-%m-%d')"
           git pull --rebase --autostash
           git push

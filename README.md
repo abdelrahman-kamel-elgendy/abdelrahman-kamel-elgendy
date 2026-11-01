@@ -1,45 +1,40 @@
-<div align="center">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,40:1e1b4b,100:24243e&height=220&section=header&text=Abdelrahman%20Kamel&fontSize=56&fontColor=ffffff&fontAlignY=40&desc=Backend%20Developer&descAlignY=62&descSize=25&animation=fadeIn"/>
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=800&color=A78BFA&center=true&vCenter=true&width=650&lines=Building+robust+backend+systems;Crafting+clean+%26+scalable+APIs;Always+learning%2C+always+shipping;Coffee+%2B+Code+%3D+Production+Ready" alt="Typing SVG" />
-</div>
-
+<!-- ═══════════════════════ 01 · HERO ═══════════════════════ Gradient header + typing animation. First 5 seconds: name, role, and what you do, in that order. --> <div align="center"> <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:0f0c29,45:302b63,100:24243e&height=260&section=header&text=Abdelrahman%20Kamel&fontSize=58&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20%C2%B7%20.NET%20%C2%B7%20Java%20%C2%B7%20Angular&descAlignY=60&descSize=20&descColor=A78BFA&animation=fadeIn" alt="Abdelrahman Kamel - Full Stack Developer"/> <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&width=700&lines=Designing+backend+systems+that+scale;REST+APIs+%7C+Microservices+%7C+Auth+%7C+Angular;Writing+code+future-me+won't+curse;Open+to+full+stack+%26+backend+roles" alt="Typing animation"/> <br/> <img src="https://img.shields.io/badge/STATUS-OPEN%20TO%20WORK-22C55E?style=for-the-badge&labelColor=0D1117"/> <img src="https://img.shields.io/badge/ROLE-FULL%20STACK-7C3AED?style=for-the-badge&labelColor=0D1117"/> <img src="https://img.shields.io/badge/BASE-CAIRO%2C%20EG-60A5FA?style=for-the-badge&labelColor=0D1117"/> <img src="https://komarev.com/ghpvc/?username=abdelrahman-kamel-elgendy&style=for-the-badge&color=A78BFA&label=PROFILE+VIEWS&labelColor=0D1117"/> </div> <br/> <!-- ═══════════════════ 02 · IDENTITY (TERMINAL) ═══════════════════ Replaces "About Me" with a shell session. Reads like a real engineer's terminal and answers: who, what, now, next. -->
 ---
 
 <!-- ── THEME: REST API response ─────────────────────────── -->
 ## `GET /api/whoiam`
 
-```json
+```http
+GET /api/whoiam HTTP/1.1
+Host: abdelrahman-kamel-elgendy.dev
+Accept: application/json
+
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Cache-Control: public, max-age=86400
+X-Powered-By: Coffee
+X-Debug-Strategy: console.log first, ask questions later...
+
 {
-    "status_code": 200,
-    "data": {
-        "name": "Abdelrahman Kamel",
-        "title": "Full Stack Developer",
-        "core_skills": [
-            "RESTful & GraphQL API Design",
-            "Microservices & Event-Driven Architecture",
-            "Database Modeling & Query Optimization",
-            "Auth Systems  (JWT · OAuth2 · Sessions)",
-            "Frontend Development  (Angular · TypeScript)"
-        ],
-        "currently": {
-            "building": "Full stack apps: .NET APIs + Angular clients",
-            "learning": [
-                "System Design patterns",
-                "AWS Cloud"
-            ],
-            "focus_on": [
-                "REST APIs",
-                "Angular",
-                "System Design"
-            ],
-            "open_to": "Exciting full stack opportunities"
-        },
-        "config": {
-            "coffee_dependency": true,
-            "favourite_http": 418,
-            "debug_strategy": "console.log first, ask questions later...",
-            "principle": "Write code humans can read, machines can run, and future-you won't curse."
-        }
+    "name": "Abdelrahman Kamel",
+    "title": "Full Stack Developer",
+    "core_skills": [
+        "RESTful & GraphQL API Design",
+        "Microservices & Event-Driven Architecture",
+        "Database Modeling & Query Optimization",
+        "Auth Systems  (JWT · OAuth2 · Sessions)",
+        "Frontend Development  (Angular · TypeScript)"
+    ],
+    "currently": {
+        "building": "Full stack apps: .NET APIs + Angular clients",
+        "learning": ["System Design patterns", "AWS Cloud"],
+        "focus_on": ["REST APIs", "Angular", "System Design"],
+        "open_to": "Exciting full stack opportunities"
+    },
+    "config": {
+        "coffee_dependency": true,
+        "favourite_http": 418,
+        "principle": "Write code humans can read, machines can run, and future-you won't curse."
     }
 }
 ```
@@ -115,59 +110,65 @@ stack:
 ---
 
 <!-- ── THEME: SQL query ────────────────────────────────── -->
+<!-- ═══════════════════ GITHUB ANALYTICS ═══════════════════
+     Left: SQL query with a real result set (snapshot as of 2026-11-01).
+     Right: live widgets for stars, streak graphic and top languages.
+-->
 ## `metrics.sql`
 
 <table width="100%">
 <tr>
 <td valign="top" width="50%">
 
+<!-- METRICS_START -->
 ```sql
--- ──────────────────────────────────
---  Querying developer stats
---  from github.db
--- ──────────────────────────────────
 SELECT
-    total_stars,
     total_commits,
+    commits_this_year,
+    total_contributions,
     pull_requests,
+    merged_pull_requests,
     total_issues,
-    contributed_to,
     current_streak,
-    longest_streak,
-    top_languages
+    longest_streak
 FROM
     github_stats
 WHERE
     username = 'abdelrahman-kamel-elgendy'
-    AND year = YEAR (CURDATE ())
-ORDER BY
-    contributions DESC;
+    AND year = YEAR(CURDATE());
 
 -- ── Result ─────────────────────────
--- rows returned : 1
--- execution time: 0.003s
--- status        : 200 OK
--- cache         : HIT
-
--- ── Indexes used ───────────────────
--- idx_username  (seek)
--- idx_year      (seek)
--- idx_contributions (sort)
+-- as of 2023-33-4
+-- +---------------------+-------+
+-- | total_commits       |   546 |
+-- | commits_this_year   |   433 |
+-- | total_contributions |   634 |
+-- | pull_requests       |    28 |
+-- | merged_pull_requests|    28 |
+-- | total_issues        |     0 |
+-- | current_streak      | 216 d |
+-- | longest_streak      | 216 d |
+-- +---------------------+-------+
+-- streak window: 2026-03-31 → 2026-11-01
+-- 1 row in set
 ```
+<!-- METRICS_END -->
+
 </td>
-<td valign="top" width="60%">
+<td valign="top" width="50%">
 <div align="center">
 
-<img width="100%" src="https://github-stats-extended.vercel.app/api?username=abdelrahman-kamel-elgendy&show_icons=true&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA&text_color=CDD6F4&rank_icon=github" alt="GitHub Stats" />
+<img width="100%" src="https://github-stats-extended.vercel.app/api?username=abdelrahman-kamel-elgendy&show_icons=true&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&icon_color=7C3AED&text_color=CDD6F4&rank_icon=github" alt="GitHub Stats"/>
 
-<img width="100%" src="https://streak-stats.demolab.com?user=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&background=0D1117&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA&sideLabels=CDD6F4&currStreakNum=FFFFFF&sideNums=CDD6F4&dates=6B7280" alt="GitHub Streak Stats" />
+<img width="100%" src="https://streak-stats.demolab.com?user=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&background=0D1117&ring=A78BFA&fire=7C3AED&currStreakLabel=A78BFA&sideLabels=CDD6F4&currStreakNum=FFFFFF&sideNums=CDD6F4&dates=6B7280" alt="GitHub Streak"/>
 
-<img width="100%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&text_color=CDD6F4&layout=compact" alt="Top Languages" />
+<img width="100%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&text_color=CDD6F4&layout=compact" alt="Top Languages"/>
 
 </div>
 </td>
 </tr>
 </table>
+
 ---
 
 <!-- ── THEME: Application log ─────────────────────────── -->
