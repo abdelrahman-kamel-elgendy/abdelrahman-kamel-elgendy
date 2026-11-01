@@ -1,5 +1,12 @@
-<!-- ═══════════════════════ 01 · HERO ═══════════════════════ Gradient header + typing animation. First 5 seconds: name, role, and what you do, in that order. --> <div align="center"> <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:0f0c29,45:302b63,100:24243e&height=260&section=header&text=Abdelrahman%20Kamel&fontSize=58&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20%C2%B7%20.NET%20%C2%B7%20Java%20%C2%B7%20Angular&descAlignY=60&descSize=20&descColor=A78BFA&animation=fadeIn" alt="Abdelrahman Kamel - Full Stack Developer"/> <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&width=700&lines=Designing+backend+systems+that+scale;REST+APIs+%7C+Microservices+%7C+Auth+%7C+Angular;Writing+code+future-me+won't+curse;Open+to+full+stack+%26+backend+roles" alt="Typing animation"/> <br/> <img src="https://img.shields.io/badge/STATUS-OPEN%20TO%20WORK-22C55E?style=for-the-badge&labelColor=0D1117"/> <img src="https://img.shields.io/badge/ROLE-FULL%20STACK-7C3AED?style=for-the-badge&labelColor=0D1117"/> <img src="https://img.shields.io/badge/BASE-CAIRO%2C%20EG-60A5FA?style=for-the-badge&labelColor=0D1117"/> <img src="https://komarev.com/ghpvc/?username=abdelrahman-kamel-elgendy&style=for-the-badge&color=A78BFA&label=PROFILE+VIEWS&labelColor=0D1117"/> </div> <br/> <!-- ═══════════════════ 02 · IDENTITY (TERMINAL) ═══════════════════ Replaces "About Me" with a shell session. Reads like a real engineer's terminal and answers: who, what, now, next. -->
----
+<div align="center">
+
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:0f0c29,45:302b63,100:24243e&height=220&section=header&text=Abdelrahman%20Kamel%20Elgendy&fontSize=52&fontColor=ffffff&fontAlignY=42&desc=Full%20Stack%20Developer&descAlignY=64&descSize=26&descColor=A78BFA&stroke=7C3AED&strokeWidth=1&animation=twinkling" alt="Abdelrahman Kamel Elgendy - Full Stack Developer"/>
+
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Technologist%20Medium%20Skin%20Tone.png" alt="Man Technologist Medium Skin Tone" width="250" height="250" />
+
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&repeat=true&width=780&height=32&lines=Designing+backend+systems+that+scale;REST+APIs+%7C+Microservices+%7C+Auth+%7C+Angular;Writing+code+future-me+won't+curse;Open+to+full+stack+%26+backend+roles" alt="Typing animation"/>
+</div>
+
 
 <!-- ── THEME: REST API response ─────────────────────────── -->
 ## `GET /api/whoiam`
@@ -110,43 +117,42 @@ stack:
 ---
 
 ## `metrics.sql`
+<table width="100%">
+<tr>
+<td width=50%>
 
-<!-- STATS_START -->
-```sql
--- ── github_stats ─────────────────
-SELECT
-    total_stars,
-    total_commits,
-    commits_this_year,
-    pull_requests,
-    merged_pull_requests,
-    total_issues
-FROM
-    github_stats
-WHERE
-    username = 'abdelrahman-kamel-elgendy';
+  <!-- LANGS_START -->
+  ```sql
+  SELECT
+      language
+  FROM
+      repo_languages
+  WHERE
+      owner = 'abdelrahman-kamel-elgendy'
+  GROUP BY
+      language
+  LIMIT 6;
 
--- ── Result (2026-11-01) ──
--- +----------------------+-------+
--- | metric               | value |
--- +----------------------+-------+
--- | total_stars          |     0 |
--- | total_commits        |   565 |
--- | commits_this_year    |   452 |
--- | pull_requests        |    28 |
--- | merged_pull_requests |    28 |
--- | total_issues         |     0 |
--- +----------------------+-------+
--- 6 rows in set
-```
-<!-- STATS_END -->
+  -- ── Result (2026-11-01) ──
+  -- +------------+--------+
+  -- | language   |  value |
+  -- +------------+--------+
+  -- | Java       | 48.50% |
+  -- | JavaScript | 20.15% |
+  -- | C#         | 16.37% |
+  -- | HTML       |  6.98% |
+  -- | TypeScript |  6.32% |
+  -- | Python     |  1.14% |
+  -- +------------+--------+
+  -- 6 rows in set
+  ```
+  <!-- LANGS_END -->
 
-<img src="https://github-stats-extended.vercel.app/api?username=abdelrahman-kamel-elgendy&show_icons=true&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&icon_color=7C3AED&text_color=CDD6F4&rank_icon=github" alt="GitHub Stats"/>
-
+</td>
+<td width=50%>
 
 <!-- STREAK_START -->
 ```sql
--- ── contribution_calendar ────────
 SELECT
     total_contributions,
     tracking_since,
@@ -174,44 +180,17 @@ WHERE
 ```
 <!-- STREAK_END -->
 
-
-<img src="https://streak-stats.demolab.com?user=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&background=0D1117&ring=A78BFA&fire=7C3AED&currStreakLabel=A78BFA&sideLabels=CDD6F4&currStreakNum=FFFFFF&sideNums=CDD6F4&dates=6B7280" alt="GitHub Streak"/>
-
-
-<!-- LANGS_START -->
-```sql
--- ── repo_languages ───────────────
-SELECT
-    language,
-    ROUND(100 * SUM(bytes) / SUM(SUM(bytes)) OVER (), 2) AS share
-FROM
-    repo_languages
-WHERE
-    owner = 'abdelrahman-kamel-elgendy'
-    AND is_fork = FALSE
-GROUP BY
-    language
-ORDER BY
-    share DESC
-LIMIT 6;
-
--- ── Result (2026-11-01) ──
--- +------------+--------+
--- | language   |  share |
--- +------------+--------+
--- | Java       | 48.50% |
--- | JavaScript | 20.15% |
--- | C#         | 16.37% |
--- | HTML       |  6.98% |
--- | TypeScript |  6.32% |
--- | Python     |  1.14% |
--- +------------+--------+
--- 6 rows in set
-```
-<!-- LANGS_END -->
-
-<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&text_color=CDD6F4&layout=compact" alt="Top Languages"/>
----
+</td>
+</tr>
+<tr>
+    <td width=50% align="center">
+      <img width=100% src="https://github-stats-extended.vercel.app/api/top-langs/?username=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&bg_color=0D1117&title_color=A78BFA&text_color=CDD6F4&layout=compact" alt="Top Languages"/>
+    </td>
+    <td width=50% align="center">
+      <img width=100% src="https://streak-stats.demolab.com?user=abdelrahman-kamel-elgendy&hide_border=true&border_radius=12&background=0D1117&ring=A78BFA&fire=7C3AED&currStreakLabel=A78BFA&sideLabels=CDD6F4&currStreakNum=FFFFFF&sideNums=CDD6F4&dates=6B7280" alt="GitHub Streak"/>
+    </td>
+  </tr>
+</table>
 
 <!-- ── THEME: Application log ─────────────────────────── -->
 ## `daily-backend-tip.log`
@@ -246,15 +225,11 @@ LIMIT 6;
 ## `POST /api/connect`
 
 <div align="center">
-<a href="mailto:abdelrahman.kamel.elgendy@gmail.com">
-  <img src="https://img.shields.io/badge/Drop%20me%20an%20email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-&nbsp;
-<a href="https://www.linkedin.com/in/abdelrahman-kamel-elgendy/">
-  <img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a> 
-
-<br/>
-
-> *The best backend is the one nobody notices until it's gone ;)*
+  <a href="mailto:abdelrahman.kamel.elgendy@gmail.com">
+    <img src="https://img.shields.io/badge/Drop%20me%20an%20email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/abdelrahman-kamel-elgendy/">
+    <img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a> 
 </div>

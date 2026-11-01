@@ -27,7 +27,7 @@ jobs:
         run: python3 scripts/update_metrics.py
 
       - name: Update tip and quote in README
-        run: python3 scripts/update_readme.py
+        run: python3 scripts/update_tip_and_quote.py
 
       - name: Commit and push
         env:
