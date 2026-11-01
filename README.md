@@ -122,6 +122,10 @@ stack:
 
 <!-- METRICS_START -->
 ```sql
+-- ──────────────────────────────────
+--  Querying developer stats
+--  from github.db
+-- ──────────────────────────────────
 SELECT
     total_commits,
     commits_this_year,
@@ -138,17 +142,17 @@ WHERE
     AND year = YEAR(CURDATE());
 
 -- ── Result ─────────────────────────
--- as of 2023-33-4
--- +---------------------+-------+
--- | total_commits       |   546 |
--- | commits_this_year   |   433 |
--- | total_contributions |   634 |
--- | pull_requests       |    28 |
--- | merged_pull_requests|    28 |
--- | total_issues        |     0 |
--- | current_streak      | 216 d |
--- | longest_streak      | 216 d |
--- +---------------------+-------+
+-- as of 2026-11-01
+-- +----------------------+--------+
+-- | total_commits        |    563 |
+-- | commits_this_year    |    450 |
+-- | total_contributions  |    639 |
+-- | pull_requests        |     28 |
+-- | merged_pull_requests |     28 |
+-- | total_issues         |      0 |
+-- | current_streak       |  216 d |
+-- | longest_streak       |  216 d |
+-- +----------------------+--------+
 -- streak window: 2026-03-31 → 2026-11-01
 -- 1 row in set
 ```
@@ -176,10 +180,10 @@ WHERE
  
 <!-- TIP_START -->
 ```log
-[2026-11-01 17:13:44.363 +02:00 INF] tip-service Fetching tip of the day...
-[2026-11-01 17:13:44.363 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-11-01 17:13:44.363 +02:00 INF] tip-service Message received → tip loaded
-[2026-11-01 17:13:44.363 +02:00 TIP] tip-service Tip → Database connection strings should never appear in source code or logs.
+[2026-11-01 17:25:17.901 +02:00 INF] tip-service Fetching tip of the day...
+[2026-11-01 17:25:17.901 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-11-01 17:25:17.901 +02:00 INF] tip-service Message received → tip loaded
+[2026-11-01 17:25:17.901 +02:00 TIP] tip-service Tip → Database connection strings should never appear in source code or logs.
 ```
 <!-- TIP_END -->
  
@@ -190,11 +194,11 @@ WHERE
  
 <!-- QUOTE_START -->
 ```log
-[2026-11-01 17:13:44.363 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-11-01 17:13:44.363 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-11-01 17:13:44.363 +02:00 INF] quote-service Message received → quote loaded
-[2026-11-01 17:13:44.363 +02:00 QOT] quote-service Quote → "When something comes from within, when it is a part of you, you have no choice but to live it, to express it."
-[2026-11-01 17:13:44.363 +02:00 AUT] quote-service Author → Kamal Ravikant 
+[2026-11-01 17:25:17.901 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-11-01 17:25:17.901 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-11-01 17:25:17.901 +02:00 INF] quote-service Message received → quote loaded
+[2026-11-01 17:25:17.901 +02:00 QOT] quote-service Quote → "When something comes from within, when it is a part of you, you have no choice but to live it, to express it."
+[2026-11-01 17:25:17.901 +02:00 AUT] quote-service Author → Kamal Ravikant 
 ```
 <!-- QUOTE_END -->
 
