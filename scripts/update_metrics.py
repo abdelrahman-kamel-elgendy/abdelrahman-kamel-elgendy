@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+"""Regenerates the metrics.sql block in README.md from live GitHub data.
+
+Replaces everything between <!-- METRICS_START --> and <!-- METRICS_END -->.
+Env: GITHUB_TOKEN (required), GH_USER, README_PATH (optional). No dependencies.
+"""
 import json
 import os
 import re
@@ -160,7 +166,12 @@ def inject(text, block):
 
 
 def main():
-    token = os.environ["GITHUB_TOKEN"]
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if not token:
+        sys.exit(
+            "No token found. Add an `env:` block with GITHUB_TOKEN to the "
+            "workflow step that runs this script (indented under the step)."
+        )
     user = os.environ.get("GH_USER", "abdelrahman-kamel-elgendy")
     path = os.environ.get("README_PATH", "README.md")
     today = datetime.now(timezone.utc).date()

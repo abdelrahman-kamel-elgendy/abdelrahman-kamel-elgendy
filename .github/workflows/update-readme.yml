@@ -21,6 +21,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Update metrics in README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: abdelrahman-kamel-elgendy
         run: python3 scripts/update_metrics.py
 
       - name: Update tip and quote in README
