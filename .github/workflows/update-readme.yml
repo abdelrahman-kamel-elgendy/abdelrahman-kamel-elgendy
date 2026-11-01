@@ -20,11 +20,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Update tip and quote in README
-        run: python3 scripts/update_readme.py
-
       - name: Update metrics in README
         run: python3 scripts/update_metrics.py
+
+      - name: Update tip and quote in README
+        run: python3 scripts/update_readme.py
 
       - name: Commit and push
         env:
