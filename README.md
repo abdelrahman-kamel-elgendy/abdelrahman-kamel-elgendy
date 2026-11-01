@@ -125,7 +125,31 @@ stack:
 
 <!-- STATS_START -->
 ```sql
--- populated by scripts/update_metrics.py on the next workflow run
+-- ── github_stats ─────────────────
+SELECT
+    total_stars,
+    total_commits,
+    commits_this_year,
+    pull_requests,
+    merged_pull_requests,
+    total_issues
+FROM
+    github_stats
+WHERE
+    username = 'abdelrahman-kamel-elgendy';
+
+-- ── Result (2026-11-01) ──
+-- +----------------------+-------+
+-- | metric               | value |
+-- +----------------------+-------+
+-- | total_stars          |     0 |
+-- | total_commits        |   565 |
+-- | commits_this_year    |   452 |
+-- | pull_requests        |    28 |
+-- | merged_pull_requests |    28 |
+-- | total_issues         |     0 |
+-- +----------------------+-------+
+-- 6 rows in set
 ```
 <!-- STATS_END -->
 
@@ -141,7 +165,31 @@ stack:
 
 <!-- STREAK_START -->
 ```sql
--- populated by scripts/update_metrics.py on the next workflow run
+-- ── contribution_calendar ────────
+SELECT
+    total_contributions,
+    tracking_since,
+    current_streak,
+    current_window,
+    longest_streak,
+    longest_window
+FROM
+    contribution_calendar
+WHERE
+    username = 'abdelrahman-kamel-elgendy';
+
+-- ── Result (2026-11-01) ──
+-- +---------------------+-------------------------+
+-- | metric              |                   value |
+-- +---------------------+-------------------------+
+-- | total_contributions |                     641 |
+-- | tracking_since      |              2024-02-02 |
+-- | current_streak      |                   216 d |
+-- | current_window      | 2026-03-31 → 2026-11-01 |
+-- | longest_streak      |                   216 d |
+-- | longest_window      | 2026-03-31 → 2026-11-01 |
+-- +---------------------+-------------------------+
+-- 6 rows in set
 ```
 <!-- STREAK_END -->
 
@@ -157,7 +205,33 @@ stack:
 
 <!-- LANGS_START -->
 ```sql
--- populated by scripts/update_metrics.py on the next workflow run
+-- ── repo_languages ───────────────
+SELECT
+    language,
+    ROUND(100 * SUM(bytes) / SUM(SUM(bytes)) OVER (), 2) AS share
+FROM
+    repo_languages
+WHERE
+    owner = 'abdelrahman-kamel-elgendy'
+    AND is_fork = FALSE
+GROUP BY
+    language
+ORDER BY
+    share DESC
+LIMIT 6;
+
+-- ── Result (2026-11-01) ──
+-- +------------+--------+
+-- | language   |  share |
+-- +------------+--------+
+-- | Java       | 48.50% |
+-- | JavaScript | 20.15% |
+-- | C#         | 16.37% |
+-- | HTML       |  6.98% |
+-- | TypeScript |  6.32% |
+-- | Python     |  1.14% |
+-- +------------+--------+
+-- 6 rows in set
 ```
 <!-- LANGS_END -->
 
@@ -177,10 +251,10 @@ stack:
  
 <!-- TIP_START -->
 ```log
-[2026-11-01 06:45:59.648 +02:00 INF] tip-service Fetching tip of the day...
-[2026-11-01 06:45:59.648 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-11-01 06:45:59.648 +02:00 INF] tip-service Message received → tip loaded
-[2026-11-01 06:45:59.648 +02:00 TIP] tip-service Tip → Database connection strings should never appear in source code or logs.
+[2026-11-01 17:30:19.175 +02:00 INF] tip-service Fetching tip of the day...
+[2026-11-01 17:30:19.175 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-11-01 17:30:19.175 +02:00 INF] tip-service Message received → tip loaded
+[2026-11-01 17:30:19.175 +02:00 TIP] tip-service Tip → Database connection strings should never appear in source code or logs.
 ```
 <!-- TIP_END -->
  
@@ -191,11 +265,11 @@ stack:
  
 <!-- QUOTE_START -->
 ```log
-[2026-11-01 06:45:59.648 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-11-01 06:45:59.648 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-11-01 06:45:59.648 +02:00 INF] quote-service Message received → quote loaded
-[2026-11-01 06:45:59.648 +02:00 QOT] quote-service Quote → "When something comes from within, when it is a part of you, you have no choice but to live it, to express it."
-[2026-11-01 06:45:59.648 +02:00 AUT] quote-service Author → Kamal Ravikant 
+[2026-11-01 17:30:19.175 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-11-01 17:30:19.175 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-11-01 17:30:19.175 +02:00 INF] quote-service Message received → quote loaded
+[2026-11-01 17:30:19.175 +02:00 QOT] quote-service Quote → "When something comes from within, when it is a part of you, you have no choice but to live it, to express it."
+[2026-11-01 17:30:19.175 +02:00 AUT] quote-service Author → Kamal Ravikant 
 ```
 <!-- QUOTE_END -->
 
