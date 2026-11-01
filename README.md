@@ -87,24 +87,23 @@ stack:
 <td valign="middle" width="50%">
 <div align="center">
 
- ```yaml
-Languages
-```
+
+## Languages
 <img src="https://skillicons.dev/icons?i=cs,java,js,ts,py&theme=dark" />
  
- ```yaml
-Frameworks & Runtimes
-```
+<br/>
+
+## Frameworks & Runtimes
 <img src="https://skillicons.dev/icons?i=dotnet,spring,nodejs,nestjs,angular&theme=dark" />
 
- ```yaml
-Databases & ORMs
-```
+<br/>
+
+## Databases & ORMs
 <img src="https://skillicons.dev/icons?i=mysql,prisma,mongodb,redis&theme=dark" />
 
- ```yaml
-DevOps & Tools
-```
+<br/>
+
+## DevOps & Tools
 <img src="https://skillicons.dev/icons?i=git,github,docker,postman&theme=dark" />
  
 </div>
