@@ -138,7 +138,7 @@ ORDER BY
     share DESC
 LIMIT 6;
 
--- ── Result (2026-11-06) ──
+-- ── Result (2026-11-07) ──
 -- +------------+--------+
 -- | language   |  share |
 -- +------------+--------+
@@ -171,16 +171,16 @@ FROM
 WHERE
     username = 'abdelrahman-kamel-elgendy';
 
--- ── Result (2026-11-06) ──
+-- ── Result (2026-11-07) ──
 -- +---------------------+-------------------------+
 -- | metric              |                   value |
 -- +---------------------+-------------------------+
--- | total_contributions |                     655 |
+-- | total_contributions |                     656 |
 -- | tracking_since      |              2024-02-02 |
--- | current_streak      |                   220 d |
--- | current_window      | 2026-03-31 → 2026-11-05 |
--- | longest_streak      |                   220 d |
--- | longest_window      | 2026-03-31 → 2026-11-05 |
+-- | current_streak      |                   221 d |
+-- | current_window      | 2026-03-31 → 2026-11-06 |
+-- | longest_streak      |                   221 d |
+-- | longest_window      | 2026-03-31 → 2026-11-06 |
 -- +---------------------+-------------------------+
 -- 6 rows in set
 ```
@@ -203,10 +203,10 @@ WHERE
  
 <!-- TIP_START -->
 ```log
-[2026-11-06 07:28:02.826 +02:00 INF] tip-service Fetching tip of the day...
-[2026-11-06 07:28:02.826 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-11-06 07:28:02.826 +02:00 INF] tip-service Message received → tip loaded
-[2026-11-06 07:28:02.826 +02:00 TIP] tip-service Tip → Use query caching carefully — stale cache can be worse than no cache.
+[2026-11-07 06:56:28.807 +02:00 INF] tip-service Fetching tip of the day...
+[2026-11-07 06:56:28.807 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-11-07 06:56:28.807 +02:00 INF] tip-service Message received → tip loaded
+[2026-11-07 06:56:28.807 +02:00 TIP] tip-service Tip → Domain events decouple side effects (sending email, updating stats) from core business logic.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ WHERE
  
 <!-- QUOTE_START -->
 ```log
-[2026-11-06 07:28:02.826 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-11-06 07:28:02.826 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-11-06 07:28:02.826 +02:00 INF] quote-service Message received → quote loaded
-[2026-11-06 07:28:02.826 +02:00 QOT] quote-service Quote → "Your mind is infinite, it's your doubts that are limiting."
-[2026-11-06 07:28:02.826 +02:00 AUT] quote-service Author → Robert Kiyosaki 
+[2026-11-07 06:56:28.807 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-11-07 06:56:28.807 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-11-07 06:56:28.807 +02:00 INF] quote-service Message received → quote loaded
+[2026-11-07 06:56:28.807 +02:00 QOT] quote-service Quote → "The things I carry are my thoughts. That's it. They are the only weight. My thoughts determine whether I am free and light or burdened."
+[2026-11-07 06:56:28.807 +02:00 AUT] quote-service Author → Kamal Ravikant 
 ```
 <!-- QUOTE_END -->
 
