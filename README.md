@@ -138,16 +138,16 @@ ORDER BY
     share DESC
 LIMIT 6;
 
--- ── Result (2026-11-17) ──
+-- ── Result (2026-11-18) ──
 -- +------------+--------+
 -- | language   |  share |
 -- +------------+--------+
--- | Java       | 45.69% |
--- | C#         | 21.27% |
--- | JavaScript | 18.98% |
--- | HTML       |  6.57% |
--- | TypeScript |  5.96% |
--- | Python     |  1.01% |
+-- | Java       | 43.30% |
+-- | C#         | 25.39% |
+-- | JavaScript | 17.99% |
+-- | HTML       |  6.23% |
+-- | TypeScript |  5.64% |
+-- | Python     |  0.96% |
 -- +------------+--------+
 -- 6 rows in set
 ```
@@ -171,16 +171,16 @@ FROM
 WHERE
     username = 'abdelrahman-kamel-elgendy';
 
--- ── Result (2026-11-17) ──
+-- ── Result (2026-11-18) ──
 -- +---------------------+-------------------------+
 -- | metric              |                   value |
 -- +---------------------+-------------------------+
--- | total_contributions |                     683 |
+-- | total_contributions |                     691 |
 -- | tracking_since      |              2024-02-02 |
--- | current_streak      |                   231 d |
--- | current_window      | 2026-03-31 → 2026-11-16 |
--- | longest_streak      |                   231 d |
--- | longest_window      | 2026-03-31 → 2026-11-16 |
+-- | current_streak      |                   233 d |
+-- | current_window      | 2026-03-31 → 2026-11-18 |
+-- | longest_streak      |                   233 d |
+-- | longest_window      | 2026-03-31 → 2026-11-18 |
 -- +---------------------+-------------------------+
 -- 6 rows in set
 ```
@@ -203,10 +203,10 @@ WHERE
  
 <!-- TIP_START -->
 ```log
-[2026-11-17 08:54:01.327 +02:00 INF] tip-service Fetching tip of the day...
-[2026-11-17 08:54:01.327 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
-[2026-11-17 08:54:01.327 +02:00 INF] tip-service Message received → tip loaded
-[2026-11-17 08:54:01.327 +02:00 TIP] tip-service Tip → Apply database constraints (NOT NULL, UNIQUE, FK) — don't rely solely on app-level validation.
+[2026-11-18 08:14:19.550 +02:00 INF] tip-service Fetching tip of the day...
+[2026-11-18 08:14:19.550 +02:00 INF] tip-service GET https://raw.githubusercontent.com/abdelrahman-kamel-elgendy/abdelrahman-kamel-elgendy/main/tips.json  200 OK
+[2026-11-18 08:14:19.550 +02:00 INF] tip-service Message received → tip loaded
+[2026-11-18 08:14:19.550 +02:00 TIP] tip-service Tip → Use async message processing for operations that don't need an immediate response.
 ```
 <!-- TIP_END -->
  
@@ -217,11 +217,11 @@ WHERE
  
 <!-- QUOTE_START -->
 ```log
-[2026-11-17 08:54:01.327 +02:00 INF] quote-service Connecting to quotes upstream...
-[2026-11-17 08:54:01.327 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
-[2026-11-17 08:54:01.327 +02:00 INF] quote-service Message received → quote loaded
-[2026-11-17 08:54:01.327 +02:00 QOT] quote-service Quote → "If you can't argue both sides, you can't argue."
-[2026-11-17 08:54:01.327 +02:00 AUT] quote-service Author → Jack Butcher 
+[2026-11-18 08:14:19.550 +02:00 INF] quote-service Connecting to quotes upstream...
+[2026-11-18 08:14:19.550 +02:00 INF] quote-service GET https://zenquotes.io/api/today  200 OK
+[2026-11-18 08:14:19.550 +02:00 INF] quote-service Message received → quote loaded
+[2026-11-18 08:14:19.550 +02:00 QOT] quote-service Quote → "Silence is a source of great strength."
+[2026-11-18 08:14:19.550 +02:00 AUT] quote-service Author → Lao Tzu 
 ```
 <!-- QUOTE_END -->
 
